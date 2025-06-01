@@ -11,7 +11,7 @@
 
 
 
-<title>syllabus-m25.knit</title>
+<title>lect-9.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,30 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-p {
-font-size: 18px;
-}
-tr {
-border-bottom: 1px solid black;
-font-size: 18px;
-}
-td, th {
-padding: 8px;
-}
-#toc {
-float: left;
-padding-top: 1%;
-width: 15%;
-background: #EEEEEE;
-position: fixed;
-}
-#syllabus{
-float: left;
-width: 70%;
-margin-left: 30%;
-}
-</style>
+<style type="text/css">h1, h2, h3, h4, h5, h6 {color: rgba(96, 38, 158, 1);}p {font-size: 18px;}a {font-size: 15px;font-weight: bold;}mark{background-color: yellow;}#index {float: left;padding-top: 1%;width: 15%;background: #EEEEEE;position: fixed;}#content {float: left;width: 70%;margin-left: 30%;}#email{font-size: 18px;}#banner-1 {font-size: 30px;font-weight: bold;text-align: center;color: white;margin: auto;padding: 10px;background-color: #60269E;}#banner-2 {font-size: 20px;font-weight: bold;text-align: center;color: #60269E;margin: auto;padding: 10px;}</style>
 
 
 
@@ -376,384 +353,255 @@ display: none;
 </div>
 
 
-<div id="statistics-213-introduction-to-applied-statistics" class="section level1" style="color:white; text-align:center; background-color:#60269E;">
-<h1><strong>Statistics 213: Introduction to Applied
-Statistics</strong></h1>
-</div>
-<hr />
-<div>
-<div id="course-information-summer-2025-6-weeks" class="section level3">
-<h3><u><strong>Course Information (Summer 2025 / 6
-Weeks)</strong></u></h3>
+<div id="index">
+<p><span style="padding-left:30px;">
+<a href="javascript:history.back()" style="color:#60269E;"> BACK TO
+SYLLABUS </a> </span></p>
 <ul>
-<li><p><strong>Section:</strong> 1</p></li>
-<li><p><strong>Schedule:</strong> M, T, W, TH</p></li>
-<li><p><strong>Time:</strong> 8:00 – 9:34 am</p></li>
-<li><p><strong>Room:</strong> HN C107</p></li>
-<li><p><strong>Instructor:</strong> Alejandro Falchettore</p></li>
-<li><p><strong>Email:</strong> <a href="mailto:afalche@hunter.cuny.edu" class="email">afalche@hunter.cuny.edu</a></p></li>
-<li><p><strong>Office hours (ZOOM link in Brightspace – Appointment
-required): </strong>Monday: 12:30 – 1:30 pm</p></li>
+<li><p><a href="#d9-1"> Binomial Distribution</a></p></li>
+<li><p><a href="#d9-2"> Geometric Distribution </a></p></li>
+</ul>
+</div>
+<div id="content">
+
+<hr id="d9-1">
+<div id="binomial-distribution" class="section level1">
+<h1>Binomial Distribution</h1>
+<div id="binomial-experiment" class="section level3">
+<h3>Binomial Experiment</h3>
+<p>A binomial experiment consists of a <strong>sequence of
+trials</strong> with the following conditions:</p>
+<ol style="list-style-type: decimal">
+<li><p>There are a fixed number of trials.</p></li>
+<li><p>Each trial can result in <strong>one</strong> of only <strong>two
+possibles</strong> outcomes, labeled “success” (S) and “failure” (F).
+<em>(Bernoulli trial)</em></p></li>
+<li><p>Outcomes of different trials are independent.</p></li>
+<li><p>The probability that a trial results in a success <strong>is the
+same</strong> for each trial.</p></li>
+</ol>
+</div>
+<div id="binomial-random-variable" class="section level3">
+<h3>Binomial Random Variable</h3>
+<p>It is a discrete random variable that represent the <em>number of
+successes</em> observed when a binomial experiment is performed.</p>
+</div>
+<div id="binomial-distribution-1" class="section level3">
+<h3>Binomial Distribution</h3>
+<p>It is the probability distribution of a binomial random variable.</p>
+<ul>
+<li><p>Formula: P(X = k) = p(k) = <span class="math inline">\({n \choose
+k}p^k(1 - p)^{n - k}\)</span></p></li>
+<li><p>n: Number of independent trials in a binomial
+experiment.</p></li>
+<li><p>p: Probability that any trial results is a “success”.</p></li>
+<li><p><span class="math inline">\(n \choose k\)</span>: All possible
+combinations of successes an failures in “n” trials. You read this
+expression as “n choose k”</p></li>
+<li><p><span class="math inline">\(n \choose k\)</span> = <span class="math inline">\(\frac{n!}{k! (n - k)!}\)</span></p></li>
+<li><p>The symbol <strong>!</strong> is read as “factorial”.</p></li>
+<li><p>By definition, n! = (n)(n - 1)(n - 2)….1</p></li>
+<li><p>For instance, 5! = (5)(4)(3)(2)(1) = 120</p></li>
+<li><p><span class="math inline">\(5 \choose 2\)</span> = <span class="math inline">\(\frac{5!}{2!(5 - 2)!}\)</span> = <span class="math inline">\(\frac{5!}{(2!)(3!)}\)</span></p></li>
+<li><p><span class="math inline">\(5 \choose 2\)</span> = <span class="math inline">\(\frac{120}{(2)(6)}\)</span> = 10</p></li>
 </ul>
 <hr />
+<p>In a press release dated <strong>October 2, 2008, The National Cyber
+Security Alliance</strong> reported that approximately 80% of adult
+Americans who own a computer claim to have a firewall installed of their
+computer to prevent hackers from stealing personal information. This
+estimate was based on a survey of 3000 people. It was also reported that
+in a study of 400 computers, only about 40% actually has a firewall.</p>
+<p><em>a)</em> Suppose that the true proportion of computer owners who
+have a firewall installed is 0.80. If 20 computer owners are selected at
+random, what is the probability that more than 15 have firewall
+installed?</p>
+<ul>
+<li><p>Let X: Number of computer owners with firewall
+installed.</p></li>
+<li><p>X is Binomial with p = 0.8 and n = 20.</p></li>
+<li><p>Find P(X &gt; 15)</p></li>
+<li><p>P(X &gt; 15) = p(16) + p(17) + p(18) + p(19) + p(20)</p></li>
+<li><p>Use table 9 with n = 20 and column p = 0.8 for probabilities
+values</p></li>
+<li><p>P(X &gt; 15) = 0.218 + 0.205 + 0.137 + 0.058 + 0.012</p></li>
+<li><p>P(X &gt; 15) = 0.63</p></li>
+</ul>
+<p><em>b)</em> Suppose that the true proportion of computer owners who
+have firewall installed is 0.4. If 20 computer owners are selected at
+random, what is the probability that more than 15 have a firewall
+installed?</p>
+<ul>
+<li><p>Similar to part (a), use table 9 with n = 20 and column <strong>p
+= 0.4</strong> for probabilities values</p></li>
+<li><p>P(X &gt; 15) = 0 + 0 + 0 + 0 + 0</p></li>
+<li><p>P(X &gt; 15) <span class="math inline">\(\approx\)</span>
+0</p></li>
+<li><p><em>Note: Table 9 round these vales to zero. Using software the
+value is 0.0003170311</em></p></li>
+</ul>
+<p><em>c)</em> Suppose that a random sample of 20 computer owners is
+selected and that 14 have a firewall installed. Is it more likely that
+the true proportion of computer owners who have a firewall installed is
+0.4 or 0.8? Justify your answer based on probability calculations.</p>
+<ul>
+<li><p>Find P(X = 14)</p></li>
+<li><p>Using table 9 with n = 20 and p = 0.8, P(X = 14) = 0.109</p></li>
+<li><p>Using table 9 with n = 20 and p = 0.4, P(X = 14) = 0.005</p></li>
+<li><p>It is more likely to be 0.8</p></li>
+</ul>
+<hr />
+<p><strong>Mean of a Binomial random variable:</strong> E[X] = n.p</p>
+<p><strong>Variance of a Binomial random variable:</strong> Var(X) =
+<span class="math inline">\(np(1 - p)\)</span></p>
+<hr />
+<p>Thirty percent of all automobiles undergoing an emission inspection
+at a certain station fail the inspection. <span class="math inline">\(\phantom{Peck5, ex7.54, p.391}\)</span></p>
+<p><em>a)</em> Among 15 randomly selected cars, what is the probability
+that at most five fail the inspection?</p>
+<ul>
+<li><p>X: Number of cars that fail the inspection</p></li>
+<li><p>Find P(X <span class="math inline">\(\leq\)</span> 5); where X is
+binomial with parameters n = 15, p = 0.3</p></li>
+<li><p>P(X <span class="math inline">\(\leq\)</span> 5) = p(0) + p(1) +
+…. + p(5); where p(k) = <span class="math inline">\({n \choose k}p^k(1 -
+p)^{n - k}\)</span></p></li>
+<li><p>Alternatively, use table 9 in the textbook’s appendix to find P(X
+= k) = p(k).</p></li>
+<li><p>In the table 9, find the table corresponding to n = 15. Next,
+identify the column with the probability of success p = 0.3. Finally,
+add the probabilities (number with three decimal places) corresponding
+to x=0, x=1, …, x=5.</p></li>
+<li><p>P(X <span class="math inline">\(\leq\)</span> 5) = 0.005 + 0.031
++ 0.092 + 0.170 + 0.219 + 0.206 = 0.723</p></li>
+</ul>
+<p><em>b)</em> Among 15 randomly selected cars, what is the probability
+that between five and 10 (inclusive) fail to pass the inspection?</p>
+<ul>
+<li><p>Find <span class="math inline">\(P(5 \leq X \leq 10)\)</span>;
+where X is binomial with parameters n = 15, p = 0.3</p></li>
+<li><p><span class="math inline">\(P(5 \leq X \leq 10)\)</span> = p(5) +
+p(6) + …. + p(10)</p></li>
+<li><p>Using table 9, add the values from x=5 to x=10 in the table with
+label n=15.</p></li>
+<li><p><span class="math inline">\(P(5 \leq X \leq 10)\)</span> = 0.206
++ 0.147 + 0.081 + 0.035 + 0.012 + 0.003 = 0.484</p></li>
+</ul>
+<p><em>c)</em> What is the probability that among 25 randomly selected
+cars, the number that pass is within 1 standard deviation to the mean
+value?</p>
+<ul>
+<li><p>X: Number of cars that PASS the inspection</p></li>
+<li><p>Find <span class="math inline">\(P(\mu - \sigma \leq X \leq \mu +
+\sigma)\)</span>; where X is binomial with parameters n = 25, p =
+0.7</p></li>
+<li><p>E[X] = np = (25)(0.7) = 17.5</p></li>
+<li><p>Standard deviation of X = <span class="math inline">\(\sqrt{np(1
+- p)}\)</span> = <span class="math inline">\(\sqrt{(25)(0.7)(1 -
+0.7)}\)</span> = 2.29</p></li>
+<li><p><span class="math inline">\(P(15.21 \leq X \leq 19.79)\)</span> =
+P(16 <span class="math inline">\(\leq\)</span> X <span class="math inline">\(\leq\)</span> 19) = p(16) + p(17) + p(18) +
+p(19)</p></li>
+<li><p>Using table 9 for n = 25 and p=0.7,</p></li>
+<li><p>P(16 <span class="math inline">\(\leq\)</span> X <span class="math inline">\(\leq\)</span> 19) = 0.134 + 0.165 + 0.171 +
+0.147</p></li>
+<li><p>P(16 <span class="math inline">\(\leq\)</span> X <span class="math inline">\(\leq\)</span> 19) = 0.617</p></li>
+</ul>
+<hr id="d9-2">
 </div>
-<div id="learning-outcomes" class="section level3">
-<h3><u><strong>Learning Outcomes:</strong></u></h3>
+</div>
+<div id="geometric-distribution" class="section level1">
+<h1>Geometric Distribution</h1>
+<p>Suppose an experiment consists of a sequence of trials with the
+following conditions:</p>
+<ul>
+<li><p>The trials are independent.</p></li>
+<li><p>Each trial can result in one of two possible outcomes, success or
+failure.</p></li>
+<li><p>The probability of success is the same for all trials.</p></li>
+</ul>
+<div id="geometric-random-variable" class="section level3">
+<h3>Geometric Random Variable</h3>
+<p>It is defined as <em>X: The number of trials the first success is
+observed.</em></p>
+</div>
+<div id="geometric-distribution-1" class="section level3">
+<h3>Geometric Distribution</h3>
+<p>The probability distribution of X is called the geometric
+distribution: <strong>p(x)</strong> = <span class="math inline">\((1 -
+p)^{x - 1}p\)</span> , where x = 1,2,3,…</p>
+<hr />
+<p>Sophie is a dog that loves to play catch. Unfortunately, she is not
+very good, and the probability that she catches a ball is only 0.1. Let
+x be the number of tosses required until Sophie catches a ball.</p>
+<p><em>a)</em> Does X have a binomial or geometric distribution?</p>
 <ul>
 <li><p>
-This course emphasizes statistical literacy and develops statistical
-thinking. Statistical literacy is promoted throughout the text in the
-many examples and exercises, drawn from published research findings and
-the popular press. Many of the examples and exercises discussed will
-highlight the central role of probability and statistics in 21st century
-science. Students should understand how to adequately interpret and
-communicate statistical results. Understanding the nature and role of
-variability is key to developing sound skills in statistical thinking.
+X represents the number of <strong>trials</strong> until the first
+success. Therefore, X has a Geometric distribution. <em>(Binomial is the
+number of successes in n trials)</em>
 </p></li>
 </ul>
-</div>
-<div id="course-materials" class="section level3">
-<h3><u><strong>Course Materials</strong></u></h3>
+<p><em>b)</em> What is the probability that it will take exactly two
+tosses for Sophie to catch a ball?</p>
 <ul>
-<li><p><strong>Textbook:</strong> Introduction to Statistics and Data
-Analysis, Enhanced Review Edition (6th Edition) by Roxy Peck, Chris
-Olsen, Jay L. Devore. Duxbury Press; <u>E-book included in
-WebAssign.</u></p></li>
-<li><p><span style="background:#FFFF97"><strong>WebAssign
-(www.webassign.net) is mandatory!</strong></span>.
-<a href="https://www.getenrolled.com/?courseKey=hunter53954915" target="_blank"><strong>Click
-here</strong></a> for self-enrollment</p></li>
+<li><p>Find P(X = 2)</p></li>
+<li><p>X is geometric, p(x) = <span class="math inline">\((1 - p)^{x -
+1}p\)</span>, with p = 0.1</p></li>
+<li><p>P(X = 2) = <span class="math inline">\((1 - 0.1)^{2 -
+1}(0.1)\)</span> = (0.9)(0.1)</p></li>
+<li><p>P(X = 2) = 0.09</p></li>
 </ul>
-</div>
-<div id="grading-policy" class="section level3">
-<h3><u><strong>Grading Policy</strong></u></h3>
+<p><em>c)</em> What is the probability that more than three tosses will
+be required?</p>
 <ul>
-<li><p>There are two in-class non-cumulative tests (T1, T2), and a final
-exam (F) worth 80% altogether. Online assignments (WebAssign) are 20% of
-the grade.</p></li>
-<li><p>The tests and final are closed book exams and in person. Only a
-scientific calculator <em>(no phone, tablet or computer)</em>,
-<a href="formulas.pdf" target="_blank"><strong>formula</strong></a>
-sheets and
-<a href="tables.pdf" target="_blank"><strong>tables</strong></a> are
-allowed. The final is comprehensive. <strong>There will be no remake for
-the tests and final!</strong></p></li>
-<li><p>The final counts twice as much as the midterm tests. The lowest
-score will be dropped (if lowest score is the final exam, that score
-will be counted only once). Overall score formula: [T1 + T2 + F + F –
-min(T1, T2, F)]*8/30 + WebAssign.</p></li>
+<li><p>Find P(X &gt; 3)</p></li>
+<li><p>P(X &gt; 3) = p(4) + p(5) + p(6) + …..</p></li>
+<li><p>Using the complement rule, P(X &gt; 3) = 1 - P(X <span class="math inline">\(\leq\)</span> 3)</p></li>
+<li><p>P(X &gt; 3) = 1 - (p(1) + p(2) + p(3))</p></li>
+<li><p>P(X &gt; 3) = 1 - (0.1 + 0.09 + 0.081)</p></li>
+<li><p>P(X &gt; 3) = 0.729</p></li>
 </ul>
-</div>
-<div id="tutoring" class="section level3">
-<h3><u><strong>Tutoring</strong></u></h3>
+<hr />
+<p>Suppose that 5% of cereal boxes contain a prize and the other 95%
+contain a message, <em>“Sorry, try again.”</em> Consider the random
+variable x, where x = number of boxes purchased until a price is found.
+<span class="math inline">\(\phantom{Peck5, ex7.61, p.392}\)</span></p>
+<p><em>a)</em> What is the probability that at most two boxes must be
+purchased?</p>
 <ul>
-<li><p>
-Table tutoring and audiovisual materials are available at The Dolciani
-Mathematics Learning Center, located at the Silverstein Student Success
-Center 7th Floor Hunter East. Tutoring is available remotely and on site
-by appointment. Appointments can be booked through Navigate. For hours
-and more information visit their website
-<a href="https://www.hunter.cuny.edu/dolciani" target="_blank"><strong>click
-here</strong>.</a>
-</p></li>
+<li><p>Parameter: p = 0.05</p></li>
+<li><p>P(X <span class="math inline">\(\leq\)</span> 2) = p(1) +
+p(2)</p></li>
+<li><p>P(X <span class="math inline">\(\leq\)</span> 2) = <span class="math inline">\((1 - 0.05)^{1-1}(0.05) + (1 -
+0.05)^{2-1}(0.05)\)</span></p></li>
+<li><p>P(X <span class="math inline">\(\leq\)</span> 2) = (1)(0.05) +
+(0.95)(0.05) = 0.0975</p></li>
 </ul>
-</div>
-<div id="student-resources" class="section level3">
-<h3><u><strong>Student Resources</strong></u></h3>
+<p><em>b)</em> What is the probability that exactly four boxes must be
+purchased?</p>
 <ul>
-<li><p><u>Counseling and Wellness Services</u> offers free and
-confidential short-term counseling services, referrals, workshops, and
-support groups to all Hunter College students.
-<a href="http://www.hunter.cuny.edu/cws/counselingservices" target="_blank">
-<strong>Click here</strong></a> for more information.
-<a href="https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/" target="_blank"><strong>Click
-here</strong></a> for links to resources such as food pantries,
-emergency funding sources, and technology access.</p></li>
-<li><p><u>Assistance with CUNY login (Blackboard, CUNYfirst), email,
-Hunter NetID:</u> <a href="mailto:studenthelpdesk@hunter.cuny.edu" class="email">studenthelpdesk@hunter.cuny.edu</a> , (212)
-650-3624</p></li>
-<li><p><u>Academic Advising:</u>
-<a href="http://www.hunter.cuny.edu/advising/" target="_blank">http://www.hunter.cuny.edu/advising/</a></p></li>
-<li><p><u>Financial Aid:</u>
-<a href="https://hunter.cuny.edu/students/financial-aid" target="_blank">https://hunter.cuny.edu/students/financial-aid/</a></p></li>
+<li><p>Find P(X = 4)</p></li>
+<li><p>p(4) = <span class="math inline">\((0.95)^{4 - 1}(0.05)\)</span>
+= <span class="math inline">\((0.95)^3(0.05)\)</span></p></li>
+<li><p>p(4) = 0.0429</p></li>
 </ul>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><u><strong>Academic Integrity</strong></u></h3>
+<p><em>c)</em> What is the probability that more than four boxes must be
+purchased?</p>
 <ul>
-<li><p>
-“Hunter College regards acts of academic dishonesty (e.g., plagiarism,
-cheating on examinations, obtaining unfair advantage, and falsification
-of records and official documents) as serious offenses against the
-values of intellectual honesty. The College is committed to enforcing
-the CUNY Policy on Academic Integrity and will pursue cases of academic
-dishonesty according to the Hunter College Academic Integrity
-Procedures.”
-</p></li>
-</ul>
-</div>
-<div id="office-of-accessability" class="section level3">
-<h3><u><strong>Office of AccessABILITY</strong></u></h3>
-<ul>
-<li><p>
-“In compliance with the American Disability Act of 1990 (ADA) and with
-Section 504 of the Rehabilitation Act of 1973, Hunter College is
-committed to ensuring educational parity and accommodations for all
-students with documented disabilities and/or medical conditions. It is
-recommended that all students with documented disabilities (Emotional,
-Medical, Physical and/or Learning) consult the Office of Accessibility.”
-Call (212-772-4857)/TTY (212-650-3230) or
-<a href="http://www.hunter.cuny.edu/access" target="_blank"><strong>click
-here</strong></a> for more information. Students are welcome to speak
-with me privately about any accommodations.
-</p></li>
-</ul>
-</div>
-<div id="cuny-statement-on-sexual-misconduct" class="section level3">
-<h3><u><strong>CUNY Statement on Sexual Misconduct</strong></u></h3>
-<ul>
-<li><p>
-<p>“In compliance with the CUNY Policy on Sexual Misconduct, Hunter
-College reaffirms the prohibition of any sexual misconduct, which
-includes sexual violence, sexual harassment, and gender-based harassment
-retaliation against students, employees, or visitors, as well as certain
-intimate relationships. Students who have experienced any form of sexual
-violence on or off campus (including CUNY-sponsored trips and events)
-are entitled to the rights outlined in the Bill of Rights for Hunter
-College.</p>
-</p></li>
-<li><p><u>Sexual Violence.</u> Students are strongly encouraged to
-immediately report the incident by calling 911, contacting NYPD Special
-Victims Division Hotline (646-610-7272) or their local police precinct,
-or contacting the College’s Public Safety Office
-(212-772-4444).</p></li>
-<li><p><u>All Other Forms of Sexual Misconduct:</u> Students are also
-encouraged to contact the College’s Title IX Campus Coordinator, Dean
-John Rose (<a href="mailto:jtrose@hunter.cuny.edu" class="email">jtrose@hunter.cuny.edu</a> or 212-650-3262) or Colleen
-Barry (<a href="mailto:colleen.barry@hunter.cuny.edu" class="email">colleen.barry@hunter.cuny.edu</a> or 212-772-4534) and
-seek complimentary services through the Counseling and Wellness Services
-Office, Hunter East 1123.”</p></li>
-<li><p><u>CUNY Policy on Sexual Misconduct:</u>
-<a href="https://www1.cuny.edu/sites/title-ix/wp-content/uploads/sites/2/2021/06/2018-CUNY-Policy-on-Sexual-Misconduct.pdf" target="_blank"><strong>Click
-here</strong></a> for a pdf copy.</p></li>
+<li><p>Find P(X &gt; 4)</p></li>
+<li><p>P(X &gt; 4) = p(5) + p(6) + ……</p></li>
+<li><p>P(X &gt; 4) = 1 - P(X <span class="math inline">\(\leq\)</span>
+4) = 1 - [p(1) + p(2) + p(3) + p(4)]</p></li>
+<li><p>Part (a): P(X <span class="math inline">\(\leq\)</span> 2) =
+0.0975; Part (b): p(4) = 0.0429</p></li>
+<li><p>p(3) = <span class="math inline">\((0.95)^{3 - 1}(0.05)\)</span>
+= 0.0451</p></li>
+<li><p>P(X &gt; 4) = 1 - (0.0975 + 0.0429 + 0.0451) =
+<strong>0.8145</strong></p></li>
 </ul>
 <hr />
 </div>
-<div id="class-schedule" class="section level3">
-<h3><u><strong>Class Schedule</strong></u></h3>
-<center>
-<table style="width:auto; table-layout:auto;">
-<thead>
-<tr style="border-top: 1px solid black">
-<th style="text-align:left">
-Date
-</th>
-<th>
-Topic
-</th>
-</tr>
-</thead>
-<tr>
-<td>
-May 27
-</td>
-<td>
-<a href="lect-1.html">The Role of Statistics and Data Analysis Process
-(1.1 – 1.4), Collecting Data Sensibly (2.1 – 2.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 28
-</td>
-<td>
-<a href="lect-2.html">Graphical Methods for Describing Data (3.1 –
-3.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 29
-</td>
-<td>
-<a href="lect-3.html">Numerical Methods for Describing Data (4.1 –
-4.2)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 2
-</td>
-<td>
-<a href="lect-4.html"> Numerical Methods for Describing Data (4.3 – 4.4)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 3
-</td>
-<td>
-<a href="lect-5.html"> Probability (6.1 – 6.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 4
-</td>
-<td>
-<a href="lect-6.html"> Probability (6.4 – 6.6)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 5
-</td>
-<td>
-Probability (6.7 - Activity)
-</td>
-</tr>
-<tr>
-<td>
-June 9
-</td>
-<td>
-<a href="lect-8.html"> Random Variables and Probability Distributions
-(7.1 - 7.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 10
-</td>
-<td>
-<a href="lect-9.html"> Random Variables and Probability Distributions
-(7.5) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 11
-</td>
-<td>
-Random Variables and Probability Distributions (7.6)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 12
-</td>
-<td>
-Test 1 <em>(Chapters 1, 2, 3, 4, 6, 7)</em>
-</td>
-</tr>
-<tr>
-<td>
-June 16
-</td>
-<td>
-Sampling Variability and Sampling Distributions (8.1 – 8.3)
-</td>
-</tr>
-<tr>
-<td>
-June 17
-</td>
-<td>
-Estimation Using a Single Sample (9.1 – 9.3)
-</td>
-</tr>
-<tr>
-<td>
-June 18
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.1 – 10.2)
-</td>
-</tr>
-<tr>
-<td>
-June 23
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.3 – 10.4)
-</td>
-</tr>
-<tr>
-<td>
-June 24
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.4 – 10.5)
-</td>
-</tr>
-<tr>
-<td>
-June 25
-</td>
-<td>
-Comparing Two Populations or Treatments (11.1 – 11.3)
-</td>
-</tr>
-<tr>
-<td>
-June 26
-</td>
-<td>
-The Analysis of Categorical Data and Goodness-of-Fit Tests (12.1 - 12.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 30
-</td>
-<td>
-Test 2 <em>(Chapters 8, 9, 10, 11, 12)</em>
-</td>
-</tr>
-<tr>
-<td>
-July 1
-</td>
-<td>
-Summarizing Bivariate Data (5.1 – 5.2)
-</td>
-</tr>
-<tr>
-<td>
-July 2
-</td>
-<td>
-Summarizing Bivariate Data (5.3)
-</td>
-</tr>
-<tr>
-<td>
-July 3
-</td>
-<td>
-ANOVA (15.1)
-</td>
-</tr>
-<tr>
-<td>
-July 7
-</td>
-<td>
-ANOVA (15.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-July 8
-</td>
-<td>
-Final Exam
-</td>
-</tr>
-</table>
-</center>
-<p><br><br></p>
 </div>
 </div>
 
