@@ -11,7 +11,7 @@
 
 
 
-<title>syllabus-m25.knit</title>
+<title>lect-7.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,30 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-p {
-font-size: 18px;
-}
-tr {
-border-bottom: 1px solid black;
-font-size: 18px;
-}
-td, th {
-padding: 8px;
-}
-#toc {
-float: left;
-padding-top: 1%;
-width: 15%;
-background: #EEEEEE;
-position: fixed;
-}
-#syllabus{
-float: left;
-width: 70%;
-margin-left: 30%;
-}
-</style>
+<style type="text/css">h1, h2, h3, h4, h5, h6 {color: rgba(96, 38, 158, 1);}p {font-size: 18px;}a {font-size: 15px;font-weight: bold;}mark{background-color: yellow;}#index {float: left;padding-top: 1%;width: 15%;background: #EEEEEE;position: fixed;}#content {float: left;width: 70%;margin-left: 30%;}#email{font-size: 18px;}#banner-1 {font-size: 30px;font-weight: bold;text-align: center;color: white;margin: auto;padding: 10px;background-color: #60269E;}#banner-2 {font-size: 20px;font-weight: bold;text-align: center;color: #60269E;margin: auto;padding: 10px;}</style>
 
 
 
@@ -376,384 +353,59 @@ display: none;
 </div>
 
 
-<div id="statistics-213-introduction-to-applied-statistics" class="section level1" style="color:white; text-align:center; background-color:#60269E;">
-<h1><strong>Statistics 213: Introduction to Applied
-Statistics</strong></h1>
+<div id="index">
+<p><span style="padding-left:30px;">
+<a href="syllabus-m25.html" style="color:#60269E;"> BACK TO SYLLABUS
+</a> </span></p>
 </div>
+<div id="content">
+
+
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<div id="a-crisis-for-european-sport-fans" class="section level3">
+<h3>A Crisis for European Sport Fans?</h3>
+<p><strong>Background</strong>: The <em>New Scientist (January 4,
+2002)</em> reported on a controversy surrounding the Euro coins that
+have been introduced as a common currency across Europe. Each country
+mints its own coins, but these coins are accepted in any of the
+countries that have adopted the Euro as their currency.</p>
+<p>A group in Poland claims that the Belgium-minted Euro does not have
+an equal chance of landing heads or tails. This claim was based on 250
+tosses of the Belgium-minted Euro, of which 140 (56%) came up heads.
+Should this be cause for alarm for European sports fans, who know that
+“important” decisions are made by the flip of a coin?</p>
 <hr />
-<div>
-<div id="course-information-summer-2025-6-weeks" class="section level3">
-<h3><u><strong>Course Information (Summer 2025 / 6
-Weeks)</strong></u></h3>
+<p>In this activity, we will investigate whether this should be cause
+for alarm by examining whether observing 140 heads out of 250 tosses is
+an unusual outcome of the coin is fair.</p>
+<p><em>1)</em> For this step, you can either <em>(CHOOSE ONE)</em></p>
 <ul>
-<li><p><strong>Section:</strong> 1</p></li>
-<li><p><strong>Schedule:</strong> M, T, W, TH</p></li>
-<li><p><strong>Time:</strong> 8:00 – 9:34 am</p></li>
-<li><p><strong>Room:</strong> HN C107</p></li>
-<li><p><strong>Instructor:</strong> Alejandro Falchettore</p></li>
-<li><p><strong>Email:</strong> <a href="mailto:afalche@hunter.cuny.edu" class="email">afalche@hunter.cuny.edu</a></p></li>
-<li><p><strong>Office hours (ZOOM link in Brightspace – Appointment
-required): </strong>Monday: 12:30 – 1:30 pm</p></li>
+<li><p>flip a U.S. penny 250 times, keeping a tally of the number of
+heads and tails observed <em>(this won’t take as long as you
+think)</em></p></li>
+<li><p>simulate 250 coins tosses by using a statistical software to
+generate random numbers. <em>See instructions below.</em></p></li>
 </ul>
+<pre class="r"><code># Instructions for Simulation
+
+# Simulate 250 tosses. 0 (tail), 1 (head).
+x &lt;- sample(c(0,1), 250, replace=T)
+
+# Display the total heads.
+sum(x)
+
+# Display the proportion of heads.
+sum(x)/250</code></pre>
 <hr />
-</div>
-<div id="learning-outcomes" class="section level3">
-<h3><u><strong>Learning Outcomes:</strong></u></h3>
-<ul>
-<li><p>
-This course emphasizes statistical literacy and develops statistical
-thinking. Statistical literacy is promoted throughout the text in the
-many examples and exercises, drawn from published research findings and
-the popular press. Many of the examples and exercises discussed will
-highlight the central role of probability and statistics in 21st century
-science. Students should understand how to adequately interpret and
-communicate statistical results. Understanding the nature and role of
-variability is key to developing sound skills in statistical thinking.
-</p></li>
-</ul>
-</div>
-<div id="course-materials" class="section level3">
-<h3><u><strong>Course Materials</strong></u></h3>
-<ul>
-<li><p><strong>Textbook:</strong> Introduction to Statistics and Data
-Analysis, Enhanced Review Edition (6th Edition) by Roxy Peck, Chris
-Olsen, Jay L. Devore. Duxbury Press; <u>E-book included in
-WebAssign.</u></p></li>
-<li><p><span style="background:#FFFF97"><strong>WebAssign
-(www.webassign.net) is mandatory!</strong></span>.
-<a href="https://www.getenrolled.com/?courseKey=hunter53954915" target="_blank"><strong>Click
-here</strong></a> for self-enrollment</p></li>
-</ul>
-</div>
-<div id="grading-policy" class="section level3">
-<h3><u><strong>Grading Policy</strong></u></h3>
-<ul>
-<li><p>There are two in-class non-cumulative tests (T1, T2), and a final
-exam (F) worth 80% altogether. Online assignments (WebAssign) are 20% of
-the grade.</p></li>
-<li><p>The tests and final are closed book exams and in person. Only a
-scientific calculator <em>(no phone, tablet or computer)</em>,
-<a href="formulas.pdf" target="_blank"><strong>formula</strong></a>
-sheets and
-<a href="tables.pdf" target="_blank"><strong>tables</strong></a> are
-allowed. The final is comprehensive. <strong>There will be no remake for
-the tests and final!</strong></p></li>
-<li><p>The final counts twice as much as the midterm tests. The lowest
-score will be dropped (if lowest score is the final exam, that score
-will be counted only once). Overall score formula: [T1 + T2 + F + F –
-min(T1, T2, F)]*8/30 + WebAssign.</p></li>
-</ul>
-</div>
-<div id="tutoring" class="section level3">
-<h3><u><strong>Tutoring</strong></u></h3>
-<ul>
-<li><p>
-Table tutoring and audiovisual materials are available at The Dolciani
-Mathematics Learning Center, located at the Silverstein Student Success
-Center 7th Floor Hunter East. Tutoring is available remotely and on site
-by appointment. Appointments can be booked through Navigate. For hours
-and more information visit their website
-<a href="https://www.hunter.cuny.edu/dolciani" target="_blank"><strong>click
-here</strong>.</a>
-</p></li>
-</ul>
-</div>
-<div id="student-resources" class="section level3">
-<h3><u><strong>Student Resources</strong></u></h3>
-<ul>
-<li><p><u>Counseling and Wellness Services</u> offers free and
-confidential short-term counseling services, referrals, workshops, and
-support groups to all Hunter College students.
-<a href="http://www.hunter.cuny.edu/cws/counselingservices" target="_blank">
-<strong>Click here</strong></a> for more information.
-<a href="https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/" target="_blank"><strong>Click
-here</strong></a> for links to resources such as food pantries,
-emergency funding sources, and technology access.</p></li>
-<li><p><u>Assistance with CUNY login (Blackboard, CUNYfirst), email,
-Hunter NetID:</u> <a href="mailto:studenthelpdesk@hunter.cuny.edu" class="email">studenthelpdesk@hunter.cuny.edu</a> , (212)
-650-3624</p></li>
-<li><p><u>Academic Advising:</u>
-<a href="http://www.hunter.cuny.edu/advising/" target="_blank">http://www.hunter.cuny.edu/advising/</a></p></li>
-<li><p><u>Financial Aid:</u>
-<a href="https://hunter.cuny.edu/students/financial-aid" target="_blank">https://hunter.cuny.edu/students/financial-aid/</a></p></li>
-</ul>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><u><strong>Academic Integrity</strong></u></h3>
-<ul>
-<li><p>
-“Hunter College regards acts of academic dishonesty (e.g., plagiarism,
-cheating on examinations, obtaining unfair advantage, and falsification
-of records and official documents) as serious offenses against the
-values of intellectual honesty. The College is committed to enforcing
-the CUNY Policy on Academic Integrity and will pursue cases of academic
-dishonesty according to the Hunter College Academic Integrity
-Procedures.”
-</p></li>
-</ul>
-</div>
-<div id="office-of-accessability" class="section level3">
-<h3><u><strong>Office of AccessABILITY</strong></u></h3>
-<ul>
-<li><p>
-“In compliance with the American Disability Act of 1990 (ADA) and with
-Section 504 of the Rehabilitation Act of 1973, Hunter College is
-committed to ensuring educational parity and accommodations for all
-students with documented disabilities and/or medical conditions. It is
-recommended that all students with documented disabilities (Emotional,
-Medical, Physical and/or Learning) consult the Office of Accessibility.”
-Call (212-772-4857)/TTY (212-650-3230) or
-<a href="http://www.hunter.cuny.edu/access" target="_blank"><strong>click
-here</strong></a> for more information. Students are welcome to speak
-with me privately about any accommodations.
-</p></li>
-</ul>
-</div>
-<div id="cuny-statement-on-sexual-misconduct" class="section level3">
-<h3><u><strong>CUNY Statement on Sexual Misconduct</strong></u></h3>
-<ul>
-<li><p>
-<p>“In compliance with the CUNY Policy on Sexual Misconduct, Hunter
-College reaffirms the prohibition of any sexual misconduct, which
-includes sexual violence, sexual harassment, and gender-based harassment
-retaliation against students, employees, or visitors, as well as certain
-intimate relationships. Students who have experienced any form of sexual
-violence on or off campus (including CUNY-sponsored trips and events)
-are entitled to the rights outlined in the Bill of Rights for Hunter
-College.</p>
-</p></li>
-<li><p><u>Sexual Violence.</u> Students are strongly encouraged to
-immediately report the incident by calling 911, contacting NYPD Special
-Victims Division Hotline (646-610-7272) or their local police precinct,
-or contacting the College’s Public Safety Office
-(212-772-4444).</p></li>
-<li><p><u>All Other Forms of Sexual Misconduct:</u> Students are also
-encouraged to contact the College’s Title IX Campus Coordinator, Dean
-John Rose (<a href="mailto:jtrose@hunter.cuny.edu" class="email">jtrose@hunter.cuny.edu</a> or 212-650-3262) or Colleen
-Barry (<a href="mailto:colleen.barry@hunter.cuny.edu" class="email">colleen.barry@hunter.cuny.edu</a> or 212-772-4534) and
-seek complimentary services through the Counseling and Wellness Services
-Office, Hunter East 1123.”</p></li>
-<li><p><u>CUNY Policy on Sexual Misconduct:</u>
-<a href="https://www1.cuny.edu/sites/title-ix/wp-content/uploads/sites/2/2021/06/2018-CUNY-Policy-on-Sexual-Misconduct.pdf" target="_blank"><strong>Click
-here</strong></a> for a pdf copy.</p></li>
-</ul>
+<p><em>2)</em> For your sequence of 250 coins, calculate the proportion
+of heads observed.</p>
 <hr />
-</div>
-<div id="class-schedule" class="section level3">
-<h3><u><strong>Class Schedule</strong></u></h3>
-<center>
-<table style="width:auto; table-layout:auto;">
-<thead>
-<tr style="border-top: 1px solid black">
-<th style="text-align:left">
-Date
-</th>
-<th>
-Topic
-</th>
-</tr>
-</thead>
-<tr>
-<td>
-May 27
-</td>
-<td>
-<a href="lect-1.html">The Role of Statistics and Data Analysis Process
-(1.1 – 1.4), Collecting Data Sensibly (2.1 – 2.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 28
-</td>
-<td>
-<a href="lect-2.html">Graphical Methods for Describing Data (3.1 –
-3.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 29
-</td>
-<td>
-<a href="lect-3.html">Numerical Methods for Describing Data (4.1 –
-4.2)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 2
-</td>
-<td>
-<a href="lect-4.html"> Numerical Methods for Describing Data (4.3 – 4.4)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 3
-</td>
-<td>
-<a href="lect-5.html"> Probability (6.1 – 6.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 4
-</td>
-<td>
-<a href="lect-6.html"> Probability (6.4 – 6.6)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 5
-</td>
-<td>
-<a href="lect-7.html"> Probability (6.7 - Activity) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 9
-</td>
-<td>
-<a href="lect-8.html"> Random Variables and Probability Distributions
-(7.1 - 7.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 10
-</td>
-<td>
-<a href="lect-9.html"> Random Variables and Probability Distributions
-(7.5) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 11
-</td>
-<td>
-Random Variables and Probability Distributions (7.6)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 12
-</td>
-<td>
-Test 1 <em>(Chapters 1, 2, 3, 4, 6, 7)</em>
-</td>
-</tr>
-<tr>
-<td>
-June 16
-</td>
-<td>
-Sampling Variability and Sampling Distributions (8.1 – 8.3)
-</td>
-</tr>
-<tr>
-<td>
-June 17
-</td>
-<td>
-Estimation Using a Single Sample (9.1 – 9.3)
-</td>
-</tr>
-<tr>
-<td>
-June 18
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.1 – 10.2)
-</td>
-</tr>
-<tr>
-<td>
-June 23
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.3 – 10.4)
-</td>
-</tr>
-<tr>
-<td>
-June 24
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.4 – 10.5)
-</td>
-</tr>
-<tr>
-<td>
-June 25
-</td>
-<td>
-Comparing Two Populations or Treatments (11.1 – 11.3)
-</td>
-</tr>
-<tr>
-<td>
-June 26
-</td>
-<td>
-The Analysis of Categorical Data and Goodness-of-Fit Tests (12.1 - 12.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 30
-</td>
-<td>
-Test 2 <em>(Chapters 8, 9, 10, 11, 12)</em>
-</td>
-</tr>
-<tr>
-<td>
-July 1
-</td>
-<td>
-Summarizing Bivariate Data (5.1 – 5.2)
-</td>
-</tr>
-<tr>
-<td>
-July 2
-</td>
-<td>
-Summarizing Bivariate Data (5.3)
-</td>
-</tr>
-<tr>
-<td>
-July 3
-</td>
-<td>
-ANOVA (15.1)
-</td>
-</tr>
-<tr>
-<td>
-July 7
-</td>
-<td>
-ANOVA (15.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-July 8
-</td>
-<td>
-Final Exam
-</td>
-</tr>
-</table>
-</center>
-<p><br><br></p>
+<p><em>3)</em> Write a paragraph explaining why the European sport fans
+should or should not be worried by the results of the Polish experiment.
+Your explanation should be based on the observed proportion of heads
+from the Polish experiment.</p>
+<hr />
 </div>
 </div>
 
