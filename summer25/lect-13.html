@@ -11,7 +11,7 @@
 
 
 
-<title>syllabus-m25.knit</title>
+<title>lect-13.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,30 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-p {
-font-size: 18px;
-}
-tr {
-border-bottom: 1px solid black;
-font-size: 18px;
-}
-td, th {
-padding: 8px;
-}
-#toc {
-float: left;
-padding-top: 1%;
-width: 15%;
-background: #EEEEEE;
-position: fixed;
-}
-#syllabus{
-float: left;
-width: 70%;
-margin-left: 30%;
-}
-</style>
+<style type="text/css">h1, h2, h3, h4, h5, h6 {color: rgba(96, 38, 158, 1);}p {font-size: 18px;}a {font-size: 15px;font-weight: bold;}mark{background-color: yellow;}#index {float: left;padding-top: 1%;width: 15%;background: #EEEEEE;position: fixed;}#content {float: left;width: 70%;margin-left: 30%;}#email{font-size: 18px;}#banner-1 {font-size: 30px;font-weight: bold;text-align: center;color: white;margin: auto;padding: 10px;background-color: #60269E;}#banner-2 {font-size: 20px;font-weight: bold;text-align: center;color: #60269E;margin: auto;padding: 10px;}</style>
 
 
 
@@ -376,388 +353,370 @@ display: none;
 </div>
 
 
-<div id="statistics-213-introduction-to-applied-statistics" class="section level1" style="color:white; text-align:center; background-color:#60269E;">
-<h1><strong>Statistics 213: Introduction to Applied
-Statistics</strong></h1>
-</div>
-<hr />
-<div>
-<div id="course-information-summer-2025-6-weeks" class="section level3">
-<h3><u><strong>Course Information (Summer 2025 / 6
-Weeks)</strong></u></h3>
+<div id="index">
+<p><span style="padding-left:30px;">
+<a href="syllabus-m25.html" style="color:#60269E;"> BACK TO SYLLABUS
+</a> </span></p>
 <ul>
-<li><p><strong>Section:</strong> 1</p></li>
-<li><p><strong>Schedule:</strong> M, T, W, TH</p></li>
-<li><p><strong>Time:</strong> 8:00 – 9:34 am</p></li>
-<li><p><strong>Room:</strong> HN C107</p></li>
-<li><p><strong>Instructor:</strong> Alejandro Falchettore</p></li>
-<li><p><strong>Email:</strong> <a href="mailto:afalche@hunter.cuny.edu" class="email">afalche@hunter.cuny.edu</a></p></li>
-<li><p><strong>Office hours (ZOOM link in Brightspace – Appointment
-required): </strong>Monday: 12:30 – 1:30 pm</p></li>
+<li><p><a href="#d13-1"> Language of Hypothesis Testing </a></p></li>
+<li><p><a href="#d13-2"> Errors in Hypothesis Testing </a></p></li>
+</ul>
+</div>
+<div id="content">
+
+<hr id="d13-1">
+<div id="the-language-of-testing-hypothesis" class="section level1">
+<h1>The Language of Testing Hypothesis</h1>
+<ul>
+<li><p>A <strong>hypothesis</strong> is a statement (or claim) regarding
+the <strong>parameter</strong>.</p></li>
+<li><p>The <strong>hypothesis testing</strong> is a procedure, based on
+a random sample, used to test a statement regarding some
+parameter.</p></li>
+<li><p>For example, according to the Center of Disease Control and
+Prevention, 19.6% of children aged 6 to 11 years are overweight. A
+school nurse thinks that the percentage of 6- to 11-years-old who are
+overweight is higher in her school district.</p></li>
+<li><p>The claim to test is <em>“19.6% of children aged 6 to 11 years
+are overweight.”</em></p></li>
+</ul>
+<div id="steps-in-hypothesis-testing" class="section level2">
+<h2>Steps in Hypothesis Testing</h2>
+<ul>
+<li><p>Identify the statement (or claim) regarding the nature of the
+population (parameter).</p></li>
+<li><p>Collect evidence (sample data) to test the statement.</p></li>
+<li><p>Analyze the data to assess the plausibility of the
+statement.</p></li>
+<li><p>Conclude if the evidence rejects or fail to reject “claim” about
+the parameter.</p></li>
+</ul>
+</div>
+<div id="basic-definitions" class="section level2">
+<h2>Basic Definitions</h2>
+<ul>
+<li><p>The <strong>null hypothesis</strong>, denoted by
+<strong>Ho</strong>, is a statement or claim to be tested.</p></li>
+<li><p>The null hypothesis implies no change, no effect, or no
+difference and is assumed to be true UNTIL evidence indicates
+otherwise.</p></li>
+<li><p>Ho: <em>The percent of overweight students in the district is
+19.6</em></p></li>
+<li><p>The <strong>alternative hypothesis</strong>, denoted by
+<strong>Ha</strong>, is the statement to support after rejecting the
+null hypothesis. Another notation is <span class="math inline">\(H_1\)</span>.</p></li>
+<li><p><em>Ha: The percent of overweight students in the district is
+<strong>greater</strong> than 19.6</em></p></li>
+</ul>
+</div>
+<div id="setting-up-the-hypotheses" class="section level2">
+<h2>Setting up the hypotheses</h2>
+<p>Two-tailed test:</p>
+<ul>
+<li><p>Ho: parameter = claim</p></li>
+<li><p>Ha: parameter <span class="math inline">\(\neq\)</span>
+claim</p></li>
+</ul>
+<p>Left-tailed test:</p>
+<ul>
+<li><p>Ho: parameter = claim</p></li>
+<li><p>Ha: parameter &lt; claim</p></li>
+</ul>
+<p>Right-tailed test:</p>
+<ul>
+<li><p>Ho: parameter = claim</p></li>
+<li><p>Ha: parameter &gt; claim</p></li>
 </ul>
 <hr />
-</div>
-<div id="learning-outcomes" class="section level3">
-<h3><u><strong>Learning Outcomes:</strong></u></h3>
+<p>To determine whether the pipe welds in a nuclear power plant meet
+specifications, a random sample of welds is selected and tests are
+conducted on each weld in the sample. Weld strength is measured as the
+force required to break the weld. Suppose that the specifications state
+that the mean strength of welds should exceed 100 lb/in2. The inspection
+team decides to test Ho: <span class="math inline">\(\mu\)</span> = 100
+versus Ha: <span class="math inline">\(\mu\)</span> &gt; 100. Explain
+why this alternative hypothesis was chosen rather than <span class="math inline">\(\mu\)</span> &lt; 100. </p>
 <ul>
 <li><p>
-This course emphasizes statistical literacy and develops statistical
-thinking. Statistical literacy is promoted throughout the text in the
-many examples and exercises, drawn from published research findings and
-the popular press. Many of the examples and exercises discussed will
-highlight the central role of probability and statistics in 21st century
-science. Students should understand how to adequately interpret and
-communicate statistical results. Understanding the nature and role of
-variability is key to developing sound skills in statistical thinking.
+Find convincing evidence to support the welds’ specification.
 </p></li>
 </ul>
-</div>
-<div id="course-materials" class="section level3">
-<h3><u><strong>Course Materials</strong></u></h3>
-<ul>
-<li><p><strong>Textbook:</strong> Introduction to Statistics and Data
-Analysis, Enhanced Review Edition (6th Edition) by Roxy Peck, Chris
-Olsen, Jay L. Devore. Duxbury Press; <u>E-book included in
-WebAssign.</u></p></li>
-<li><p><span style="background:#FFFF97"><strong>WebAssign
-(www.webassign.net) is mandatory!</strong></span>.
-<a href="https://www.getenrolled.com/?courseKey=hunter53954915" target="_blank"><strong>Click
-here</strong></a> for self-enrollment</p></li>
-</ul>
-</div>
-<div id="grading-policy" class="section level3">
-<h3><u><strong>Grading Policy</strong></u></h3>
-<ul>
-<li><p>There are two in-class non-cumulative tests (T1, T2), and a final
-exam (F) worth 80% altogether. Online assignments (WebAssign) are 20% of
-the grade.</p></li>
-<li><p>The tests and final are closed book exams and in person. Only a
-scientific calculator <em>(no phone, tablet or computer)</em>,
-<a href="formulas.pdf" target="_blank"><strong>formula</strong></a>
-sheets and
-<a href="tables.pdf" target="_blank"><strong>tables</strong></a> are
-allowed. The final is comprehensive. <strong>There will be no remake for
-the tests and final!</strong></p></li>
-<li><p>The final counts twice as much as the midterm tests. The lowest
-score will be dropped (if lowest score is the final exam, that score
-will be counted only once). Overall score formula: [T1 + T2 + F + F –
-min(T1, T2, F)]*8/30 + WebAssign.</p></li>
-</ul>
-</div>
-<div id="tutoring" class="section level3">
-<h3><u><strong>Tutoring</strong></u></h3>
+<p>For the following pairs, indicate which one complies with the rules
+for setting up hypotheses, and explain why:</p>
+<p><em>a)</em> Ho: <span class="math inline">\(\mu\)</span> = 15, Ha:
+<span class="math inline">\(\mu\)</span> = 15</p>
+<p><em>b)</em> Ho: <span class="math inline">\(\sigma\)</span> = 0.4,
+Ha: <span class="math inline">\(\sigma\)</span> &gt; 0.6</p>
+<p><em>c)</em> Ho: <span class="math inline">\(\mu\)</span> = 123, Ha:
+<span class="math inline">\(\mu\)</span> &lt; 123</p>
+<p><em>d)</em> Ho: <span class="math inline">\(\mu\)</span> = 123, Ha:
+<span class="math inline">\(\mu\)</span> = 125</p>
+<p><em>e)</em> Ho: <span class="math inline">\(\bar{X}\)</span> = 0.1,
+Ha: <span class="math inline">\(\bar{X}\)</span> <span class="math inline">\(\neq\)</span> 0.1</p>
 <ul>
 <li><p>
-Table tutoring and audiovisual materials are available at The Dolciani
-Mathematics Learning Center, located at the Silverstein Student Success
-Center 7th Floor Hunter East. Tutoring is available remotely and on site
-by appointment. Appointments can be booked through Navigate. For hours
-and more information visit their website
-<a href="https://www.hunter.cuny.edu/dolciani" target="_blank"><strong>click
-here</strong>.</a>
+Only (c) complies with the rules.
 </p></li>
-</ul>
-</div>
-<div id="student-resources" class="section level3">
-<h3><u><strong>Student Resources</strong></u></h3>
-<ul>
-<li><p><u>Counseling and Wellness Services</u> offers free and
-confidential short-term counseling services, referrals, workshops, and
-support groups to all Hunter College students.
-<a href="http://www.hunter.cuny.edu/cws/counselingservices" target="_blank">
-<strong>Click here</strong></a> for more information.
-<a href="https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/" target="_blank"><strong>Click
-here</strong></a> for links to resources such as food pantries,
-emergency funding sources, and technology access.</p></li>
-<li><p><u>Assistance with CUNY login (Blackboard, CUNYfirst), email,
-Hunter NetID:</u> <a href="mailto:studenthelpdesk@hunter.cuny.edu" class="email">studenthelpdesk@hunter.cuny.edu</a> , (212)
-650-3624</p></li>
-<li><p><u>Academic Advising:</u>
-<a href="http://www.hunter.cuny.edu/advising/" target="_blank">http://www.hunter.cuny.edu/advising/</a></p></li>
-<li><p><u>Financial Aid:</u>
-<a href="https://hunter.cuny.edu/students/financial-aid" target="_blank">https://hunter.cuny.edu/students/financial-aid/</a></p></li>
-</ul>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><u><strong>Academic Integrity</strong></u></h3>
-<ul>
-<li><p>
-“Hunter College regards acts of academic dishonesty (e.g., plagiarism,
-cheating on examinations, obtaining unfair advantage, and falsification
-of records and official documents) as serious offenses against the
-values of intellectual honesty. The College is committed to enforcing
-the CUNY Policy on Academic Integrity and will pursue cases of academic
-dishonesty according to the Hunter College Academic Integrity
-Procedures.”
-</p></li>
-</ul>
-</div>
-<div id="office-of-accessability" class="section level3">
-<h3><u><strong>Office of AccessABILITY</strong></u></h3>
-<ul>
-<li><p>
-“In compliance with the American Disability Act of 1990 (ADA) and with
-Section 504 of the Rehabilitation Act of 1973, Hunter College is
-committed to ensuring educational parity and accommodations for all
-students with documented disabilities and/or medical conditions. It is
-recommended that all students with documented disabilities (Emotional,
-Medical, Physical and/or Learning) consult the Office of Accessibility.”
-Call (212-772-4857)/TTY (212-650-3230) or
-<a href="http://www.hunter.cuny.edu/access" target="_blank"><strong>click
-here</strong></a> for more information. Students are welcome to speak
-with me privately about any accommodations.
-</p></li>
-</ul>
-</div>
-<div id="cuny-statement-on-sexual-misconduct" class="section level3">
-<h3><u><strong>CUNY Statement on Sexual Misconduct</strong></u></h3>
-<ul>
-<li><p>
-<p>“In compliance with the CUNY Policy on Sexual Misconduct, Hunter
-College reaffirms the prohibition of any sexual misconduct, which
-includes sexual violence, sexual harassment, and gender-based harassment
-retaliation against students, employees, or visitors, as well as certain
-intimate relationships. Students who have experienced any form of sexual
-violence on or off campus (including CUNY-sponsored trips and events)
-are entitled to the rights outlined in the Bill of Rights for Hunter
-College.</p>
-</p></li>
-<li><p><u>Sexual Violence.</u> Students are strongly encouraged to
-immediately report the incident by calling 911, contacting NYPD Special
-Victims Division Hotline (646-610-7272) or their local police precinct,
-or contacting the College’s Public Safety Office
-(212-772-4444).</p></li>
-<li><p><u>All Other Forms of Sexual Misconduct:</u> Students are also
-encouraged to contact the College’s Title IX Campus Coordinator, Dean
-John Rose (<a href="mailto:jtrose@hunter.cuny.edu" class="email">jtrose@hunter.cuny.edu</a> or 212-650-3262) or Colleen
-Barry (<a href="mailto:colleen.barry@hunter.cuny.edu" class="email">colleen.barry@hunter.cuny.edu</a> or 212-772-4534) and
-seek complimentary services through the Counseling and Wellness Services
-Office, Hunter East 1123.”</p></li>
-<li><p><u>CUNY Policy on Sexual Misconduct:</u>
-<a href="https://www1.cuny.edu/sites/title-ix/wp-content/uploads/sites/2/2021/06/2018-CUNY-Policy-on-Sexual-Misconduct.pdf" target="_blank"><strong>Click
-here</strong></a> for a pdf copy.</p></li>
 </ul>
 <hr />
+<p>A certain university has decided to introduce the use of plus and
+minus with letter grades, as long as there is evidence that more than
+60% of the faculty favor the change.</p>
+<p>A random sample of faculty will be selected, and the resulting data
+will be used to test the relevant hypotheses. If p represents the
+proportion of all faculty that favor a change to plus-minus grading,
+which of the following pair of hypotheses should the administration
+test:</p>
+<p>Ho: p = 0.6 versus Ha: p &lt; 0.6, or</p>
+<p>Ho: p = 0.6 versus Ha: p &gt; 0.6</p>
+<p>Explain your choice.</p>
+<ul>
+<li><p>We need to find convincing evidence that “more than” 60% favor
+the change.</p></li>
+<li><p>Ho: p = 0.6 versus Ha: p &gt; 0.6.</p></li>
+</ul>
+<hr />
+<p>Many older homes have electrical systems that use fuses rather than
+circuit breakers. A manufacturer of 40-amp fuses wants to make sure that
+the mean amperage at which its fuses burn out is in fact 40.</p>
+<p>If the mean amperage is lower than 40, customers will complain
+because the fuses require replacement too often. If the mean amperage is
+higher than 40, the manufacturer might be liable for damage to an
+electrical system as a result of fuse malfunction.</p>
+<p>To verify the mean amperage of the fuses, a sample of fuses is
+selected and tested. If a hypothesis test is performed using the
+resulting data, what null and alternative hypotheses would be of
+interest to the manufacturer?</p>
+<ul>
+<li><p>
+Ho: <span class="math inline">\(\mu\)</span> = 40 versus Ha: <span class="math inline">\(\mu\)</span> <span class="math inline">\(\neq\)</span> 40
+</p></li>
+</ul>
+<hr />
+<p>A <strong>test procedure</strong> is specified by the following:</p>
+<ul>
+<li><p>A <strong>test statistic</strong> is a function of the sample
+data on which the decision (reject Ho or fail to reject Ho) is to be
+based.</p></li>
+<li><p>A <strong>rejection region</strong> is the set of all test
+statistics values for which Ho will be rejected.</p></li>
+<li><p>The null hypothesis will be rejected if and only if the observed
+or computed <strong>test statistic</strong> value falls in the rejection
+region.</p></li>
+</ul>
+<hr id="d13-2">
 </div>
-<div id="class-schedule" class="section level3">
-<h3><u><strong>Class Schedule</strong></u></h3>
-<center>
-<table style="width:auto; table-layout:auto;">
+<div id="errors-in-hypothesis-testing-type-i-and-ii" class="section level2">
+<h2>Errors in Hypothesis Testing (Type I and II)</h2>
+<table>
 <thead>
-<tr style="border-top: 1px solid black">
-<th style="text-align:left">
-Date
-</th>
-<th>
-Topic
-</th>
+<tr class="header">
+<th align="left">Decision</th>
+<th align="left">Ho is true</th>
+<th align="left">Ha is true</th>
 </tr>
 </thead>
-<tr>
-<td>
-May 27
-</td>
-<td>
-<a href="lect-1.html">The Role of Statistics and Data Analysis Process
-(1.1 – 1.4), Collecting Data Sensibly (2.1 – 2.4)</a>
-</td>
+<tbody>
+<tr class="odd">
+<td align="left">Reject Ho</td>
+<td align="left">Type I error</td>
+<td align="left">Correct</td>
 </tr>
-<tr>
-<td>
-May 28
-</td>
-<td>
-<a href="lect-2.html">Graphical Methods for Describing Data (3.1 –
-3.4)</a>
-</td>
+<tr class="even">
+<td align="left">Fail to reject Ho</td>
+<td align="left">Correct</td>
+<td align="left">Type II error</td>
 </tr>
-<tr>
-<td>
-May 29
-</td>
-<td>
-<a href="lect-3.html">Numerical Methods for Describing Data (4.1 –
-4.2)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 2
-</td>
-<td>
-<a href="lect-4.html"> Numerical Methods for Describing Data (4.3 – 4.4)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 3
-</td>
-<td>
-<a href="lect-5.html"> Probability (6.1 – 6.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 4
-</td>
-<td>
-<a href="lect-6.html"> Probability (6.4 – 6.6)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 5
-</td>
-<td>
-<a href="lect-7.html"> Probability (6.7 - Activity) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 9
-</td>
-<td>
-<a href="lect-8.html"> Random Variables and Probability Distributions
-(7.1 - 7.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 10
-</td>
-<td>
-<a href="lect-9.html"> Random Variables and Probability Distributions
-(7.5) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 11
-</td>
-<td>
-<a href="lect-10.html"> Random Variables and Probability Distributions
-(7.6) </a>
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 12
-</td>
-<td>
-Test 1 <em>(Chapters 1, 2, 3, 4, 6, 7)</em>
-</td>
-</tr>
-<tr>
-<td>
-June 16
-</td>
-<td>
-<a href="lect-11.html"> Sampling Variability and Sampling Distributions
-(8.1 – 8.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 17
-</td>
-<td>
-<a href="lect-12.html"> Estimation Using a Single Sample (9.1 – 9.3)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 18
-</td>
-<td>
-<a href="lect-13.html"> Hypothesis Testing Using a Single Sample (10.1 –
-10.2) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 23
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.3 – 10.4)
-</td>
-</tr>
-<tr>
-<td>
-June 24
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.4 – 10.5)
-</td>
-</tr>
-<tr>
-<td>
-June 25
-</td>
-<td>
-Comparing Two Populations or Treatments (11.1 – 11.3)
-</td>
-</tr>
-<tr>
-<td>
-June 26
-</td>
-<td>
-The Analysis of Categorical Data and Goodness-of-Fit Tests (12.1 - 12.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 30
-</td>
-<td>
-Test 2 <em>(Chapters 8, 9, 10, 11, 12)</em>
-</td>
-</tr>
-<tr>
-<td>
-July 1
-</td>
-<td>
-Summarizing Bivariate Data (5.1 – 5.2)
-</td>
-</tr>
-<tr>
-<td>
-July 2
-</td>
-<td>
-Summarizing Bivariate Data (5.3)
-</td>
-</tr>
-<tr>
-<td>
-July 3
-</td>
-<td>
-ANOVA (15.1)
-</td>
-</tr>
-<tr>
-<td>
-July 7
-</td>
-<td>
-ANOVA (15.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-July 8
-</td>
-<td>
-Final Exam
-</td>
-</tr>
+</tbody>
 </table>
-</center>
-<p><br><br></p>
+<ul>
+<li><p><strong>Type I error:</strong> The error of rejecting Ho when Ho
+is true.</p></li>
+<li><p>The probability of Type I error is denoted <span class="math inline">\(\alpha\)</span></p></li>
+<li><p><span class="math inline">\(\alpha\)</span> = P(Reject Ho | Ho is
+true)</p></li>
+<li><p>Another name for <span class="math inline">\(\alpha\)</span> is
+the <strong>significance level</strong> of the test.</p></li>
+<li><p><strong>Type II error:</strong> The error of failing to reject Ho
+when Ho is false</p></li>
+<li><p>The probability of a Type II error is denoted by <span class="math inline">\(\beta\)</span></p></li>
+<li><p><span class="math inline">\(\beta\)</span> = P(Fail to reject Ho
+| Ha is true)</p></li>
+<li><p>The <strong>Power of the test</strong> is the probability of
+rejecting Ho when Ho is false.</p></li>
+<li><p>Power = P(Reject Ho | Ha is true)</p></li>
+<li><p>Power = 1 - <span class="math inline">\(\beta\)</span></p></li>
+</ul>
+<hr />
+<p>Ann Landers, in her advice column of October 24, 1994 (San Luis
+Obispo Telegram-Tribune), described the reliability of DNA paternity
+testing as follows: <em>“To get a completely accurate result, you would
+have to be tested, and so would (the man) and your mother. The test is
+100% accurate if the man is not the father and 99.9% accurate if he
+is.”</em> </p>
+<p><em>a)</em> Consider using the results of DNA paternity testing to
+decide between the following two hypotheses:</p>
+<ul>
+<li><p>Ho: A particular man is the father</p></li>
+<li><p>Ha: A particular man is not the father</p></li>
+</ul>
+<p>In the context of this problem, describe Type I and Type II errors.
+(Although these are not hypotheses about a population characteristic,
+this exercise illustrates the definitions of Type I and Type II
+errors.)</p>
+<ul>
+<li><p>By definition, Type I error is rejecting Ho when Ho is true. In
+this context, the test result will conclude that the man is NOT the
+father when he is the actual father.</p></li>
+<li><p>By definition, Type II error is failing to reject Ho when Ha is
+true. In this context, the test result will conclude that there is not
+enough evidence to reject the claim that the man is the father when he
+is not father.</p></li>
+</ul>
+<p><em>b)</em> Based on the information given, what are the values of
+<span class="math inline">\(\alpha\)</span>, the probability of a Type I
+error, and <span class="math inline">\(\beta\)</span>, the probability
+of a Type II error?</p>
+<ul>
+<li><p>By definition, <span class="math inline">\(\alpha\)</span> =
+P(Type I error) = 0.001</p></li>
+<li><p>By definition, <span class="math inline">\(\beta\)</span> =
+P(Type II error) = 0</p></li>
+</ul>
+<p><em>c)</em> Ann Landers also stated, “If the mother is not tested,
+there is a 0.8% chance of a false positive.” For the hypotheses given in
+Part (a), what is the value of <span class="math inline">\(\beta\)</span> if the decision is based on DNA
+testing in which the mother is not tested?</p>
+<ul>
+<li><p>A false positive, in this context, is the man is the father when
+he not the actual father (fail to reject Ho when Ha is true)</p></li>
+<li><p><span class="math inline">\(\beta\)</span> = 0.008</p></li>
+</ul>
+<hr />
+<p>In a hypothesis test, there are two possible conclusions: We either
+reject Ho or we fail to reject Ho. The fundamental idea behind
+hypothesis-testing procedures is this: We reject the null hypothesis if
+the observed sample is very unlikely to have occurred when Ho is
+true.</p>
+<hr />
+<p><strong>Criminal Trials in the United States</strong></p>
+<p>The jury is always told that the defendant is “innocent until proven
+guilty”.</p>
+<p><em>1)</em> What must a member of the jury assume about the defendant
+at the beginning of the trial? This is the null hypothesis.</p>
+<ul>
+<li><p>
+Ho: Defendant is innocent
+</p></li>
+</ul>
+<p><em>2)</em> It is the prosecuting attorney’s job to present evidence
+to the jury. IF there is enough evidence (“beyond a reasonable doubt”),
+then the jury will convict the defendant of the crime. If the defendant
+is convicted, the jury is rejecting the null hypothesis (above) and
+saying the defendant is …….</p>
+<ul>
+<li><p>
+Ha: Defendant is guilty
+</p></li>
+</ul>
+<p><em>3)</em> When the jury convicts someone of a crime, their verdict
+is GUILTY. Is this “Reject Ho” OR “Fail to Reject Ho”?</p>
+<ul>
+<li><p>
+Reject Ho
+</p></li>
+</ul>
+<p><em>4)</em> If the jury fails to convict someone of a crime, their
+verdict is NOT GUILTY. Is this “Reject Ho” OR “Fail to Reject Ho”?</p>
+<ul>
+<li><p>
+Fail to reject Ho
+</p></li>
+</ul>
+<p><em>4a)</em> How does the verdict of “not guilty” differ from
+“innocent”?</p>
+<ul>
+<li><p>
+“Not Guilty” indicates that there was not enough evidence to convict the
+defendant. This verdict makes no statement about whether or not the
+defendant committed the crime.
+</p></li>
+<li><p>
+“Innocent” indicates that the defendant did not commit the crime.
+</p></li>
+</ul>
+<p><em>5)</em> Sometimes the jury makes a correct decision and sometime
+the jury makes a mistake.</p>
+<p><em>5a)</em> When Ho is true, but we reject it based on the sample
+evidence, this is an error. We call it a Type I error. Write a sentence
+describing a Type I error in the U.S. criminal justice system.</p>
+<ul>
+<li><p>
+Type I Error = Guilty Verdict When Defendant Is Innocent
+</p></li>
+</ul>
+<p><em>5b)</em> When Ho is false, but we fail to reject it based on the
+sample evidence, this is also an error. We call it a Type II error.
+Write a sentence describing a Type II error in the U.S. criminal justice
+system.</p>
+<ul>
+<li><p>
+Type II Error = NOT Guilty Verdict When Defendant is Guilty
+</p></li>
+</ul>
+<hr />
+<p><strong>Medical Testing</strong></p>
+<p>Medical tests have been developed to detect many serious diseases
+(such as cancer and HIV). A medical test is designed to give correct
+results as often as possible. That is, to minimize the occurrence of
+“false positives” and “false negatives”.</p>
+<p>A doctor starts by assuming that a patient is healthy (no disease),
+then looks for evidence to contradict that assumption. If the patient
+has a negative test result, the doctor continues to assume that the
+patient is healthy. If the patient has a positive test result, the
+doctor concludes that the patient has a disease.</p>
+<p><em>a)</em> State Ho and Ha.</p>
+<ul>
+<li><p>
+Ho: Patient Is Healthy Ha: Patient Has Disease
+</p></li>
+</ul>
+<p><em>b)</em> When will the doctor Reject Ho?</p>
+<ul>
+<li><p>
+Doctor rejects Ho when test result is positive.
+</p></li>
+</ul>
+<p><em>c)</em> When will the doctor Fail to Reject Ho?</p>
+<ul>
+<li><p>
+Doctor fails to reject Ho when test result is negative.
+</p></li>
+</ul>
+<p><em>d)</em> What kind of an error is a “false positive”? EXPLAIN.</p>
+<ul>
+<li><p>
+A false positive is a Type I error (reject Ho when Ho is true).
+</p></li>
+</ul>
+<p><em>e)</em> What kind of an error is a “false negative”? EXPLAIN.</p>
+<ul>
+<li><p>
+A false negative is a Type II error (fail to reject Ho when Ho is
+false).
+</p></li>
+</ul>
+<p><em>f)</em> What are the consequences of a false positive? Of a false
+negative?</p>
+<ul>
+<li><p>
+With a false positive, a person thinks they have a disease (and may
+start treatment) when they are healthy. With a false negative, a person
+doesn’t know they have a disease (and don’t start treatment).
+</p></li>
+</ul>
+<hr />
+</div>
 </div>
 </div>
 
