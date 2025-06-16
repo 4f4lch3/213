@@ -11,7 +11,7 @@
 
 
 
-<title>syllabus-m25.knit</title>
+<title>lect-14.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,30 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-p {
-font-size: 18px;
-}
-tr {
-border-bottom: 1px solid black;
-font-size: 18px;
-}
-td, th {
-padding: 8px;
-}
-#toc {
-float: left;
-padding-top: 1%;
-width: 15%;
-background: #EEEEEE;
-position: fixed;
-}
-#syllabus{
-float: left;
-width: 70%;
-margin-left: 30%;
-}
-</style>
+<style type="text/css">h1, h2, h3, h4, h5, h6 {color: rgba(96, 38, 158, 1);}p {font-size: 18px;}a {font-size: 15px;font-weight: bold;}mark{background-color: yellow;}#index {float: left;padding-top: 1%;width: 15%;background: #EEEEEE;position: fixed;}#content {float: left;width: 70%;margin-left: 30%;}#email{font-size: 18px;}#banner-1 {font-size: 30px;font-weight: bold;text-align: center;color: white;margin: auto;padding: 10px;background-color: #60269E;}#banner-2 {font-size: 20px;font-weight: bold;text-align: center;color: #60269E;margin: auto;padding: 10px;}</style>
 
 
 
@@ -376,389 +353,181 @@ display: none;
 </div>
 
 
-<div id="statistics-213-introduction-to-applied-statistics" class="section level1" style="color:white; text-align:center; background-color:#60269E;">
-<h1><strong>Statistics 213: Introduction to Applied
-Statistics</strong></h1>
-</div>
-<hr />
-<div>
-<div id="course-information-summer-2025-6-weeks" class="section level3">
-<h3><u><strong>Course Information (Summer 2025 / 6
-Weeks)</strong></u></h3>
+<div id="index">
+<p><span style="padding-left:30px;">
+<a href="syllabus-m25.html" style="color:#60269E;"> BACK TO SYLLABUS
+</a> </span></p>
 <ul>
-<li><p><strong>Section:</strong> 1</p></li>
-<li><p><strong>Schedule:</strong> M, T, W, TH</p></li>
-<li><p><strong>Time:</strong> 8:00 – 9:34 am</p></li>
-<li><p><strong>Room:</strong> HN C107</p></li>
-<li><p><strong>Instructor:</strong> Alejandro Falchettore</p></li>
-<li><p><strong>Email:</strong> <a href="mailto:afalche@hunter.cuny.edu" class="email">afalche@hunter.cuny.edu</a></p></li>
-<li><p><strong>Office hours (ZOOM link in Brightspace – Appointment
-required): </strong>Monday: 12:30 – 1:30 pm</p></li>
+<li><p><a href="#d14-1"> Large-Sample Hypothesis Test for a Population
+Proportion, p </a></p></li>
+<li><p><a href="#d14-2"> The P-Value </a></p></li>
+</ul>
+</div>
+<div id="content">
+
+<hr id="d14-1">
+<div id="large-sample-hypothesis-test-for-a-population-proportion-p." class="section level1">
+<h1>Large-Sample Hypothesis Test for a Population Proportion, p.</h1>
+<p>In this section, we consider testing hypotheses about a population
+proportion when the sample size n is large. As before, p denotes the
+proportion of individuals or objects in a specified population that
+possess a certain property. A random sample of n individuals or objects
+is selected from the population. The sample proportion <span class="math inline">\(\hat{p}\)</span> serves as the basis for testing
+hypotheses about p. A large sample test procedure is based on the
+sampling distribution of <span class="math inline">\(\hat{p}\)</span></p>
+<ul>
+<li><p>Null Hypothesis, Ho: p = po; Alternative Hypothesis, Ha: p &gt;
+po (or p &lt; po, or p <span class="math inline">\(\neq\)</span>
+po)</p></li>
+<li><p>Test statistic, Z = <span class="math inline">\(\frac{\hat{p} -
+po}{\sqrt{\frac{po(1 - po)}{n}}}\)</span></p></li>
+<li><p><em>Assumption 1</em>: The sample proportion, <span class="math inline">\(\hat{p}\)</span>, is from a random
+sample.</p></li>
+<li><p><em>Assumption 2</em>: The sample size, n, is large. This test
+can be used if “n” satisfy both n.po <span class="math inline">\(\geq\)</span> 10 and n.(1 - po) <span class="math inline">\(\geq\)</span> 10</p></li>
+<li><p><em>Assumption 3</em>: If the sampling is without replacement,
+the sample size is no more than 10% of the population size.</p></li>
 </ul>
 <hr />
-</div>
-<div id="learning-outcomes" class="section level3">
-<h3><u><strong>Learning Outcomes:</strong></u></h3>
+<p>The paper “Teens and Distracted driving” (Pew Internet &amp; American
+Life Project, 2009) reported that in a representative sample of 283
+American teens are 16 to 17, there were 74 who indicated that they had
+sent a text message while driving. For purposes of this exercise, assume
+that this sample is a random sample of 16 to 17-year-old Americans. Do
+these data provide convincing evidence that more than a quarter of
+Americans age 16 to 17 have sent a text message while driving? Test the
+appropriate hypotheses using a significance level of 0.01?</p>
 <ul>
-<li><p>
-This course emphasizes statistical literacy and develops statistical
-thinking. Statistical literacy is promoted throughout the text in the
-many examples and exercises, drawn from published research findings and
-the popular press. Many of the examples and exercises discussed will
-highlight the central role of probability and statistics in 21st century
-science. Students should understand how to adequately interpret and
-communicate statistical results. Understanding the nature and role of
-variability is key to developing sound skills in statistical thinking.
-</p></li>
-</ul>
-</div>
-<div id="course-materials" class="section level3">
-<h3><u><strong>Course Materials</strong></u></h3>
-<ul>
-<li><p><strong>Textbook:</strong> Introduction to Statistics and Data
-Analysis, Enhanced Review Edition (6th Edition) by Roxy Peck, Chris
-Olsen, Jay L. Devore. Duxbury Press; <u>E-book included in
-WebAssign.</u></p></li>
-<li><p><span style="background:#FFFF97"><strong>WebAssign
-(www.webassign.net) is mandatory!</strong></span>.
-<a href="https://www.getenrolled.com/?courseKey=hunter53954915" target="_blank"><strong>Click
-here</strong></a> for self-enrollment</p></li>
-</ul>
-</div>
-<div id="grading-policy" class="section level3">
-<h3><u><strong>Grading Policy</strong></u></h3>
-<ul>
-<li><p>There are two in-class non-cumulative tests (T1, T2), and a final
-exam (F) worth 80% altogether. Online assignments (WebAssign) are 20% of
-the grade.</p></li>
-<li><p>The tests and final are closed book exams and in person. Only a
-scientific calculator <em>(no phone, tablet or computer)</em>,
-<a href="formulas.pdf" target="_blank"><strong>formula</strong></a>
-sheets and
-<a href="tables.pdf" target="_blank"><strong>tables</strong></a> are
-allowed. The final is comprehensive. <strong>There will be no remake for
-the tests and final!</strong></p></li>
-<li><p>The final counts twice as much as the midterm tests. The lowest
-score will be dropped (if lowest score is the final exam, that score
-will be counted only once). Overall score formula: [T1 + T2 + F + F –
-min(T1, T2, F)]*8/30 + WebAssign.</p></li>
-</ul>
-</div>
-<div id="tutoring" class="section level3">
-<h3><u><strong>Tutoring</strong></u></h3>
-<ul>
-<li><p>
-Table tutoring and audiovisual materials are available at The Dolciani
-Mathematics Learning Center, located at the Silverstein Student Success
-Center 7th Floor Hunter East. Tutoring is available remotely and on site
-by appointment. Appointments can be booked through Navigate. For hours
-and more information visit their website
-<a href="https://www.hunter.cuny.edu/dolciani" target="_blank"><strong>click
-here</strong>.</a>
-</p></li>
-</ul>
-</div>
-<div id="student-resources" class="section level3">
-<h3><u><strong>Student Resources</strong></u></h3>
-<ul>
-<li><p><u>Counseling and Wellness Services</u> offers free and
-confidential short-term counseling services, referrals, workshops, and
-support groups to all Hunter College students.
-<a href="http://www.hunter.cuny.edu/cws/counselingservices" target="_blank">
-<strong>Click here</strong></a> for more information.
-<a href="https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/" target="_blank"><strong>Click
-here</strong></a> for links to resources such as food pantries,
-emergency funding sources, and technology access.</p></li>
-<li><p><u>Assistance with CUNY login (Blackboard, CUNYfirst), email,
-Hunter NetID:</u> <a href="mailto:studenthelpdesk@hunter.cuny.edu" class="email">studenthelpdesk@hunter.cuny.edu</a> , (212)
-650-3624</p></li>
-<li><p><u>Academic Advising:</u>
-<a href="http://www.hunter.cuny.edu/advising/" target="_blank">http://www.hunter.cuny.edu/advising/</a></p></li>
-<li><p><u>Financial Aid:</u>
-<a href="https://hunter.cuny.edu/students/financial-aid" target="_blank">https://hunter.cuny.edu/students/financial-aid/</a></p></li>
-</ul>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><u><strong>Academic Integrity</strong></u></h3>
-<ul>
-<li><p>
-“Hunter College regards acts of academic dishonesty (e.g., plagiarism,
-cheating on examinations, obtaining unfair advantage, and falsification
-of records and official documents) as serious offenses against the
-values of intellectual honesty. The College is committed to enforcing
-the CUNY Policy on Academic Integrity and will pursue cases of academic
-dishonesty according to the Hunter College Academic Integrity
-Procedures.”
-</p></li>
-</ul>
-</div>
-<div id="office-of-accessability" class="section level3">
-<h3><u><strong>Office of AccessABILITY</strong></u></h3>
-<ul>
-<li><p>
-“In compliance with the American Disability Act of 1990 (ADA) and with
-Section 504 of the Rehabilitation Act of 1973, Hunter College is
-committed to ensuring educational parity and accommodations for all
-students with documented disabilities and/or medical conditions. It is
-recommended that all students with documented disabilities (Emotional,
-Medical, Physical and/or Learning) consult the Office of Accessibility.”
-Call (212-772-4857)/TTY (212-650-3230) or
-<a href="http://www.hunter.cuny.edu/access" target="_blank"><strong>click
-here</strong></a> for more information. Students are welcome to speak
-with me privately about any accommodations.
-</p></li>
-</ul>
-</div>
-<div id="cuny-statement-on-sexual-misconduct" class="section level3">
-<h3><u><strong>CUNY Statement on Sexual Misconduct</strong></u></h3>
-<ul>
-<li><p>
-<p>“In compliance with the CUNY Policy on Sexual Misconduct, Hunter
-College reaffirms the prohibition of any sexual misconduct, which
-includes sexual violence, sexual harassment, and gender-based harassment
-retaliation against students, employees, or visitors, as well as certain
-intimate relationships. Students who have experienced any form of sexual
-violence on or off campus (including CUNY-sponsored trips and events)
-are entitled to the rights outlined in the Bill of Rights for Hunter
-College.</p>
-</p></li>
-<li><p><u>Sexual Violence.</u> Students are strongly encouraged to
-immediately report the incident by calling 911, contacting NYPD Special
-Victims Division Hotline (646-610-7272) or their local police precinct,
-or contacting the College’s Public Safety Office
-(212-772-4444).</p></li>
-<li><p><u>All Other Forms of Sexual Misconduct:</u> Students are also
-encouraged to contact the College’s Title IX Campus Coordinator, Dean
-John Rose (<a href="mailto:jtrose@hunter.cuny.edu" class="email">jtrose@hunter.cuny.edu</a> or 212-650-3262) or Colleen
-Barry (<a href="mailto:colleen.barry@hunter.cuny.edu" class="email">colleen.barry@hunter.cuny.edu</a> or 212-772-4534) and
-seek complimentary services through the Counseling and Wellness Services
-Office, Hunter East 1123.”</p></li>
-<li><p><u>CUNY Policy on Sexual Misconduct:</u>
-<a href="https://www1.cuny.edu/sites/title-ix/wp-content/uploads/sites/2/2021/06/2018-CUNY-Policy-on-Sexual-Misconduct.pdf" target="_blank"><strong>Click
-here</strong></a> for a pdf copy.</p></li>
+<li><p>Step 1: Identify the hypotheses.</p></li>
+<li><p>Ho: p = 0.25 vs Ha: p &gt; 0.25</p></li>
+<li><p>Step 2: Check the necessary assumption: Large random
+sample</p></li>
+<li><p>Step 3: Compute the test statistic, Z = <span class="math inline">\(\frac{\hat{p} - 0.25}{\sqrt{\frac{0.25(1 -
+0.25)}{n}}}\)</span></p></li>
+<li><p>Z = <span class="math inline">\(\frac{\frac{74}{283} -
+0.25}{\sqrt{\frac{0.25(1 - 0.25)}{283}}}\)</span> = 0.4461</p></li>
+<li><p>Step 4: Identify the rejection region.</p></li>
+<li><p>The rejection region is defined by the type of test (one or two
+tailed) and the level of significance, <span class="math inline">\(\alpha\)</span></p></li>
+<li><p>Rejection region with <span class="math inline">\(\alpha\)</span>
+= 0.01: Z <span class="math inline">\(\in\)</span> (2.33, <span class="math inline">\(\infty\)</span>)</p></li>
+<li><p>Step 5: Get a decision about the null hypothesis.</p></li>
+<li><p>Since Z = 0.446 <span class="math inline">\(\notin\)</span>
+(2.33, <span class="math inline">\(\infty\)</span>)</p></li>
+<li><p>Conclusion: There is not enough evidence to reject Ho.</p></li>
 </ul>
 <hr />
+<p>The report <em>“2007 Electronic Monitoring &amp; Surveillance Survey:
+Many Companies Monitoring, Recording, Videotaping—and Firing—Employees”
+(American Management Association, 2007)</em> summarized the results of a
+survey of 304 U.S. businesses. Of these companies, 201 indicated that
+they monitor employees’ web site visits. For purposes of this exercise,
+assume that it is reasonable to regard this sample as representative of
+businesses in the United States. </p>
+<p><em>a)</em> Is there sufficient evidence to conclude that more than
+60% of U.S. businesses monitor employees’ web site visits? Test the
+appropriate hypotheses using a significance level of 0.01.</p>
+<ul>
+<li><p>Ho: p=0.6; Ha: p &gt; 0.6</p></li>
+<li><p><span class="math inline">\(\hat{p}\)</span> = <span class="math inline">\(\frac{201}{304} \approx\)</span> 0.6612</p></li>
+<li><p>Is the sample size large? np = 182.4 &gt; 10 and n(1 - p) = 121.6
+&gt; 10</p></li>
+<li><p>Test statistic: Z = <span class="math inline">\(\frac{\hat{p} -
+0.6}{\sqrt{\frac{0.6(1 - 0.6)}{n}}}\)</span></p></li>
+<li><p>When n=304 and <span class="math inline">\(\hat{p}\)</span> =
+<span class="math inline">\(\frac{201}{304}\)</span>, Z-test =
+2.178</p></li>
+<li><p>At 0.01 <em>(right tail, see table 3 at 98%)</em>, the critical
+<span class="math inline">\(Z_c\)</span> is 2.33. The rejection region
+is Z &gt; 2.33</p></li>
+<li><p>Since Z-test &lt; 2.33, there is not enough evidence to reject
+Ho.</p></li>
+</ul>
+<p><em>b)</em> Is there sufficient evidence to conclude that a majority
+of U.S. businesses monitor employees’ web site visits? Test the
+appropriate hypotheses using a significance level of 0.01.</p>
+<ul>
+<li><p>Ho: p=0.5; Ha: p &gt; 0.5</p></li>
+<li><p><span class="math inline">\(\hat{p}\)</span> = <span class="math inline">\(\frac{201}{304} \approx\)</span> 0.6612</p></li>
+<li><p>Is the sample size large? np = 182.4 &gt; 10 and n(1 - p) = 121.6
+&gt; 10</p></li>
+<li><p>test statistic: Z = <span class="math inline">\(\frac{\hat{p} -
+0.5}{\sqrt{\frac{0.5(1 - 0.5)}{n}}}\)</span></p></li>
+<li><p>When n=304 and <span class="math inline">\(\hat{p}\)</span> =
+<span class="math inline">\(\frac{201}{304}\)</span>, Z-test =
+5.621</p></li>
+<li><p>At 0.01 <em>(right tail, see table 3 at 98%)</em>, the critical
+<span class="math inline">\(Z_c\)</span> is 2.33. The rejection region
+is Z &gt; 2.33</p></li>
+<li><p>Since Z-test &gt; 2.33, there is enough evidence to reject
+Ho.</p></li>
+</ul>
+<hr id="d14-2">
 </div>
-<div id="class-schedule" class="section level3">
-<h3><u><strong>Class Schedule</strong></u></h3>
-<center>
-<table style="width:auto; table-layout:auto;">
-<thead>
-<tr style="border-top: 1px solid black">
-<th style="text-align:left">
-Date
-</th>
-<th>
-Topic
-</th>
-</tr>
-</thead>
-<tr>
-<td>
-May 27
-</td>
-<td>
-<a href="lect-1.html">The Role of Statistics and Data Analysis Process
-(1.1 – 1.4), Collecting Data Sensibly (2.1 – 2.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 28
-</td>
-<td>
-<a href="lect-2.html">Graphical Methods for Describing Data (3.1 –
-3.4)</a>
-</td>
-</tr>
-<tr>
-<td>
-May 29
-</td>
-<td>
-<a href="lect-3.html">Numerical Methods for Describing Data (4.1 –
-4.2)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 2
-</td>
-<td>
-<a href="lect-4.html"> Numerical Methods for Describing Data (4.3 – 4.4)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 3
-</td>
-<td>
-<a href="lect-5.html"> Probability (6.1 – 6.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 4
-</td>
-<td>
-<a href="lect-6.html"> Probability (6.4 – 6.6)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 5
-</td>
-<td>
-<a href="lect-7.html"> Probability (6.7 - Activity) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 9
-</td>
-<td>
-<a href="lect-8.html"> Random Variables and Probability Distributions
-(7.1 - 7.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 10
-</td>
-<td>
-<a href="lect-9.html"> Random Variables and Probability Distributions
-(7.5) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 11
-</td>
-<td>
-<a href="lect-10.html"> Random Variables and Probability Distributions
-(7.6) </a>
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 12
-</td>
-<td>
-Test 1 <em>(Chapters 1, 2, 3, 4, 6, 7)</em>
-</td>
-</tr>
-<tr>
-<td>
-June 16
-</td>
-<td>
-<a href="lect-11.html"> Sampling Variability and Sampling Distributions
-(8.1 – 8.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 17
-</td>
-<td>
-<a href="lect-12.html"> Estimation Using a Single Sample (9.1 – 9.3)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 18
-</td>
-<td>
-<a href="lect-13.html"> Hypothesis Testing Using a Single Sample (10.1 –
-10.2) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 23
-</td>
-<td>
-<a href="lect-14.html"> Hypothesis Testing Using a Single Sample (10.3 –
-10.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 24
-</td>
-<td>
-Hypothesis Testing Using a Single Sample (10.4 – 10.5)
-</td>
-</tr>
-<tr>
-<td>
-June 25
-</td>
-<td>
-Comparing Two Populations or Treatments (11.1 – 11.3)
-</td>
-</tr>
-<tr>
-<td>
-June 26
-</td>
-<td>
-The Analysis of Categorical Data and Goodness-of-Fit Tests (12.1 - 12.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 30
-</td>
-<td>
-Test 2 <em>(Chapters 8, 9, 10, 11, 12)</em>
-</td>
-</tr>
-<tr>
-<td>
-July 1
-</td>
-<td>
-Summarizing Bivariate Data (5.1 – 5.2)
-</td>
-</tr>
-<tr>
-<td>
-July 2
-</td>
-<td>
-Summarizing Bivariate Data (5.3)
-</td>
-</tr>
-<tr>
-<td>
-July 3
-</td>
-<td>
-ANOVA (15.1)
-</td>
-</tr>
-<tr>
-<td>
-July 7
-</td>
-<td>
-ANOVA (15.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-July 8
-</td>
-<td>
-Final Exam
-</td>
-</tr>
-</table>
-</center>
-<p><br><br></p>
+<div id="the-p-value" class="section level1">
+<h1>The P-Value</h1>
+<ul>
+<li><p>The <strong>P-value</strong> is the probability that chance alone
+would produce a test statistic as extreme as the observed test
+statistic.</p></li>
+<li><p>Assuming that the null hypothesis is true, we must first decide
+which values of the test statistic are at least as contradictory to Ho
+as the value obtained from our sample.</p></li>
+<li><p>Reject Ho if P-value <span class="math inline">\(\leq\)</span>
+<span class="math inline">\(\alpha\)</span></p></li>
+<li><p>Fail to reject Ho if P-value &gt; <span class="math inline">\(\alpha\)</span></p></li>
+</ul>
+<hr />
+<p>The paper “Teens and Distracted driving” (Pew Internet &amp; American
+Life Project, 2009) reported that in a representative sample of 283
+American teens are 16 to 17, there were 74 who indicated that they had
+sent a text message while driving. For purposes of this exercise, assume
+that this sample is a random sample of 16 to 17-year-old Americans. Do
+these data provide convincing evidence that more than a quarter of
+Americans age 16 to 17 have sent a text message while driving? Test the
+appropriate hypotheses using a significance level of 0.01?</p>
+<ul>
+<li><p>Ho: p = 0.25 vs Ha: p &gt; 0.25</p></li>
+<li><p>Z = 0.4461</p></li>
+<li><p>This is a right-tailed test (&gt;)</p></li>
+<li><p>p-value = P(Z &gt; 0.446)</p></li>
+<li><p>Using the Z-table: P(Z &gt; 0.446) = P(Z &lt; -0.446) =
+0.328</p></li>
+<li><p>Since the p-value &gt; 0.01, fail to reject Ho.</p></li>
+</ul>
+<hr />
+<p>Pairs of P-values and significance levels, <span class="math inline">\(\alpha\)</span>, are given. For each pair, state
+whether the observed P-value would lead to rejection of Ho at the given
+significance level.</p>
+<p><em>a)</em> P-value = 0.084, <span class="math inline">\(\alpha\)</span> = 0.05</p>
+<ul>
+<li><p>
+The P-value &gt; <span class="math inline">\(\alpha\)</span>, so fail to
+reject Ho.
+</p></li>
+</ul>
+<p><em>b)</em> P-value = 0.003, <span class="math inline">\(\alpha\)</span> = 0.01</p>
+<ul>
+<li><p>
+The P-value &lt; <span class="math inline">\(\alpha\)</span>, so reject
+Ho.
+</p></li>
+</ul>
+<p><em>c)</em> P-value = 0.498, <span class="math inline">\(\alpha\)</span> = 0.05</p>
+<ul>
+<li><p>
+The P-value &gt; <span class="math inline">\(\alpha\)</span>, so fail to
+reject Ho.
+</p></li>
+</ul>
+<p><em>d)</em> P-value = 0.084, <span class="math inline">\(\alpha\)</span> = 0.10</p>
+<ul>
+<li><p>
+The P-value &lt; <span class="math inline">\(\alpha\)</span>, so reject
+Ho.
+</p></li>
+</ul>
+<hr />
 </div>
 </div>
 
