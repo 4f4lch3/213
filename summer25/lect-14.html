@@ -358,9 +358,10 @@ display: none;
 <a href="syllabus-m25.html" style="color:#60269E;"> BACK TO SYLLABUS
 </a> </span></p>
 <ul>
-<li><p><a href="#d14-1"> Large-Sample Hypothesis Test for a Population
-Proportion, p </a></p></li>
+<li><p><a href="#d14-1"> Large-Sample Hypothesis Test for p
+</a></p></li>
 <li><p><a href="#d14-2"> The P-Value </a></p></li>
+<li><p><a href="#d14-3"> Hypothesis Test for <span class="math inline">\(\mu\)</span> </a></p></li>
 </ul>
 </div>
 <div id="content">
@@ -528,6 +529,80 @@ Ho.
 </p></li>
 </ul>
 <hr />
+<hr id="d14-3">
+</div>
+<div id="hypothesis-test-for-the-population-mean" class="section level1">
+<h1>Hypothesis Test for the Population Mean</h1>
+<ul>
+<li><p>Null hypothesis: Ho: <span class="math inline">\(\mu\)</span> =
+<span class="math inline">\(\mu_0\)</span></p></li>
+<li><p>Alternative hypothesis: Ha: <span class="math inline">\(\mu\)</span> &gt; <span class="math inline">\(\mu_0\)</span>, (OR Ha: <span class="math inline">\(\mu\)</span> &lt; <span class="math inline">\(\mu_0\)</span> OR Ha: <span class="math inline">\(\mu\)</span> <span class="math inline">\(\neq\)</span> <span class="math inline">\(\mu_0\)</span>)</p></li>
+<li><p>Assumption 1: The <span class="math inline">\(\bar{X}\)</span>
+and <span class="math inline">\(S\)</span> are the mean and standard
+deviation of a random sample.</p></li>
+<li><p>Assumption 2: The sample size is large (generally n <span class="math inline">\(\geq\)</span> 30) <strong>OR</strong> the
+population distribution is at least approximately normal</p></li>
+<li><p>Test statistics, ( <span class="math inline">\(\sigma\)</span> is
+known ) <strong>z-test</strong> : z = <span class="math inline">\(\frac{\bar{x} -
+\mu_0}{\frac{\sigma}{\sqrt{n}}}\)</span>.</p></li>
+<li><p>Test statistics, ( <span class="math inline">\(\sigma\)</span> is
+unknown ) <strong>t-test</strong> : t = <span class="math inline">\(\frac{\bar{x} -
+\mu_0}{\frac{s}{\sqrt{n}}}\)</span>.</p></li>
+<li><p>The “t-test” has a t-distribution with df = n - 1.</p></li>
+</ul>
+<hr />
+<p>The mean birth weight of male babies born to 121 mothers taking
+vitamin supplement is 3.54 kilograms with standard deviation of 0.69
+kilograms. Test the claim that the mean birth weight of all babies born
+to mothers taking vitamin supplement is equal to 3.39 kilograms, which
+is the mean for the population of all male babies. Use a 0.05
+significance level.</p>
+<ul>
+<li><p>It is known <span class="math inline">\(\bar{X}\)</span> = 3.54,
+S = 0.69, n = 121</p></li>
+<li><p>Ho: <span class="math inline">\(\mu\)</span> = 3.39 vs Ha: <span class="math inline">\(\mu\)</span> <span class="math inline">\(\neq\)</span> 3.39</p></li>
+<li><p>Since <span class="math inline">\(\sigma\)</span> is unknown, use
+t = <span class="math inline">\(\frac{\bar{x} -
+\mu_0}{\frac{s}{\sqrt{n}}}\)</span> = <span class="math inline">\(\frac{3.54 -
+3.39}{\frac{0.69}{\sqrt{121}}}\)</span> = 2.39</p></li>
+<li><p>In textbook’s appendix table 3, when <span class="math inline">\(\alpha\)</span> = 0.05 in a two-tailed test, see
+column at 95%.</p></li>
+<li><p>When df=120, the rejection region is (<span class="math inline">\(-\infty\)</span>, -1.98) and (1.98, <span class="math inline">\(\infty\)</span>)</p></li>
+<li><p>Since t-test = 2.39 <span class="math inline">\(\in\)</span>
+(1.98, <span class="math inline">\(\infty\)</span>), there is enough
+evidence to reject Ho</p></li>
+</ul>
+<hr />
+<p>To test Ho: <span class="math inline">\(\mu\)</span> = 20 versus Ha:
+<span class="math inline">\(\mu\)</span> &lt; 20, a simple random sample
+of size n = 18 is obtained from a population that is known to be
+normally distributed.</p>
+<p><em>a)</em> If <span class="math inline">\(\bar{x}\)</span> = 18.3, S
+= 4.3, compute the test statistics.</p>
+<ul>
+<li>t = <span class="math inline">\(\frac{\bar{X} -
+\mu_0}{S/\sqrt{n}}\)</span> = <span class="math inline">\(\frac{18.3 -
+20}{4.3/\sqrt{18}}\)</span> = -1.677</li>
+</ul>
+<p><em>b)</em> Approximate and interpret the p-value.</p>
+<ul>
+<li><p>The table 4 in the textbook’s appendix displays values of T with
+one decimal place. Therefore, use t = -1.7 instead of -1.677</p></li>
+<li><p>The T distribution is symmetric, so the left tail area is the
+same as the right. Therefore, the area below -1.7 (the p-value in this
+exercise) is equal to the area above 1.7.</p></li>
+<li><p>When df = 17, the corresponding “right tail” area is
+0.054.</p></li>
+<li><p>P-value = 0.054. This is the probability that the sample supports
+the claim, Ho: <span class="math inline">\(\mu\)</span> = 20.</p></li>
+</ul>
+<p><em>c)</em> If the researcher decides to test this hypothesis at the
+<span class="math inline">\(\alpha\)</span> = 0.05 level of
+significance, will the researcher reject the null hypothesis? Why?</p>
+<ul>
+<li>Since p-value &gt; <span class="math inline">\(\alpha\)</span>, fail
+to reject Ho.</li>
+</ul>
 </div>
 </div>
 
