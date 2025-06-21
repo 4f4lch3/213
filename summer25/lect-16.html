@@ -11,7 +11,7 @@
 
 
 
-<title>syllabus-m25.knit</title>
+<title>lect-16.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,30 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-p {
-font-size: 18px;
-}
-tr {
-border-bottom: 1px solid black;
-font-size: 18px;
-}
-td, th {
-padding: 8px;
-}
-#toc {
-float: left;
-padding-top: 1%;
-width: 15%;
-background: #EEEEEE;
-position: fixed;
-}
-#syllabus{
-float: left;
-width: 70%;
-margin-left: 30%;
-}
-</style>
+<style type="text/css">h1, h2, h3, h4, h5, h6 {color: rgba(96, 38, 158, 1);}p {font-size: 18px;}a {font-size: 15px;font-weight: bold;}mark{background-color: yellow;}#index {float: left;padding-top: 1%;width: 15%;background: #EEEEEE;position: fixed;}#content {float: left;width: 70%;margin-left: 30%;}#email{font-size: 18px;}#banner-1 {font-size: 30px;font-weight: bold;text-align: center;color: white;margin: auto;padding: 10px;background-color: #60269E;}#banner-2 {font-size: 20px;font-weight: bold;text-align: center;color: #60269E;margin: auto;padding: 10px;}</style>
 
 
 
@@ -376,392 +353,678 @@ display: none;
 </div>
 
 
-<div id="statistics-213-introduction-to-applied-statistics" class="section level1" style="color:white; text-align:center; background-color:#60269E;">
-<h1><strong>Statistics 213: Introduction to Applied
-Statistics</strong></h1>
+<div id="index">
+<p><span style="padding-left:30px;">
+<a href="syllabus-m25.html" style="color:#60269E;"> BACK TO SYLLABUS
+</a> </span></p>
+<ul>
+<li><p><a href="#d16-1"> Mean Difference Using Paired Samples
+</a></p></li>
+<li><p><a href="#d16-2"> Proportion Difference Between Two Population
+</a></p></li>
+<li><p><a href="#d16-3"> A large-Sample Confidence Interval for <span class="math inline">\(p_1 - p_2\)</span> </a></p></li>
+</ul>
 </div>
+<div id="content">
+
+<hr id="d16-1">
+<div id="means-difference-using-paired-samples" class="section level2">
+<h2>Means Difference Using Paired Samples</h2>
+<p>Match paired samples are a result of an experimental design in which
+the experimental units are paired up.</p>
+<p>The pairs are selected so that they are related in some way. For
+instance, the same person before or after a treatment, twins, husband
+and wife, same geographical location, and so on). There are only two
+levels of treatments, <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, in a match-paired design.</p>
+<p>Let’s define <strong>d</strong> = <span class="math inline">\(X_1 -
+X_2\)</span> as the difference between these random variables.
+<strong>d</strong> is another random variable with mean <span class="math inline">\(\mu_d\)</span> and standard deviation <span class="math inline">\(\sigma_d\)</span>.</p>
+<div id="paired-t-test" class="section level3">
+<h3>Paired t test</h3>
+<p>Ho: <span class="math inline">\(\mu_d\)</span> = <span class="math inline">\(\mu_o\)</span> vs Ha: <span class="math inline">\(\mu_d\)</span> &gt; <span class="math inline">\(\mu_o\)</span> (or <span class="math inline">\(\mu_d\)</span> &lt; <span class="math inline">\(\mu_o\)</span>, <span class="math inline">\(\mu_d
+\neq \mu_o\)</span>)</p>
+<p>Test statistic: t = <span class="math inline">\(\frac{\bar{x}_d -
+\mu_0}{S_d/\sqrt{n}}\)</span></p>
+<p>where <strong>n</strong> is the number of sample differences, <span class="math inline">\(\bar{x}_d\)</span> and <span class="math inline">\(S_d\)</span> are the mean and standard deviation
+of the sample differences. The test statistic <strong>t</strong> follows
+a T-distribution with <strong>n - 1</strong> degrees of freedom.</p>
+<p></p>
+<p><em>1)</em> The samples are paired.</p>
+<p><em>2)</em> The n sample differences can be viewed as a random sample
+from a population of differences.</p>
+<p><em>3)</em> The size of sample differences is at least 30 OR the
+population distribution of the “differences” is approximately
+normal.</p>
 <hr />
-<div>
-<div id="course-information-summer-2025-6-weeks" class="section level3">
-<h3><u><strong>Course Information (Summer 2025 / 6
-Weeks)</strong></u></h3>
-<ul>
-<li><p><strong>Section:</strong> 1</p></li>
-<li><p><strong>Schedule:</strong> M, T, W, TH</p></li>
-<li><p><strong>Time:</strong> 8:00 – 9:34 am</p></li>
-<li><p><strong>Room:</strong> HN C107</p></li>
-<li><p><strong>Instructor:</strong> Alejandro Falchettore</p></li>
-<li><p><strong>Email:</strong> <a href="mailto:afalche@hunter.cuny.edu" class="email">afalche@hunter.cuny.edu</a></p></li>
-<li><p><strong>Office hours (ZOOM link in Brightspace – Appointment
-required): </strong>Monday: 12:30 – 1:30 pm</p></li>
-</ul>
-<hr />
-</div>
-<div id="learning-outcomes" class="section level3">
-<h3><u><strong>Learning Outcomes:</strong></u></h3>
-<ul>
-<li><p>
-This course emphasizes statistical literacy and develops statistical
-thinking. Statistical literacy is promoted throughout the text in the
-many examples and exercises, drawn from published research findings and
-the popular press. Many of the examples and exercises discussed will
-highlight the central role of probability and statistics in 21st century
-science. Students should understand how to adequately interpret and
-communicate statistical results. Understanding the nature and role of
-variability is key to developing sound skills in statistical thinking.
-</p></li>
-</ul>
-</div>
-<div id="course-materials" class="section level3">
-<h3><u><strong>Course Materials</strong></u></h3>
-<ul>
-<li><p><strong>Textbook:</strong> Introduction to Statistics and Data
-Analysis, Enhanced Review Edition (6th Edition) by Roxy Peck, Chris
-Olsen, Jay L. Devore. Duxbury Press; <u>E-book included in
-WebAssign.</u></p></li>
-<li><p><span style="background:#FFFF97"><strong>WebAssign
-(www.webassign.net) is mandatory!</strong></span>.
-<a href="https://www.getenrolled.com/?courseKey=hunter53954915" target="_blank"><strong>Click
-here</strong></a> for self-enrollment</p></li>
-</ul>
-</div>
-<div id="grading-policy" class="section level3">
-<h3><u><strong>Grading Policy</strong></u></h3>
-<ul>
-<li><p>There are two in-class non-cumulative tests (T1, T2), and a final
-exam (F) worth 80% altogether. Online assignments (WebAssign) are 20% of
-the grade.</p></li>
-<li><p>The tests and final are closed book exams and in person. Only a
-scientific calculator <em>(no phone, tablet or computer)</em>,
-<a href="formulas.pdf" target="_blank"><strong>formula</strong></a>
-sheets and
-<a href="tables.pdf" target="_blank"><strong>tables</strong></a> are
-allowed. The final is comprehensive. <strong>There will be no remake for
-the tests and final!</strong></p></li>
-<li><p>The final counts twice as much as the midterm tests. The lowest
-score will be dropped (if lowest score is the final exam, that score
-will be counted only once). Overall score formula: [T1 + T2 + F + F –
-min(T1, T2, F)]*8/30 + WebAssign.</p></li>
-</ul>
-</div>
-<div id="tutoring" class="section level3">
-<h3><u><strong>Tutoring</strong></u></h3>
-<ul>
-<li><p>
-Table tutoring and audiovisual materials are available at The Dolciani
-Mathematics Learning Center, located at the Silverstein Student Success
-Center 7th Floor Hunter East. Tutoring is available remotely and on site
-by appointment. Appointments can be booked through Navigate. For hours
-and more information visit their website
-<a href="https://www.hunter.cuny.edu/dolciani" target="_blank"><strong>click
-here</strong>.</a>
-</p></li>
-</ul>
-</div>
-<div id="student-resources" class="section level3">
-<h3><u><strong>Student Resources</strong></u></h3>
-<ul>
-<li><p><u>Counseling and Wellness Services</u> offers free and
-confidential short-term counseling services, referrals, workshops, and
-support groups to all Hunter College students.
-<a href="http://www.hunter.cuny.edu/cws/counselingservices" target="_blank">
-<strong>Click here</strong></a> for more information.
-<a href="https://ww2.hunter.cuny.edu/students/student-life/emergency-support-and-resources/" target="_blank"><strong>Click
-here</strong></a> for links to resources such as food pantries,
-emergency funding sources, and technology access.</p></li>
-<li><p><u>Assistance with CUNY login (Blackboard, CUNYfirst), email,
-Hunter NetID:</u> <a href="mailto:studenthelpdesk@hunter.cuny.edu" class="email">studenthelpdesk@hunter.cuny.edu</a> , (212)
-650-3624</p></li>
-<li><p><u>Academic Advising:</u>
-<a href="http://www.hunter.cuny.edu/advising/" target="_blank">http://www.hunter.cuny.edu/advising/</a></p></li>
-<li><p><u>Financial Aid:</u>
-<a href="https://hunter.cuny.edu/students/financial-aid" target="_blank">https://hunter.cuny.edu/students/financial-aid/</a></p></li>
-</ul>
-</div>
-<div id="academic-integrity" class="section level3">
-<h3><u><strong>Academic Integrity</strong></u></h3>
-<ul>
-<li><p>
-“Hunter College regards acts of academic dishonesty (e.g., plagiarism,
-cheating on examinations, obtaining unfair advantage, and falsification
-of records and official documents) as serious offenses against the
-values of intellectual honesty. The College is committed to enforcing
-the CUNY Policy on Academic Integrity and will pursue cases of academic
-dishonesty according to the Hunter College Academic Integrity
-Procedures.”
-</p></li>
-</ul>
-</div>
-<div id="office-of-accessability" class="section level3">
-<h3><u><strong>Office of AccessABILITY</strong></u></h3>
-<ul>
-<li><p>
-“In compliance with the American Disability Act of 1990 (ADA) and with
-Section 504 of the Rehabilitation Act of 1973, Hunter College is
-committed to ensuring educational parity and accommodations for all
-students with documented disabilities and/or medical conditions. It is
-recommended that all students with documented disabilities (Emotional,
-Medical, Physical and/or Learning) consult the Office of Accessibility.”
-Call (212-772-4857)/TTY (212-650-3230) or
-<a href="http://www.hunter.cuny.edu/access" target="_blank"><strong>click
-here</strong></a> for more information. Students are welcome to speak
-with me privately about any accommodations.
-</p></li>
-</ul>
-</div>
-<div id="cuny-statement-on-sexual-misconduct" class="section level3">
-<h3><u><strong>CUNY Statement on Sexual Misconduct</strong></u></h3>
-<ul>
-<li><p>
-<p>“In compliance with the CUNY Policy on Sexual Misconduct, Hunter
-College reaffirms the prohibition of any sexual misconduct, which
-includes sexual violence, sexual harassment, and gender-based harassment
-retaliation against students, employees, or visitors, as well as certain
-intimate relationships. Students who have experienced any form of sexual
-violence on or off campus (including CUNY-sponsored trips and events)
-are entitled to the rights outlined in the Bill of Rights for Hunter
-College.</p>
-</p></li>
-<li><p><u>Sexual Violence.</u> Students are strongly encouraged to
-immediately report the incident by calling 911, contacting NYPD Special
-Victims Division Hotline (646-610-7272) or their local police precinct,
-or contacting the College’s Public Safety Office
-(212-772-4444).</p></li>
-<li><p><u>All Other Forms of Sexual Misconduct:</u> Students are also
-encouraged to contact the College’s Title IX Campus Coordinator, Dean
-John Rose (<a href="mailto:jtrose@hunter.cuny.edu" class="email">jtrose@hunter.cuny.edu</a> or 212-650-3262) or Colleen
-Barry (<a href="mailto:colleen.barry@hunter.cuny.edu" class="email">colleen.barry@hunter.cuny.edu</a> or 212-772-4534) and
-seek complimentary services through the Counseling and Wellness Services
-Office, Hunter East 1123.”</p></li>
-<li><p><u>CUNY Policy on Sexual Misconduct:</u>
-<a href="https://www1.cuny.edu/sites/title-ix/wp-content/uploads/sites/2/2021/06/2018-CUNY-Policy-on-Sexual-Misconduct.pdf" target="_blank"><strong>Click
-here</strong></a> for a pdf copy.</p></li>
-</ul>
-<hr />
-</div>
-<div id="class-schedule" class="section level3">
-<h3><u><strong>Class Schedule</strong></u></h3>
-<center>
-<table style="width:auto; table-layout:auto;">
+<p>To determine if chocolate milk was effective as other carbohydrate
+replacement drinks, nine male cyclists performed an intense workout
+followed by a drink and a rest period. At the end of the rest period,
+each cyclist performed an endurance trial in which he exercised until
+exhausted and time to exhaustion was measured. Each cyclist completed
+the entire regime on two different days. On one day the drink provided
+was chocolate milk and on the other day the drink provided was a
+carbohydrate replacement drink. Is there evidence that the mean time of
+exhaustion is greater after chocolate milk than after carbohydrate
+replacement drink? Use a significance level of 0.05. </p>
+<table style="width:100%;">
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+</colgroup>
 <thead>
-<tr style="border-top: 1px solid black">
-<th style="text-align:left">
-Date
-</th>
-<th>
-Topic
-</th>
+<tr class="header">
+<th align="left">Cyclist</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">4</th>
+<th align="left">5</th>
+<th align="left">6</th>
+<th align="left">7</th>
+<th align="left">8</th>
+<th align="left">9</th>
 </tr>
 </thead>
-<tr>
-<td>
-May 27
-</td>
-<td>
-<a href="lect-1.html">The Role of Statistics and Data Analysis Process
-(1.1 – 1.4), Collecting Data Sensibly (2.1 – 2.4)</a>
-</td>
+<tbody>
+<tr class="odd">
+<td align="left">Choc</td>
+<td align="left">24.85</td>
+<td align="left">50.09</td>
+<td align="left">38.30</td>
+<td align="left">26.11</td>
+<td align="left">36.54</td>
+<td align="left">26.14</td>
+<td align="left">36.13</td>
+<td align="left">47.35</td>
+<td align="left">35.08</td>
 </tr>
-<tr>
-<td>
-May 28
-</td>
-<td>
-<a href="lect-2.html">Graphical Methods for Describing Data (3.1 –
-3.4)</a>
-</td>
+<tr class="even">
+<td align="left">Carb</td>
+<td align="left">10.02</td>
+<td align="left">29.96</td>
+<td align="left">37.40</td>
+<td align="left">15.52</td>
+<td align="left">9.11</td>
+<td align="left">21.58</td>
+<td align="left">31.23</td>
+<td align="left">22.04</td>
+<td align="left">17.02</td>
 </tr>
-<tr>
-<td>
-May 29
-</td>
-<td>
-<a href="lect-3.html">Numerical Methods for Describing Data (4.1 –
-4.2)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 2
-</td>
-<td>
-<a href="lect-4.html"> Numerical Methods for Describing Data (4.3 – 4.4)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 3
-</td>
-<td>
-<a href="lect-5.html"> Probability (6.1 – 6.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 4
-</td>
-<td>
-<a href="lect-6.html"> Probability (6.4 – 6.6)</a>
-</td>
-</tr>
-<tr>
-<td>
-June 5
-</td>
-<td>
-<a href="lect-7.html"> Probability (6.7 - Activity) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 9
-</td>
-<td>
-<a href="lect-8.html"> Random Variables and Probability Distributions
-(7.1 - 7.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 10
-</td>
-<td>
-<a href="lect-9.html"> Random Variables and Probability Distributions
-(7.5) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 11
-</td>
-<td>
-<a href="lect-10.html"> Random Variables and Probability Distributions
-(7.6) </a>
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 12
-</td>
-<td>
-Test 1 <em>(Chapters 1, 2, 3, 4, 6, 7)</em>
-</td>
-</tr>
-<tr>
-<td>
-June 16
-</td>
-<td>
-<a href="lect-11.html"> Sampling Variability and Sampling Distributions
-(8.1 – 8.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 17
-</td>
-<td>
-<a href="lect-12.html"> Estimation Using a Single Sample (9.1 – 9.3)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 18
-</td>
-<td>
-<a href="lect-13.html"> Hypothesis Testing Using a Single Sample (10.1 –
-10.2) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 23
-</td>
-<td>
-<a href="lect-14.html"> Hypothesis Testing Using a Single Sample (10.3 –
-10.4) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 24
-</td>
-<td>
-<a href="lect-15.html"> Comparing Two Populations or Treatments (11.1)
-</a>
-</td>
-</tr>
-<tr>
-<td>
-June 25
-</td>
-<td>
-<a href="lect-16.html"> Comparing Two Populations or Treatments (11.2 –
-11.3) </a>
-</td>
-</tr>
-<tr>
-<td>
-June 26
-</td>
-<td>
-<a href="lect-17.html"> The Analysis of Categorical Data and
-Goodness-of-Fit Tests (12.1 - 12.2) </a>
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-June 30
-</td>
-<td>
-Test 2 <em>(Chapters 8, 9, 10, 11, 12)</em>
-</td>
-</tr>
-<tr>
-<td>
-July 1
-</td>
-<td>
-Summarizing Bivariate Data (5.1 – 5.2)
-</td>
-</tr>
-<tr>
-<td>
-July 2
-</td>
-<td>
-Summarizing Bivariate Data (5.3)
-</td>
-</tr>
-<tr>
-<td>
-July 3
-</td>
-<td>
-ANOVA (15.1)
-</td>
-</tr>
-<tr>
-<td>
-July 7
-</td>
-<td>
-ANOVA (15.2)
-</td>
-</tr>
-<tr style="background:#FFFF97">
-<td>
-July 8
-</td>
-<td>
-Final Exam
-</td>
-</tr>
+</tbody>
 </table>
-</center>
-<p><br><br></p>
+<ul>
+<li>Find the observed time difference, d, between “milk chocolate” and
+“carbohydrate replacement”.</li>
+</ul>
+<table style="width:100%;">
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Cyclist</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">4</th>
+<th align="left">5</th>
+<th align="left">6</th>
+<th align="left">7</th>
+<th align="left">8</th>
+<th align="left">9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">d</td>
+<td align="left">14.83</td>
+<td align="left">20.13</td>
+<td align="left">0.90</td>
+<td align="left">10.59</td>
+<td align="left">27.43</td>
+<td align="left">4.56</td>
+<td align="left">4.90</td>
+<td align="left">25.31</td>
+<td align="left">18.06</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Ho: <span class="math inline">\(\mu_d\)</span> = 0 (no difference
+between these drinks)</p></li>
+<li><p>Ha: <span class="math inline">\(\mu_d\)</span> &gt; 0 (time for
+chocolate, <span class="math inline">\(X_1\)</span>, is greater than
+carbohydrate, <span class="math inline">\(X_2\)</span>, drinks)</p></li>
+<li><p>Find the sample mean, standard deviation and size of
+<strong>d</strong>: <span class="math inline">\(x_d\)</span>: <span class="math inline">\(\bar{x}_d\)</span> = 14.08, <span class="math inline">\(S_d\)</span> = 9.47, n = 9</p></li>
+<li><p>Find the test statistic: t = <span class="math inline">\(\frac{\bar{x}_d - 0}{s_d/\sqrt{n}}\)</span> = t =
+<span class="math inline">\(\frac{14.08 - 0}{9.47/\sqrt{9}}\)</span> =
+4.46</p></li>
+<li><p>The <span class="math inline">\(t_{critical}\)</span> when <span class="math inline">\(\alpha\)</span> = 5% and df = 9 - 1 = 8 is 1.86.
+Since the t-test &gt; 1.86, reject Ho.</p></li>
+<li><p>There is enough evidence to suggest that the mean time exhaustion
+is greater after drinking chocolate milk.</p></li>
+</ul>
+<hr />
+<p>In an experiment designed to study the effects of illumination level
+on task performance <em>(“Performance of Complex Tasks Under Different
+Levels of Illumination,” J. Illumin. Engrg., 1976: 235-242)</em>,
+subjects were required to insert a fine-tipped probe into the eyeholes
+of 10 needles in rapid succession both for a low light level with a
+black background and a higher level with a white background. Each data
+value is the time (sec) required to complete the task.</p>
+<table style="width:100%;">
+<colgroup>
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Subject</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">4</th>
+<th align="left">5</th>
+<th align="left">6</th>
+<th align="left">7</th>
+<th align="left">8</th>
+<th align="left">9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Black</td>
+<td align="left">25.85</td>
+<td align="left">28.84</td>
+<td align="left">32.05</td>
+<td align="left">25.74</td>
+<td align="left">20.89</td>
+<td align="left">41.05</td>
+<td align="left">25.01</td>
+<td align="left">24.96</td>
+<td align="left">27.47</td>
+</tr>
+<tr class="even">
+<td align="left">White</td>
+<td align="left">18.23</td>
+<td align="left">20.84</td>
+<td align="left">22.96</td>
+<td align="left">19.68</td>
+<td align="left">19.50</td>
+<td align="left">24.98</td>
+<td align="left">16.61</td>
+<td align="left">16.07</td>
+<td align="left">24.59</td>
+</tr>
+</tbody>
+</table>
+<p>Does the data indicate that the higher level of illumination yields a
+decrease of more than 5 s in true average task completion time? Test the
+appropriate hypotheses using the P-value approach.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Subject (i)</th>
+<th align="left">Black, <span class="math inline">\(X_2\)</span></th>
+<th align="left">White, <span class="math inline">\(X_1\)</span></th>
+<th align="left"><span class="math inline">\(d_i = X_1 -
+X_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">25.85</td>
+<td align="left">18.23</td>
+<td align="left">-7.62</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">28.84</td>
+<td align="left">20.84</td>
+<td align="left">-8.00</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">32.05</td>
+<td align="left">22.96</td>
+<td align="left">-9.09</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">25.74</td>
+<td align="left">19.68</td>
+<td align="left">-6.06</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">20.89</td>
+<td align="left">19.50</td>
+<td align="left">-1.39</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">41.05</td>
+<td align="left">24.98</td>
+<td align="left">-16.07</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">25.01</td>
+<td align="left">16.61</td>
+<td align="left">-8.40</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">24.96</td>
+<td align="left">16.07</td>
+<td align="left">-8.89</td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">27.47</td>
+<td align="left">24.59</td>
+<td align="left">-2.88</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Summary Statistics: N = 9, <span class="math inline">\(\bar{X}_d\)</span> = -7.6, <span class="math inline">\(S_d\)</span> = 4.178</p></li>
+<li><p>Null Hypothesis, Ho: <span class="math inline">\(\mu_d\)</span> =
+-5</p></li>
+<li><p>Alternative Hypothesis, Ha: <span class="math inline">\(\mu_d\)</span> &lt; -5</p></li>
+<li><p>Test statistic, t = <span class="math inline">\(\frac{\bar{X}_d -
+do}{S_d/\sqrt{n}}\)</span></p></li>
+<li><p>t = <span class="math inline">\(\frac{-7.6 -
+(-5)}{4.178/\sqrt{9}}\)</span> = -1.867</p></li>
+<li><p>The <span class="math inline">\(t_{critical}\)</span> when <span class="math inline">\(\alpha\)</span> = 5% and df = 9 - 1 = 8 is
+-1.86</p></li>
+<li><p>Since the t-test &lt; -1.86, reject Ho.</p></li>
+</ul>
+<hr />
+<p>Jane usually takes her dry cleaning to Lilac Cleaners in Rochester,
+NY, but is considering changing to Leary’s Cleaners. According to a
+local newspaper, Leary’s uses a dry-wet cleaning process which is more
+environmentally friendly. Jane expects to pay more for this service, but
+wants to know how much more.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Lilac, <span class="math inline">\(X_1\)</span></th>
+<th>Leary’s, <span class="math inline">\(X_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Suit</td>
+<td>10.25</td>
+<td>12.25</td>
+</tr>
+<tr class="even">
+<td>Shirt/Blouse</td>
+<td>5.25</td>
+<td>5.99</td>
+</tr>
+<tr class="odd">
+<td>Slacks</td>
+<td>5.25</td>
+<td>5.89</td>
+</tr>
+<tr class="even">
+<td>Skirt</td>
+<td>5.25</td>
+<td>5.89</td>
+</tr>
+<tr class="odd">
+<td>Sweater</td>
+<td>5.25</td>
+<td>5.39</td>
+</tr>
+<tr class="even">
+<td>Winter coat</td>
+<td>11.95</td>
+<td>13.49</td>
+</tr>
+<tr class="odd">
+<td>Comforter (full-size)</td>
+<td>15.00</td>
+<td>14.25</td>
+</tr>
+<tr class="even">
+<td>Raincoat</td>
+<td>11.95</td>
+<td>12.99</td>
+</tr>
+</tbody>
+</table>
+<p><em>1)</em> Explain why the prices in the table above are considers
+dependent samples.</p>
+<ul>
+<li><p>
+There are two prices for each item - Leary’s price and Lilac’s price.
+The prices are paired by item.
+</p></li>
+</ul>
+<p><em>2)</em> Compute the differences (Leary’s – Lilac) and write them
+in the column labeled “Difference”.</p>
+<ul>
+<li><p>d = Leary’s Price - Lilac’s Price</p></li>
+<li><p>d = {2, 0.74, 0.64, 0.64, 0.14, 1.54, -0.75, 1.04}</p></li>
+</ul>
+<p><em>3)</em> Create a 90% confidence interval for the mean difference
+in price for the two dry cleaners. Identify the Population, Statistical
+Method, Sample, Statistical Results, and Conclusion.</p>
+<p>Formula: 90% confidence, <span class="math inline">\(\bar{X}_d \pm
+(1.90)(\frac{S_d}{\sqrt{n}})\)</span></p>
+<p>Summary of sample mean differences: n=8, <span class="math inline">\(\bar{X}_d\)</span> = 0.749, <span class="math inline">\(S_d\)</span> = 0.838.</p>
+<p>Assumption: Items have been randomly chosen. Since n is small (n &lt;
+30), check a normal probability plot of the “differences”. Notice that
+the plot suggests that <span class="math inline">\(\bar{X}_d\)</span> is
+normal.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwAAAAKgCAIAAACjiI2DAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nOzdZ3wU5drH8XtmtqZB6BCkC6IUCyCKFEURUIogHUK196Meec7xWI56LNi7KAIBaQlVECwoCCogKggoIKiU0AMhdevM82JDWMhu6mZnsvv7vsrn3tndK7Mzs/+dco2kaZoAAACIJrLeBQAAAIQbAQgAAEQdAhAAAIg6BCAAABB1CEAAACDqEIAAAEDUIQABAICoQwACAABRhwAEAACiDgEIAABEHQIQAACIOia9C4DBef9Y8vKcLfmaUJJuuHtSl5qS3gWFjl7/WkXe17tr0ZR5vzo0oVxw470Trko889xgrxls+ioqgpdGAGGnAcVxLB9XQxJCCHOnF3Z69K4mpPT61yryvo6loxMkIYSwXPXyHm/Jrxls+ioqgpdGAOEWFXuAtMwN099atd8rhBBy7a6T7urZoKRDfzk/zXr9070eIde4esK9vRpypLCs/Od5AJKkmKwx1WonNWt9WacrWtWyhrU46IFFAoChREcAOrVh+rNPr3cJIYSQ6+2o+fO84fWL3Xmu5WxOefbpr5xCafHIDXcRgMrunHleLMlU/cKeox/6z78ndakXFYtjhZguHvbU85c4NaEkdS3NAaDipnfvSJ2StsN7wY33jg/HsTEjLxJhnhUAjCD6vnHUIwsffWxpz5kDa7OdMwTNk7n787fvXp2a+mRa6r+vqcHHUhylxc0PPXZzSKb3bJ//3yef2S53SRg1zljf+mFfJIw7KwBUnugLQEJ4D8556F8juk/tw5YuHEyt7lu89P6LlHNHNU/+6WP7d/70zZKZM5b8muHVPEe/fvKW0XU2fHp7cyXwCyGktOMbf/jDq8uFoEZbJHScFQD0E1UBSLJe0aPjnrXrT3v3zXjgiRFd3rwugQhU+SyJFzRv0SLAknZR2w7dbhp9/6NfTr558CubszX1xOdPPLlsyKxbSKZhkP/j9z+7NX3e22CLhJ6zAoBuoioAaaL+qBdHeG58dF2OZ8/U+54ZtmnKNbHlfzk19+DW73/Ysnv/0cx8rxJTvc4FF7bvdNWljeMD/1z17lz40vxtTk2KvWL0P/o1V4TryM+fr1y3Iz3TXbfnXZOuqSUJ4d29eMrcrQ5Nir181D/6t1CEEM6jW9es/mHHvgyHKb5es/bXXNelZaL/p+Y6tm3t1z/s2Hc8V4up3aTt1T27taltKaZqb/b+rRs3b/tj35GTOS5hjq1er/FFl111VbsGMTqlDqXuDf+bMXnt5Y//6NLUY8vnfpl1y9BqvlJLMcfOUcZPJAB3xs7v1/6w7c8jmU4ptnaTSzp179q+vr2EOROCWVrq9y3rZe1Fp9cyvvvo3S/TPSfWrz6tCiG8+7944+msREkIucbV44bHfP7BV+leIZQGPe+8rWvw48Ta8W+nvv/1Ya8QSuM+94+7sloIF5/gi0SplHoxKHZWjL+31wXsEgIimt6XoYWD98/XrrEIIYS153vp+Vue7RQjCSEka/t/b8wL/Az18PvXW4UQQmnxyPeuIg97jn3/7l09GsfKRTb6ki3p6vGvfH2w6HM0x/KxiZIQQqqevMyhHll+X/uEgu2ruePzv/su6XV+cXs9WQghxY9c7NDcB1b8X8+GVv83keT41iPe25Lte8U/Fz96XUPbOUVI9qY3v7A+Qw3wTzkPfPlScucGtqLfVJKS0PKm/0vbFWhulPPC48J5Lkxtn9jiLmFqz87nO5p9U7f854YzU5dmjp15gfJ9Imf+tc4v7fbk717wYI/z5qaQTLWumPDBT5mB5qdW8Vla9vet+GXwnp0vdDIXqVcIIZTm//gu75f/tDX55lvX1/8Mft2898C7Pe2SEEIyX/HsjlItF6FZJIpdGsu4GBQ/KwIsMQAiSXT9xNGc+U5L+3+8/Y/2Nklozl9fvfflLc6yvojjt6lDO/a45701+3JVTZLttZq1ubzDFW2b14mRJaE50r+f/kivjgPe3Jp33vMkq82XZZz5+ccWP3zbO1uz1PNfWzJbzJIQQnPn5x1f/WjvwS+sTneZYmvUrhlvkSUhhKZm/z7vvoEPr8r0Hlww8bqhL3+d7lTsibVrJdgUSQghtPy/lv9r8B3zDp/32q6dH9x6ZZ/HUjYccmhCSIqter1GTZo0rBNvloTQvFm7Vzw/tEu/V7fml3V2hISS1Lih7+e5eirj1JnSSzPHhCj/J1JIMsmHPhlz7Yg31hx0CMVevU6dGjEmSRJCaJ4TP318V8+bn/+p6JMrPkvL974VJMU0urxb9+7dLqnjW2Lkas2v7O7TqXk1S7vkcVdaJSE054aUOb8Hu2ZdPbg09TuHJoRkvTp51Pln84RC4EWiOGVfDIqfFdG1bQSikd4JLBwKf3qe2XGQs/6Riy2SEEKK6/LS9gC/9ILvAcr65sGLLJIQQkixF4964+u/cwt/pOcfXP/++HbxvgfNLe9fffqc13R9c+8FihBC2G564j9X2SRzg6vH/+eNabNmT586d8MJ36u4vn2gsSKEENZuyaOam+PbJr+zZl+Oqmmamp/+/XsjLvQFAsnWffJ/b66pxLQa9uoXe7O8mqZpzuO/zLrj0jjfT9/zf5V7dr3aNdb31JiLR7/99d7TZx5V8w7+8PFdHXxbe8l+5Qvn/5oPyx4g9fi0Pr6+L0rDe74+M8NLM8cq8omc/dcu6dK5hqzU6frg9PV/Z3sL5suGGfd3run7FpSslz+95dzlJCSztOzvG7JGiI7FI30zxtLllb3+D6iHpvX1PWK6aPKmwLtBvH+90d0mCSGk+Js+Phxk91iRJ4VgkQi+NJZ/MQg+KwBEtCgLQFc895tH0zRNPb363gtNkhBCSrj2zd1FvteDBSDPjv919GUQpcHw+YeKbizVw/OH1/d989mueumcTXRhuDE1atrI1nz84vSiccK17sEmihBCSJKkNBqz6Mi575C96vYLzjwsyXVvmbnv3Jdwbpp8se/8IMu1bx84+1z3meMawnzpk1uKfqd590/t7fuaNLV6bOO5X01hCUD5q+/2/WPC0vX1v88UXpo5VpFPpPBf80Xh57ecf7xKPfnFXQWn6sr1J6zI8XsoJLO0HO9b+QFIU0+ljaglCyGE0uTeb/KL/Gua5t372jVWSQgh1xy24GQp809IFolg/2ZFFgMCEBClonQ3r5Rw7dOvj2usCKFlrX3y/ml/BdvVfy73punTf3ZqQkjWTg/9d3D9onNPqjf48bsvNQshNMePn8zb4fF/TPJ963n273PdOuWVAQ2KOXCgCXuPyc8NqHvuO8R17dMtXhJCaJowXX7/c6ManfsSlkt79/S9qnfPzj1n/yel6fhpX3/xadon0z9+fWLbomc9yA37DbzSIoQQnr83/3ws3NfDqAfmvT4/3SuEkMxtb7z+bNvJkudYxT6Rs5RmE//3QHv7+c9N7PnYfV2skhBCPbpy6fcOvyeEZpaW+X3DQKred8KQJEUI4d2flrI6p8gE6p+LUze5NCHkegPH9q2U67OCLhKBhWoxABBNojQACSHV6PO/V0YkKUKop754/KHZB0pxloF311er//YKIYT58kEDg/QmUVrd1LeVSQghPL+v+fb8U3GEEELIdfuNKakJkbnTwJuTinw6lkZNk3xvq1x8880XFqlAuaCJ72ezmpXpd76MVK1px6433Dx45LjR3QNe2SIl1q/r+wFd2hMuQsV7asuM22+6b3mGKoSQaw/4x8SLA8zXYHMsVJ+I0rj/kKvOjyFCCCE3vKFXG5MQQqgnNm/aezZThmaWlv19w8LeffzoliYhhHps6cwVJ89Lb969i9M2uzUhlCZDx15XgcsogyjdInHOM0K0GACIKlF1Gfy5pNoDX5pyy5ej046qxz+d/EjqjfOG1Ss+lOTt2LrbI4QQcq32lzUKlh1NLdtdbJO252jCs3P7Lo+44PyL0iXLZVddUcKdjuRarVvXDfA7NjbWd2m1ZLmwdYA+KlJMnO9xzekMfMsB54ldP/+4dedf6cczcx1ur6r5vt28u7cVTK96Q/zVoB5b+/5/nyryz6iunBMHdv307ZrNB3JUTQghWVuMff+N4YE+g6BzLFSfiO3STu2CXA7U5OJWdukntyY8f/3xt0dcUvTbtfyztGLvW4nMlyePvfyV/9vkUk+tTFlyZOgEvzvHeP9YmPqTWxPC1Hpk8lXlumNXCBaJc4RoMQAQXaI4AAkh1x/2yvNzvpm0PEM9svCRx5ZeN6PY+2Ooxw4e8rVLUxo2aRj8C8mS1LCuLHK8Qs08fDhfiCJftzUaN4ovYZsuJ1QPeBWKJBecHRtbLSHQZyfLwTb/6omNHz39+JSUb/ZmecN6jEs9uvb9Z9YWP41krt/94Y9Snukb+C61weZYqD4RuV7TxrYgzzXVbVBHFlleoeUdP56rCb+uBBWepeV83zBQWo6a0P2ZH7/M1XK/TkndN+7+Jmc+GO+uRWlb3JqQLFeMHt2ufNuPECwS57xciBYDANElqgOQEHKj5Nefmbv+3i8zvemfPPTv4d0/KObQlJqTnev7KS/FxsUG/z6SYgp20wgtNydXE+e3iCv+2QUUpfjtvqKUZZeAd9/88T3Hzt7r1IQQQrLWbN62bcuGtRNiLL7rf4Wa/sPCtX+6wnz2j6TE1Lnw8q69B4+9Y0LfixKC/sfB5lioPhE5LiEu2JtLdntBQ0LNkZevCVHw3FDM0vK8b5jISbdO7Puv1aknVef3KXN23vOvgsNQ3t8Xpv7qFkKyd00eUfQYbIWVdpHwF6rFAEB0ifIAJITS/LY3n5jX6eFvs737pj/wxPDi7o9xdrz4oKCdfTzQS0myooR106vum3bHnZ/sdWpCyDWvfvCdDx6/tU3iud9dzuVjV639sxQ36i47U+uHVqz8x/mncUiSYrYnJCbGmksxK4LOsRB9IsJkCv5VLhVesCVJhX+HaJaW+X3DR6p584RB9RZ+dEh1b/3kky3/fO4KkxDCsyMtbbtbCCn+hrG3lrtRcggWiXOfWfhXxRYDAFEl6gOQEKaL7nnr/+Zf9e+NeX73xwj0lSPHJcT7NvlabnZO8E2t7+elEEKS4uLj9N/SerZPf2d1piqEUJrd9snyl28MtJPL46m062JM8XWTGjasjCUtVJ+IlpeTF+zZWn5evu8xKaZw90KIZmmZ3zesYq+bMLL59Jf/8Hp2pc7f/NQVnc3Csz1t4W8eIeRa/cb2r1P+okK7SFTVFROAvqL2KjB/lnYPvf3wpTZJaK7f37r3+U35QpgtAa5srtsoyXcmhvfAXweCX5jjOLjvmCqEEHLtC5ICXeITXlrGhh92eYQQwtR61J09Ax7iU9P/2ueseneDDNUn4j2SfjhYWPEcOVTw3IS6dQqeG6pZWtb3DTNLp3HJ7c2SEN4/F6Vucgnh2Zq6cKdHCKXBoLE3luHmXJWsiq6YAHRGABJCCGHr8Njb911sKbg/xitbXDa7vej9hGxtL2/tuzQ545efgrYO8vz28zaHJoSQLJdcerH+u9jUE8eO+86QMDVv1TxgPeqBz5b97A5rVaERok9Ey9m+Ncil5t6/f9/t2xNjanHRmevuQjVLy/q+4aa0HjO+i00Swvv34rSNLvfm+Wm7PUIozYaP7R6jT0kBVc0VE4DOCEAFYq9+/M07WpgkoeVvfvHeN3da4openqM079WroJPI1kWLdwfe0Dp/Xrz8L68QQrJ0uPG6Ijcs14HFWnCtsuZ0OALsk9BOr37xtXUFx1tKOIvCYEL1iXi2fbp8T6Bnq4e+/nK7RwghlIadOxdeYR2qWVrW960UWvAC5UbDJt6YIAnh3b8kdc3a+Qv3eoQwtRk1ppOhrqAK2YpZzKwAEHEIQIUSrn36jfFNFEloOd8/+8AnR+1F542p/bhJV8dIQmiun954cn560fYunr0fPzF1l0cIISf2uX1EEwPMXyXpwua+Ex7cP6/57vT5W3jn7hkTJ350slEz3+2n1NMnM6tQj7gQfSKae/ObTy06UuTbL3v9q2+vc2pCCKXJwEEdzxwWDdksLeP7hpTJ7NsJop48fjLoJy7VHjBhYB1ZCO+BRZP/OX+fV0jWK5NHtQlrV6KSVXAxKNWsABBpDPAFbRhSYu/nXh2ZpAihZX236PNAvWLl5re/9I9L7ZIQ6pG023uNffvbg2d+5gtv5s7lzw2+4aEvTqlCyNW7P/G/YXUNsP9HCHu3/r1qyEII9fj8h++evj3rzI6JvP1rP7ire5fbFudd99z0B3w9XbwHV6/4OeR3IK88FfpENNU3qalpu9Y5Cyb2Gv/uusJnqzl7V/x38Ii3dnk0IaSEHv+456qzez0qOEvL/b4hpNStV0cRQgjPntR3F+7JVYU373j6iSK3ro+/YcLwxooQ3vRffjnsFVJM9+RhzQy32ajQYlDaWQEgwuh9M7JwKHoz1KDUQ3OH1PPbvBe5G7ymufbMGtXCVrAFleSYOi3aXHZZu5ZJCYVX78rVrnho5ZHz76pYeKNTU6vJm4LcCvLsNJc8/lOAaTy7XrzSLIQQcr3bv3AGKP/ohzf6Ds7YhqQ6zr7s9pe7nml6IilxSRd3uLJT+xa17bIkhBTT5u7lh73uLU8U3NxTSDFJbTtd2evZDS5NC9PNUAMrzRzTtPJ/Io4lo3wtD6y93v3uowH1FUlIsr1Ws0subX9x01qFJ4FJSr1+H+4+fymoyCytwPuG7GaoWt5Xd529lZwkm0yKFHipc/9S+H8IqfrgOSdKe/fT84RikShuaSzvYlCGWQEgkhjup5zOpPpDX/nfTbWKmy3m5qNTNn77wT3XNomVJU3NO7Zn+y+//Lo7PcutCclcq93gJ9I2rX21d4AbWejGfMlDC5c+e3OzGEkIzZuT/tvmjZu27jnuUGpdMfaN1WveuqmebGp39zNjW1glIYSWl75t0+bfj1SZX8Dl/URUp9MthBCSFJfYfsLcbz65v1sDi+PEnzu2bP3trxP5qiaEZE3q/sCctfMnXXjeYaiKzNKKvG/o2K/9z5sTW5/pDKh6PMG6WZvaJY/v7AsWcp0BY2+uaYj9mkWVf8Us9awAEEkkTYv8dV3L3DD9rVX7vUJp0POu27qWdGKyuv/zt2b84Lt/pVzj6gn39gp8M2o1Z//P3/2wZde+Y6edmiWuRoNmbTp0ubJ1rSBHLNT9q96aseGUKuRa10y6+/qAHf7PTlOn2213XlfkrtZaxnfT3v3yoFdIcR3GPHRzsyKnYuT+PPu1ZXs8QpguGTp5yHmXurgzflu3ev3WP4/lqJZqdZte0qlbl7Z1/c711rJ2fbl41c/pDlutJu26Xt+1dU2zEN4/lrw8Z0u+JpSkG+6e1KW0336F81zIdXvccUeP8uTB0syxc59Qtk8kf8ucV5bs9gjJfumIRwa2VIQQruO/fffthm1/HslyyrF1mra9+tpubeoUcwiqXLO0Iu/r3bVoyrxfHZpQLrjx3glXFV6BH+xjCjb9mVlw4Ifln32/54TbWq1Wg+ZtOnS+okVikcilHZ3R/8IJy7M1pcl9X/3+Zo9gd+8oQSgWiVItjWVcDAqUalYAiCBREYAAlJt315Rr2j+2wSnM7Z748aen2nMBOYCIYKDjNAAMRzux7NnXNzk1IcX3vO+2tqQfAJGCAAQgGM++OffcP/eQKiTThZP+PSqJ7QWAiMEGDUAA3qzdnz1/67UTUw96hWRqPPaVf3Xh9hEAIgh7tAH48Wx5+qqeb/+t5WVm5nl89w5N6PzE/NcNe/UXAJQLe4AAnMPryDpx4lSeRxNCUqpdMuqdb1Y+3ilO76oAILS4CgyAHy1z65K5X+3KcEgJdZu27d67+4UJ/EwCEIEIQAAAIOrw2w4AAEQdAhAAAIg6BCAAABB1CEAAACDqEIAAAEDUIQABAICoQwACAABRhwAEAACiDgEIAABEHQIQAACIOgQgAAAQdQhAAAAg6hCAAABA1DHpXUDlOn36dOlvd2+z2cxmsxAiLy/P6/VWZl3lJElSXFxcfn6+x+PRu5bA4uPjhRCqqubm5updS2AWi8ViseTk5OhdSGAmk8lutwshnE6ny+XSu5zAYmJiVFV1OBx6FxKY3W43mUxCiNzcXFVV9S4nAFmWY2NjDb6dEUJ4vd68vDy9ywnMarWazWbDrshms9lmswljr8ixsbEej8fpdOpdSGAxMTGKogghcnJySv89Xr169dK/RYQHII/HU/oZJ0mSb3Z7vV5jJgxZlhVFUVXVmOUJIXwzUAhh2ArNZrOiKIYtT1EU489DWZaNvBD6r8jGTBi+T9mw87BwBmqaZswKhRAWi0WWZcOWZzKZjD8PZVkWBt7O+K/IlfRLhkNgAAAg6hCAAABA1CEAAQCAqEMAAgAAUYcABAAAog4BCAAARB0CEAAAiDoEIAAAEHUIQAAAIOoQgAAAQNQhAAEAgKhDAAIAAFGHAAQAAKKOse8GrzlPHUo/nu2S7Yl1k+rGG7tYAABQVRg1U6indiybOX3xuj9OuTUhhJAkW+02PYdPGtOzaYykd3EAAKBqM2QA0jI3vfevF79I95hqXNjlyjYNYt0ndv/4w7ZtK956/ED+C0/3u0DRu0IAAFCVGTEAOX6d+8GX6R7bRcOefnLERbG+HT7Jtyz67+SZ27YtSPvp+oc62XUuEQAAlNrvv/8+c+bMjRs3ZmVlJSQkXHnllWPHjm3durWOJRnwJGj37+t/OKHKta8bc+uZ9COEsDa5+ZarEyQte+f2fV49ywMAAGUwZcqUa6+9dtq0adu3b9+/f//27dunTZvWo0ePF198UceqDLgHyNRq2DNTemSK2hdZzhlXEmtUk0VWXl6eplNlAACgTN5+++2XXnqp6Liqqi+//LLdbr///vvDX5Uw5B4gKaZW45aXtG9Zx3zuuPPIoQxVyPUa1DNg0QAA4DzHjx8PmH4KTZky5ejRo2Grx58B9wAF5tm3cunmPGFrd+019YsGIJfLdfz48aLPstlsilLaU6YlqeCAmyzLpX9WOPkqNGx5/gxboW8eGrY8WZYL/zBskZIkSZJk5PJ8fxi2Qt+nbNiPuHAGGv9TNmx5VWJFFmH5iFetWpWfn1/MBA6HY+XKlRMnTjxv3H9FLvw7tKpGANKyt858dd4up7XVmPE31AkwI3bs2HHbbbcVHV+9enW1atXK+nYJCQnlqTJc4uLi9C6hBIqiJCYm6l1FcQxenhDCZrPZbDa9qwhKURSr1ap3FSUw+IocHx+vdwklYEWuOLvdbrcb96odRVEqezvz559/ljjN3r17i/koy/ElXkpVIACpJzd//MyUT/9W61/7j38OamYu+RkAAEB/ubm5IZmmMhg9ADn2ff7Gs1O/P6Y06v3Ik7dfVSvI6T/Vq1e//vrri46rqup0Okv5XiaTybcz0OVyaZoRz7SWJMlisbjdblVV9a4lMN9eAU3TXC6X3rUEpiiKyWQq/VIRZrIsm81mIYTX6/V4PHqXE5jFYlFV1bDlmc1m3wEIVuRyM/6KbDKZZFk2bHm+7YwQwuPxeL0GvXA5PCty3bp1S5ymXr16RbfJ5VuRy7Rn2sgBSDv96yf/ezF1Z25CmxGTJw+7JD74QcCmTZu+8MILRcczMjKys7NL+X7x8fG+AJSXl2fMjbssyzVq1MjPzzfsau9b+FRVLf1sDzO73a4oimHLs1qtvgDkdDrz8vL0Liew6tWrezyenJwcvQsJLCEhwWKxCCFyc3ON+d2jKIrFYsnLy3O73XrXEoAkSb4V2ev1GnZNiYmJsdlshi3PZrP5zlVwOp3FnwGjo8TERJfLVdl7Xzp37lyaaYp+lNWqVfMFoJycnNL/VChTADLsBVVazo5Z/30udaezQY8HXnhyeHHpBwAAGNDVV1/doUOHYia4/PLLr7nmmrDV48+gAcj117IXn1+4R23U57H/PXBtkqXkZwAAAGORJOn9998PdiCsTp06H3zwQeFFc2FmyADk2DnvtZRfcxKvuvs/t3VMNGSJAACgZI0bN169evWAAQP8g44sy/3791+9enWTJk30KsyA5wCphz6f8ek+T+wVw8Z0jHUUOTwpyWab3UIqAgCgSqhbt+5HH3107NixzZs3nzhxolatWh06dKhTp46+VRkvAKmHN6zb5dQ05+b37hr5XtHH5QaDXnxnXCvjdpYCAADnq1OnTt++ffWu4izjBSDJXKNpmzaWoNduyLXqxnBCNAAAqAADBqA6Pe55pofeVQAAgAjGuTQAACDqEIAAAEDUIQABAICoQwACAABRhwAEAACiDgEIAABEHQIQAACIOgQgAAAQdQhAAAAg6hCAAABA1CEAAQCAqEMAAgAAUYcABAAAog4BCAAARB0CEAAAiDoEIAAAEHUIQAAAIOoQgAAAQNQhAAEAgKhDAAIAAFGHAAQAAKIOAQgAAEQdAhAAAIg6BCAAABB1CEAAACDqEIAAAEDUIQABAICoQwACAABRhwAEAACiDgEIAABEHQIQAACIOgQgAAAQdQhAAAAg6hCAAABA1CEAAQCAqEMAAgAAUYcABAAAog4BCAAARB0CEAAAiDoEIAAAEHUIQAAAIOoQgAAAQNQhAAEAgKhDAAIAAFGHAAQAAKIOAQgAAEQdAhAAAIg6BCAAABB1CEAAACDqEIAAAEDUIQABAICoQwACAABRhwAEAACiDgEIAABEHQIQAACIOgQgAAAQdQhAAAAg6hCAAABA1CEAAQCAqEMAAgAAUYcABAAAog4BCAAARB0CEAAAiDoEIAAAEHVMehcAAED4eDyejRs3btu2zeFw1KtXr2vXrklJSXoXBR0QgAAA0eLLL7+cPHny/v37C0cURRk8ePBzzz1XvXp1HQtD+HEIDAAQFebNmzdq1Cj/9COE8Hq9CxYs6NevX2Zmpl6FQRcEIABA5Dt48OCjjz6qaVrAR3fu3PnUU0+FtyLojAAEAIh8M2fOdDgcxUywYMGCU6dOha0e6I4ABACIfN99913xE7jd7o0bN4ASs3oAACAASURBVIanGBgBAQgAEPlOnDhR4jTHjh0LQyVRzePRu4KzCEAAgMgXFxdX4jQJCQlhqCQ6yenp9jffrNGxo/nHH/WupQCXwQMAIl/btm23bdtW/DTt2rULTzHRQ3K5LKtW2VJSzN9+KzRNCGGdNcvdsaPedQlBAAIARIMRI0bMmTOnmAk6derUrFmzsNUT8Uy//26dNcuWlib5n1ouSXIpjkWGBwEIABD5OnfuPHLkyGAZKDY29sUXXwxzSRFJysmxrFhhS001r13rP67WqeMcPtwxerS3aVO9ajsPAQgAEBVefvllq9U6Y8aM87oBNWjQ4IMPPmjTpo1ehUUG09attpQU68KFUm7u2VFZdnft6khOdvbpI8xm/aoLIMIDkCRJ5XtW+Z5Y2XxVGbY8f4atsHAe6l1IYIWFGfxTNnh5PoYt0uArsn9VxqxQlHdFtlgsU6ZMGTt27IIFC3799de8vLykpKRrr712yJAhdrs95OUJA3/KPiEpTzp92rp0qXXaNNOOHf7jaoMGzltvdYwfr15wgRCi3G9TefNQCtYWMzJommbkhQ8AgCpJVcX334tZs8SsWSI//+y4xSIGDBBjxoi+fYWi6FdfySI8AGVnZ5d+YpvNZjabhRB5eXler7fSiio/SZLi4uLy8/M9Rmql4C8+Pl4Ioapqrv8uUCOxWCxWq7VMC0Y4mUwm3y9Rl8vldDr1LiewmJgYVVWLb6qrI7vdbjKZhBC5ubmqqupdTgCyLMfGxhp8OyOE8Hq9eXl5epcTmNVqNZvNOTk5ehcSmNlsttlsQgin0+lyufQuJ7DY2FiPx1OO7Yx05Ih57lzzjBnyX3/5j6stW7pHjXKPGaPVqlXx8mJiYhRFEULk5OSUPqj4voNKKcIPgblcrtLPOIvFUvgsYyYMWZaFEG6327BrlG/h0zTNsF/esixbLBbDlleofBum8LDb7V6v17DlWa1W3x8ul8uYCUNRlNjYWLfb7Xa79a4lgMIAZOQVWVEUk8lk2PIKjzwYeUWOiYkp24rs9ZrXr7elpFg/+8y/n6FmtbpuvNGRnOzu1k34/vFQ/Ms2m80XgFwuV+l/yRCAAABAaCh//WVNTbXNnSsfPOg/7mnf3jl0qGPoUK16db1qqwgCEAAAOF/RHoY+WkKCc+BAx7hxnrZtdSyv4ghAAADgLGX3btv8+dbZs+WTJ/3HPe3bO5KTnUOGaCG9aE4vBCAAAFCVehiGBAEIAICoVuV6GIYEAQgAgGgknT5tmzPH9vHHAXsY5o8b5+thGKkIQAAARBNVNf/4o7x0qW32bP8ehprF4urd2zl0qOv66w3ewzAkCEAAAEQF+cgR64IFtpQUZd8+/3HvhRc6hg93jhql1qypV23hRwACACCiBelhKGw2Z69ejuRkd/fu+hWnGwIQAACRSfnzT2tamm3OHDk93X/c0769fOedzkGDcmVZr9p0RwACACCiBO1hWK2ac8AAx/jxnjZtEhMThcsljHrfxjAgAAEAECGUXbtsCxZEfA/DkCAAAQBQtUnZ2ZbPPgvQw7BuXeewYY4xY7xNmuhUmnERgAAAqKqis4dhSBCAAACoYqTMTOuyZbZp00y//eY/HiU9DEOCAAQAQBWhquZ162wLFliWLZMcjsJhXw9DR3Kyu1s3IUk6FliFEIAAADA6ehiGHAEIAACjCtLDULPZXFHcwzAkCEAAABhOMT0MHcnJzkGDtLg4vWqLDAQgAACMojQ9DHUsL5IQgAAA0J+vh6Ft9mzJv4ehJLk7dnQOG0YPw5AjAAEAoBspO9u6eLF1/nzzpk3+4/QwrGwEIAAAdEAPQ30RgAAACJ+gPQyTkpyDB+ePH682bKhXbVGFAAQAQOWjh6HBEIAAAKhEQXsYtmzpGDbMOXq0WqOGXrVFMwIQAACVwOtVvvkm/sMPz+9hGBfn6tvXMXQoPQz1RQACACCU5L17xdy5YsYM29Gj/uMFPQwHD9ZiY/WqDYUIQAAAhEAJPQwnTPBccomO5eE8BCAAACokcA9DWfZ26pQ/ZIhz6FDNZtOvOgRGAAIAoDyC9TDU6tWTxo4Vt93mqFfPkZ+vV3koHgEIAICyKehhmJYm5eWdHVUU9zXXOJKTpUGD4qpXF0II/w6HMBgCEAAApVLKHoY2E9+tVQAfEgAAxfL1MExJsa5aJVyuwmF6GFZpBCAAAAIr6GE4c6ayf7//OD0MIwABCACAc3m95vXrbSkp9DCMYAQgAAAKKHv32ubMsc6dKx8/7j9OD8PIQwACAEQ7yem0fP45PQyjCgEIABC9lJ07bampRXsYujt0cA4bRg/DCEYAAgBEnWA9DNW6dZ3DhjmSk72NG+tVG8KDAAQAiCLF9zB09u0r6OITHfiYAQCRr6CH4UcfmX7/3X/c26yZc/Bgx8iRvh6GiB4EIABA5KKHIYIgAAEAIpB8+LA1NZUehgiGAAQAiCDBehjGx7v69KGHIQoRgAAAkaCgh+GcOfKJE/7j9DBEQAQgAEAVRg9DlA8BCABQJQXtYdi1q2PIENeAAfQwRDEIQACAqkTKzjbNmydPn57488/+42q9es6hQ+lhiFIiAAEAqgZ6GCKEWFYAAIZWQg/DUaPUpCS9akPVRQACABhSYQ/DlSuF2104rFks6s03y3feeerSS+lhiHIjAAEAjCVoD8NWrRxDhzpHj7Y1bGiz2YT/uc9AGRGAAADG4HJZvvnGumBB0R6GzltucQ4d6r7ySh2rQ4QhAAEAdKbs2WObO5cehggnAhAAQB9BexhWr+7s398xcaLn4ot1LA+RjQAEAAi3gh6Gs2ZJp06dHaWHIcKIAAQACBMpK8u6ZIlt5kzTr7/6j9PDEOFHAAIAVDp6GMJoWOAAAJVFPn7cunixbfZspUgPQ8eoUc4RI9TatfWqDVGOAAQACLXgPQxdvXs7kpPd3brRwxD6IgABAEKmoIfhjBnKgQP+474eho7Ro7UaNfSqDfBHAAIAVFhhD8MVK4TXWzhMD0MYFgEIAFB+9DBEFUUAAgCUGT0MUdURgAAAZWDautU6f74tLY0ehqjSCEAAgJKV0MNw7Fhvo0Z61QaUAwEIAFAcehgiIrHUAgACOXLEnpISoIdh8+aOkSPpYYiqjgAEAPCjquKrr8TUqaYlS0z+PQytVteNN9LDEBGDAAQAEOJMD0P7zJli/37/cXoYIiIRgAAgqjmystSVK2utXBmzapV/D0ORkOAYOJAehohUBCAAiEaapn3x1lvuqVP7Hj1a57zHrrhC3H67Z9iwHL9DYECEIQABQHSRnE55xYq///WvkRkZ/ufynBIiVYhNnTq9tWaN3W4XHo/IzNStSqCSEYAAIFr49zBMPDOoCvG1EFOFWCqESwixaZPnrrtmzJihX5lAOBCAACDCFfQwnDHDtG2b/3i6ELOF+ECIv86dPiUl5dFHH23VqlU4iwTCzOgByHVk8+dr/8hRmnQbdFWSrHc1AFClFPQwTE2V8vMLBzVZXq2qU4VYLIQn0LM0TVuyZMljjz0WtjqB8DNyAHIcWPPxqx98vjdXk2KubT6AAAQApSIfO2ZdssQ2a5ayc6f/uK+H4b//+OONefOKf4U9e/ZUZoGA/gwagLS8P7+Y+urH3xzQataMzzuRo3c9AFAFqKp53TpbSop15UoRvIdh5iOPlOKV1MosFNCfIQOQdvqbV//17o/qBdfe+49BzmkPTt2ud0UAYGTyoUPWtDT7jBnygQP+4wF7GDYqxV1LmzVrFvoqASMxZAASHqeo1+OeB+68oaktY4XexQCAUblc1lWrrPPnW1av9u9hqMXHO2+5xZGc7GnfvuiTevXq9eyzz2qaVswL9+/fP/TVAkZiyAAkVev64Au942ySEMWtoAAQrZQ//rDNm2f95BM5I8N/3NO+vSM52XnrrVpMTLDnXnTRRYMGDVq4cGGwCW699dbLLrvM4wl4hjQQIQwZgIQpLs6YhQGAniSn0/L557aUFPO33wq/XTha9erO/v0dkyZ5Wrcuzeu88sorBw8e3LhxY9GHOnToMG3atJBVDBhVhOSMjIyMtWvXFh3v0aOH1Wot5YsoiuL7w2KxmExGnDOSJAkhLBaLLBv6ijhJkmw2m95VBOb7ZA1enu8PwxYpy7KiKEYuz/eH1Wo15pm8vgotFkvhNqdUz/rlF/PcuaZ586RTp/xfy9u9u3v8eM9NNwmLxVTqbbrNZlu5cuV77703derUffv2+QYbNWp0++2333333QkJCb46Dfspm0wmI29nzGaz7w8jr8iSJBm5PP8VufjDteUmVdLrhop2YsXjt3+w3XLtv2c91MkcdLJffvnltttuKzq+evXqatWqVWJ9AFCpTp8W8+eL998Xv/xyznhSkhg9Wtxxh2jatILvcOjQoWPHjtWuXTspKamCLwVUIUbczwEAED/9JKZOFbNni7y8s4MWi+jVSyQni1tuESHaUd2gQYMGDRqE5KWAKiRCAlBSUtJ9991XdFxV1dzc3FK+iNVq9R2AyM/PN+aec0mSYmJinE6nYU9OjI2NFUKoqprv13bWUMxms9lszvP/RjESk8nkO2jrdrtdLpfe5QRmt9tVVXU6nXoXEpjNZvMdWjLsiizLst1udzgcXr/rtgpJR4+aPvnENGOG/Oef/uNqixae5GTPmDFa7dpCCOF0ikr7CIy/IvtOVDD+iuxyudx+DZkMxW63e71ew25nClfkvLy80h+q8i26pRQhAahOnTpjx44tOp6RkVH6FdhkMvkCkGEThizLvgBk2EXWt/BpmmbY7aYQwmw2G7Y8q9VaGICMXKTH4zFseWaz2bfdDJYwdKcoit1udzqd53w1lq6HoRBCVPKclyTJ+AFIkiRFUQxbns1mM/6KbLPZjLwiF54k53A4Sv9LJhoDEABUUSX0MBwzRktMDPZcAOVGAAIAPTid1uXLA/QwTEhwDhzoGDvW066djtUBEY8ABABhpfzxh1i0KGHaNOnECf/x0vQwBBAqRgxAWva+rb8ddmhCCKFl/Z2lCaGe2LVpg6oIIYRkrX/xpY3jJX1rBICyOa+HYeE2TK1d2zlwoGPMGG/pehgCCAkjBiA1ffW7zy854n/Ok3db6ovbfH/KtW9+durtbcrQPwwA9GTautWWkmJdtEjKyTk7Ksvurl0dycnOPn2EOXiXMwCVw4gBSK51Wb/h9pwgV71JMS3rGLoNMgAIIYSUlWVdssQ2fbpp+3b/cbV+fTk5OXvUKGf9+nrVBsCIAUiqdVm/4ZfpXQUAlFPBLp/UVMn/GmOLxdWjh3PYME///om1aqmnTwujdogBooERAxAAVEXysWPWefNss2crf/3lP+5t0cIxYoRz5Ei1Vi3hd9tBADoiAAFAxZS+hyEAwyAAAUA50cMQqLoIQABQNpLLZVm1qvCC9sJxehgCVQgBCABKS/njD9u8edZPPpEzMvzH6WEIVDkEIAAogeRwWL74wpaSYl671n9crVPHOWAAPQyBqogABABB0cMQiFQEIAA4n3T6tHXp0oA9DJ1DhjjGjfNecIFetQEICQIQAJxVfA9D5003Cbr4ABGBAAQAQj561Dp/vm3WLOXvv/3Hz+thCCBiEIAARDF6GALRigAEIBrJ6enWhQvt06fLBw/6j3vat3cOHeoYMoQehkBkIwABiCIl9DAcN87Ttq2O5QEIGwIQgKig7N5tmz/fOnu2fPKk/3hBD8MhQzS7Xa/aAIQfAQhAJKOHIYCACEAAIpOyZYt9xgzrwoVSbu7ZUXoYAhBCEIAARJrMTLFkiXjvvYQtW/yH1QYNnLfeSg9DAD4EIAARQVXNP/5oXbDAkpYm8vLOjlsszt69nUOHuq6/nh6GAAoRgABUbSX0MBw1Sq1ZU6fSABgXAQhA1VTYw/Czz4THc3bcZhP9+onbb8+6/HKvqupXHwBDIwABqGKK72FonjDBUq+eEEKcOqVPfQCqAgIQgKqhlD0MzQkJ+tUIoMogAAEwOnoYAgg5AhAAg5JyciwrVthSUwP0MBw+3DF6tLdpU71qA1DVEYAAGI5p61ZbSgo9DAFUHgIQAKOQTp+2Ll1q+/hj044d/uO+Hob548ap9DAEECIEIAB6O9PD0LpggeRwnB2nhyGASkMAAqCboD0ML7zQMXw4PQwBVB4CEICw83rN69cX7WGoWa2uG290JCe7u3UTkqRjgQAiHgEIQPgof/5pTUuzzZ1btIehIznZOWiQFhenV22l4XK5VqxYsXHjxuPHj1evXr1Dhw79+/ePjY3Vuy4AZUYAAlDpStnD0ODWrVt37733Hjp0qHAkJSXlySefnDJlyoABA3QsDEA5EIAAVKKI6WG4fv364cOHu1yu88ZPnTp12223eTyewYMH61IYgPIhAAEIvQjrYehyuR566KGi6cdH07TJkydfd911iYmJYS4MQLkRgACEUkT2MFy/fv3f516ndp7MzMxly5aNHTs2XBUBqCgCEIAQiOwehps3by7NNAQgoAohAAGoAFU1r1tnW7DAsmyZfw9DzWJxRVAPw8zMzBKnOXXqVBgqARAqBCAA5SEfOWJdsMCWkqLs2+c/HpE9DGvUqBGSaQAYBwEIQFl4vdLq1eapU2ssWxa4h2H37jpWV0k6duxY4jRXXnllGCoBECoEIAClUtDDcM4cOT3df7yq9DCsiC5durRs2XL37t3BJqhZs2a/fv3CWRKACiIAAShO0B6G1ao5BwxwjB/vadNGx/LCw2QyvfHGG4MGDcrPzy/6qKIor732WkJCQvgLA1BuBCAAgSm7dtkWLCjaw1C7/HLPhAlZ/ftXlR6GIdGhQ4fFixffe++9e/bs8R+vX7/+a6+91rNnT70KA1A+BCAA55Cysy2ffRagh2Hdus5hwxxjxsRfeqnX49FycvSqUC9XXHHF+vXr16xZ88MPP5w8eTI+Pr5jx469evWyWCx6lwagzAhAAApEZA/D0FIUpWfPnuzvASIAAQiIdlJmpnXZMtu0aabffvMfV5OSnIMHV/UehgAQEAEIiFbF9jB0JCe7u3UTkqRjgQBQeQhAQNQJ2sOwZUvHsGER1sMQAAIiAAGGlpOTc/DgQVmWGzdubLVaK/RaXq95/XpbSor1s8/O6WFos7l69QpPD8OsrKz09HSTydS4cWPOHQagIwIQYFA//vjjSy+9tH79eo/HI4SwWq29evWaPHlyy5Yty/pSRuhh+N1337388ss//PCD1+sVQtjt9j59+jz22GPNmjWr7LcGgKLkcj1LPbxm9rzvDuRpJU8KoBw++OCDfv36rVmzxnNmV43T6fz000979uz5+eefl/JFJJfLumxZtVtvTezcOWbKlML0o1Wr5khOzvzmm8yvvnIkJ4ch/bzzzjuDBg1av369L/0IIfLz8xctWnTdddetWbOmst8dAIoqZwA6vvblMV2bJrW+8fb/zfn+QD5BCAihtWvXPvLII4VZwZ/D4Zg0adLff/9d/Csou3bFPvNMjbZt4ydONK9dW9DBWZLcnTrlvPLKyW3bcl55JWwdnFevXv3000+rqlr0odzc3PHjxx8+fDg8lQBAofIFICGEEJo3c9cXH/571DXNGlzc+44X5m1IJwgBofDUU08FjAs+DofjtddeC/iQlJ1tS0mpdtNNiddcY3/zTelMB2e1bt38++8/tWnT6RUrHMnJYe7g/OKLL2pa0I1DTk7Om2++Gc56AECUNwCZLrr9wzkvPzCoY5JdljRP5s7Pp/7fiKubJF3S564X52885Cj5FQAElpmZuW7duuKnKXoUzLR1a9zDD9do2zbu4YfNmzYVjMqyu3v37GnTTv7yS+5//uNt0qQS6i3B0aNHt2zZUvw0pT+oBwChUs49QJb6HYc8/PrCTfuP7P5m1v/uuvnSulZJ85z6fdX7k4df1Tjpkr53v7RgE0EIKLv9+/cHPPjlLyMjIzc3VwghZWbaUlKqd+9e/frrbSkphR2c1aSk/PvvP/nTT6fT0pz9++vYwXn//v3F7P7xSU9P9/hdlQYAYVCBQ2BCCCEnNO8++v/e/fSXg4d///LjpyfdeHFNs/Cc/G3le48N69ykYZub7pmS9uNhZ2hqBaKBLJe8VspCxHz/ffw99/h2+RR2cNYsFmf//qfT0ny7fNSGDSu52JKV6t+RZYmOiwDCq4IBqJApsdX145/4cNWOQ+lbV7z/7zE9mifInowdn737zyFXNk5q2++BNz7dcaqEX7UAhGjcuLE5+A6bBkI8JsRfilJ75EjrggWFHZy9LVvm/uc/p7Zty542zd29u3E6ODdp0qTEDNS4cWNFUcJTDwD4hCoAFbLUbtv3jmdTvtm9d93rw1vHSUJo7ozty998cEC7xq37PjJz8wliEFCM+Pj4G2644bxBRYjrhVggxD4hXhCi0ZljZFpcnHPo0NNpaae++y7//vvVGjXCXm8Jatas2blz5+Knuemmm8JTDAAUCnkAchz5eenb/xxxTfOmXR+c93uOJoSQrLUvqBcjadl/rHxl/FVtev77i8OEICC4Z599trBLckshXhAiXYgvhRji17rU0759ziuvnNy+Pfudd8LQwbkiHn/8cZMpaM/VWrVq3XPPPeGsBwBECAOQ49CmBS/d3feSpAs6DLxvyrzv/s7xClNi6z53T1n40/6D+w8e/HXRc8PbVpe8R9c+f0uff63L4pJ5IIjLLrtsxgcfjDSbvxRipxCPCVH3zEOnJWl/796Za9YU9DCMjdWz0NLp2LHj66+/HvDGF7Vr1547d24N4+24AhDxKnwrDOfhH5fNnjFj5vwvf8tw+0KNJMc1vmbw+EmTxg3u0iim4FQEyyUD/zW399D+d/QdN+uPX9945N1x309uzVF/oIjffhMpKcM//HCE2104pgqx2Wze3bnz5a+9Vqdx4yp3xdSwYcPat2//+uuvf/XVV6dPnxZCNGjQYODAgffdd1+tWrX0rg5ANCp3AHIe2fzp7BkzZs77YseZ4CMkW/0r+o2ZOGniiOtbVgu0b8nWYsT7M3/e1O3lnVs+X33on60vCPkROKCKkrKzrYsX21NTxYYNQojCc5jVunUz+/fPGTGiWdu2VfqmWRdddNH777+vaVpGRobFYklISNC7IgBRrXwByLvzpR6XT95wpvOzZKrRuteIiZMmjb7p0jol3N/Z3uHmGxq8tvNw1mkOggFCCGHautWWkmJNS5Py8s6OKor7mmscycnOvn2FyRSjX3mhJUkSu3wAGEH5ApDmys93a0KS45p0GzJ+4qRxg6+6wF7ay24lSRJCqpZY3SjX6QJ6kDIzrcuW2T76yPT77+c80KKFGDUqf8SI3Jo1dSoNACJf+QKQZKl7xdDH7h43cXjPCxPKeBjL3OWlHaefE4o9luNfiEaqal63zpaSYl21SrhchcOaxeLq3ds7cWJMv35CkrS8POG/QwgAEFLlC0DKRXdO+6S8b6lYY2Ot5X0yUGXJR45YFyywzZyp7N/vP+5t2dIxbJhz9Gi1Rg2r1WqcHoYAEMEqfBUYgOJ5veb1620pKdbPPhN+d7zS4uJcffs6hg41eBcfAIhIBCCgsih799rmzLHOnSsfP+4/7mnf3pGc7Bw8uEp08QGAiEQAAkJMcjotn39uS0kxf/ut8LsRulatmnPAAMeECZ5LLtGxPACAIAABIaTs3GlLTbXNni2dPHl2VJbdHTo4hw1zDh2q2Wz6VQcAOIsABFSUr4ehLSXFtHWr/7hat65z2DBHcrK3cWO9agMABEQAAsqvND0M9asOABAUW2egzIL1MPQ2a+YcPNgxapSalKRXbQCA0iAAAaVWbA9DR3Kyu1s3uvgAQJVAAAJKJh8+bE1NDdDDsFUrx9Chvh6GetUGACgHAhAQXLAehvHxrj596GEIAFUXAQgIoKCH4Zw58okT/uP0MASAyEAAAs4qoYfhxImeiy/WsTwAQKhEeAAym82a39dY8WS54P70JpNJMuSprL4KTSZT6f8pXUiSZDab9a4iMEVRhBBFy1N27jTPm2eZOVM6dersqCx7unVzDx/uHjhQs9kkISr7v/KV5/vDsPNQkiRZlo1cnu8Pk8lUuFIbSuGKrHchgRXOQIOvyAYvr/APwxZZhVbkSvrKkwz+VVpBmqYZM8rAKLKyxLx54oMPxM8/nzPeoIEYM0bcfrto1kynygAAlSjCA9Ap/1/zJYmNjbVYLEKIrKwsr9dbaUWVnyzL1apVy8nJcbvdetcSWGJiohDC6/VmZWXpXUtgNpvNZrNlZmYqW7ZYZ860pKYW7WHoGjfOddNNuvQwtFgssbGxQgiHw5Gfnx/+AkojISHB4/Hk+c83I4mLi/P9qDXsiqwoSkJCgmFXZEmSqlevLoy9ItvtdqvVmpmZqXchgVmt1piYGCFEfn6+w+HQu5zAqlWr5na7Dbsix8fH+/aSnj59WlXVUj7L9x1USgbdBxsqqqqWPuEVTqmqqjG3m74KDVueP8NWqJ08KZYvj3/jjZJ7GOrxLxSu50b+lDVN0zTNyOX5/vB6vYYtUhi4vMK95kb+lH3bdiOXV/iHYYvUNM3g5fn+8Hq9pQ9AZRLhAQgoUNjDcOVK4XYXLvf0MASA6EQAQoQr6GE4Y4Zy4ID/uK+HoWP0aI0ehgAQfQhAiFAul+Wbb6wLFhTtYSiNGHG6f3/3lVfqWB0AQF8EIEQaZc8e29y5wXoYyqNH22vXdmdk6FUeAMAICECIEEF7GFav7uzfv7CHod1u169GAIBREIBQ5Sk7d9pSU22zZp3Xw9DdtatjyBDXgAGazaZfdQAAIyIAoaqSsrKsS5bYZs40/fqr/7har55z6FBHcrK3cWO9agMAGBwBCFWPaetWW0qKNS2taA9DR3Kys29fXXoYAgCqEL4nUGXIx49bFy+2zZ6tFOlh6Bg1yjlihFq7tl61AQCqFgIQDO/cHoaFw/QwBACUGwEIxkUPQwBAJSEAwXgKexiuWOF/Qy4tPt55DBfZMQAAIABJREFUyy3OoUPpYQgAqCACEAyk+B6Gzltv1WJi9KoNABBJCEDQXyl7GAIAECoEIOjJtHWrdf58W1pagB6GycnO3r2FxaJfdQCAiEUAgg5K6GE4dqy3USO9agMARAMCEMKKHoYAACPgywbhIB87Zl2yJEAPw+bNHSNH0sMQABBmBCBUpmA9DK1W14030sMQAKAXAhAqBT0MAQBGRgBCSLlcYulSeebMGqtW0cMQAGBYBCCEhq+HoZg3Txw75n9Mix6GAAADIgChQkroYThpkqd1ax3LAwAgIAIQyilYD0Nx3XXqpEknu3alhyEAwLAIQCibgh6GM2aYtm3zH1fr13cOGWJ/8EHRtKnm9Qr/VAQAgMEQgFBaBT0MU1Ol/Pyzo+f2MLTXqqVfgQAAlBYBCCUo6GE4a5ayc6f/eEEPw5EjVUIPAKCqIQAhCHoYAgAiFwEI55MPHbKmpdlnzJDpYQgAiFAEIJzhcllXrbLOn29ZvbpoD0NHcrKnfXsdqwMAIIQIQBDKH3/Y5s2zfvKJnJHhP04PQwBApCIARS96GAIAohYBKBoV9DBMTZUyM8+OyrK7a1dHcrKzTx9hNutXHQAAlY4AFEWK72HoGDvW26iRXrUBABBOBKCoELiHocXi6tHDOWyYr4ehftUBABBufO1FMvnYMeu8ebbZs5W//vIfp4chACDKEYAiET0MAQAoFgEoopTQw3DMGC0xUa/aAAAwDgJQJJBcLkvAHoYJCc6BAx1jx3ratdOxPAAAjIYAVLXRwxAAgHIgAFVJZ3sYrl3rP67Wru0cONAxZoyXHoYAAARHAKpqfvrJ9vbb8WlpUk7O2UF6GAIAUBYEoKpBOn3aunSpfcYMsW2bxW+8oIfhuHHeCy7QrTgAAKoaApDRldDD8KabhKLoVx0AAFUSAcig5KNHrfPnF+1hKFq1co4cmTt0KD0MAQAoNwKQwRTbw9A1blz8wIHO7GzV5dKxRgAAqjoCkFEE62Hoad/eOXSoY8gQLTFRlmU6OAMAUHEEIJ35ehjaUlLM334rNK1wnB6GAABUHgKQbuhhCACAXghA4SY5HJYvvgjQw7BOHeeAAfQwBAAgDAhA4VNwQfuiRfQwBABAXwSgSufrYWibPt20fbv/OD0MAQDQCwGo0miaedMm64IF9DAEAMBoCEChV9DDcNYs5e+//ce9LVo4RoxwjhxJD0MAAPRFAAqdYnsYOpKT3d260cWn3DZu3Lho0aIdO3a43e6GDRv27Nlz8ODBVqtV77oAAFUSASgE5PR068KF9unT5YMH/cf9exjqVVsEyMvLu//++5cuXVo48vPPPy9btuzVV1+dNm1a+/btdawNAFBFEYDKr4QehuPGedq21bG8yKBp2oQJE1avXl30oX379t16662ff/55s2bNwl8YAKBKIwCVk2XFiviHHpJOnTo7JEnuq692jB7t6tdP49BMiCxfvjxg+vHJzMx88sknZ82aFc6SAAARgABUTt6WLQvTT0EPw+Rk70UX6VtV5Jk3b17xE3z55ZcZGRk1a9YMTz0AgMhAACon74UXujt1EnY7PQwr1bZt24qfwOv1/vbbb127dg1PPQCAyEAAKr/TS5cKEzOwcuX4d80OIisrKwyVAAAiiax3AVUZ6afy1a5du8Rp6tatG4ZKAACRhAAEQ+vSpUvxEyQkJLRr1y48xQAAIgYBCIZ22223KcXeMGTChAkWiyVs9QAAIgMBCIbWunXrp556KtijnTp1evjhh8NYDgAgQhCAYHR33nnnhx9+2KBBA/9Bi8UyadKktLQ0m82mV2EAgKqL03hRBQwcOLBv374bNmz47bffHA5H48aNu3btWot7ygIAyosAhKrBYrF069atW7duehcCAIgEHAIDAABRhwAEAACiDgEIAABEHQIQAACIOgQgAAAQdQhAAAAg6hCAAABA1CEAAQCAqGPgRojOo1vXfPX9r38dzXLJcXWatOnc87orkuyS3mUBAIAqz6AByHts3TtPv7X6gEMTkiQJoWmbv/ty2bKudz/x4HVJBq0ZAABUFYYME2r68tfeWn3QXavjmLvG9740KcZ17LfVM9+e+d26d19p2OSl4c0MWTUAAKgqjHgOkHPr0qW/O+Skfg8/OqRDw3iTpMTUbdvvwUcHNpbde5cv3Jij6V0hAACo0gwYgNy7Nmw+qSpNr+t1kc1v2NL8hp6tFC375+9/dehWGwAAiATGC0Dqkd1/nFLlxFat6p9bnFTrola1ZS1/z659Xp1qAwAAEcGAAejooaOqkGvXq3N+bXLterVloWUcPurSpTIAABAhjHc6sTsn26kJOT4+7vwr3qW4+DhZaGp2VrYmzr0e/sCBA7NmzSr6YnfddZfdbi/lO5tMBXMjJiZGVdWyl17pJEkSQthsNovFonctxZFlOS4uTu8qAjOZTJIkGbY8RVF8f1gsFlk23u8TIYQQsiybzWbDzkP/FVnTjHjGoG9FttvtVqtV71qKw4pcboUrstVqLfzbaAy+IhfOt9jY2EpakQ0XgDSn06UJIZnMRUuTzBZFEl63260JcU4AOnHixKJFi4q+2j333GOz2YqOF8/g8cLg5QkhJEkqx2wPJ4OXJ4QwmUyFX+TGZNjNeiGDxwvjr8iyLBt8TTF4ecLwK7LBy/OpvBXZeD8xfT+ORKBdMJrXqwohybJCO0QAAFB+hot+ki3WLktCdTgc5x/n0lyOfFUTUkxMkYNaLVq0ePfdd4u+mtfrPX36dCnfOiYmxmw2CyFycnK8XiOeaC3Lcnx8fF5entvt1ruWwKpVqyaEUFU1Oztb71oCs1qtVqs1KytL70ICM5vNMTExQgin0+lwGPR6x7i4OK/Xm5+fr3chgRWuyNnZ2cY8lq0oSlxcXG5ursfj0buWACRJSkhIEEJ4vd6cnBy9ywnMdyaAYVdki8XiO/vC4XA4nU69ywksPj7e7XYbdjsTGxvr2zuVlZVV+kNgvu+gUjJcABKmGrUSJXH81IlTqkg8Zx+7dvL4KVVIcbVqxZ6/Byg+Pr5Tp05FXywjI6P0WaFwW+nxeIy5YfKdFOLxeAwbgHw0TTNshb41yrDlFZ734/V6DVukpmmqqhq5PN8fHo/HmL9kfJsaw67IBXvhjb0im81mI5dXeICYFbnc/FfkSvolY7xDYHLDpo3Mknrkr7/zzot8jr//TFclU+NmjY1+7gEAADA04wUgKa7tZS3NwrVj409Z/glIy/7ph+1OoTS7/NJETgECAAAVYLwAJKRa1/TulCDyNs2ZuenUmd1e6qnNKXM25Ii4Dn2vrW/AogEAQBVivHOAhJCqdRk7bt2OtzaufuGBvztffWnDmPz0X7/f8Eem9v/t3XlgVNXZx/FzZ0tmspCVJISwSFgExVARVIgolCpFBa3ia9VXbSuiVglSrbK5AYogIsEFxAr61lJE3CgCghBUlIBQEAQCIexCyJ7MnWSWe98/BjCQxSRDmMmc7+evmJmDT+7c557f3DXqivv/dA37fwAAgG8CMQAJYUgY9LeplvffXLjixw3L9+lCKEpI/KU33zvq7vREzv8BAAA+CswAJISwJKf/eXL/u4qPHDle5jJHJqa0jQ5h1w8AADgfAjYACSGEUEKjU1Kj/V0FAAAIMpxPDAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQDgEIAABIhwAEAACkQwACAADSIQABAADpEIAAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQDgEIAABIhwAEAACkQwACAADSIQABAADpEIAAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQDgEIAABIhwAEAACkQwACAADSIQABAADpEIAAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdEz+LqB5Wa1WRVEa+GaTyXRmlKZpzVZU03n/ltDQULPZ7O9a6mMwGMLCwvxdRe1MJpOiKAFbntFo9P5gsVgavupeYAaDwWw2B/4ytFqtuq77t5hanWlki8Xi71rqE8iNbDabA7mRz8wmFovFYAjQHQ0tpZFtNlszNbISmBuI88Xj8TR85Tsz3wTyMlGUgP7IWIa+8y5DKmwyVkLfBf4yDPCVUFChz5q2Ejbqe2OQ7wEqKSlp+LKLiIgICQkRQpSWlrrd7uasq4kMBkNMTEx5ebnT6fR3LbWLi4sTQng8nuLiYn/XUjur1Wqz2QoLC/1dSO1CQkIiIiKEEA6HQ1VVf5dTu6ioKLfbXVFR4e9CahcZGends1JSUuLxePxdTi2MRmN0dHRZWZnL5fJ3LbVQFCU2NlYI4Xa7S0pK/F1O7Ww2W2hoaFFRkb8LqV1oaGh4eLgQQlVVh8Ph73JqFx0d7XQ67Xa7vwupXatWrbzHOoqLixt+TMY7BzVQgO6aAwAAaD4EIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQDgEIAABIhwAEAACkQwACAADSIQABAADpEIAAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQjsnfBbRI+fn5Bw8eVBSlU6dO0dHR/i4HAAA0DgGocdatWzdt2rTNmzd7/9NgMKSnp48fP75Xr17+LQwAADQch8AaITMzc8SIEWfSjxBC07SsrKyhQ4d++OGHfiwMAAA0CgGoobKysl544QVd12u+5HK5Ro8evXv37gtfFQAAaAICUEPNmDGj1vTj5XK5Zs2adSHrAQAATUYAapDS0tLs7Oz63/Pll19emGIAAICPCEANcuzYMU3T6n9PWVlZSUnJhakHAAD4ggDUIGaz+Ty+DQAA+BcBqEHatm0bEhJS/3vatGkTFhZ2YeoBAAC+IAA1SGho6ODBg+t/z4033nhhigEAAD4iADXU008/bbVa63o1NjZ2zJgxF7IeAADQZASghurSpcuCBQsiIyNrvpSQkLBo0aK4uLgLXxUAAGgCAlAjDBw4cP369Q888EBKSor3N6mpqRkZGevXr09LS/NvbQAAoOF4FljjJCcnT506derUqU6n02AwmEwsQAAAWh7m7yayWCz+LgEAADQRh8AAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0jH5u4DmZTAYNE1r4JtVVa2srBRC6LquKEpz1tVEiqJ4awvM8oQQpaWl3h8CtkIRwJ+vEMLlcnmXoaZpAVukrusigD9iu93ucDhEAH/QLaWRA3YBegVyeU6nk0b2kd1u99bWfB+04l0EEEJMmjRp+fLlQoj33nuve/fu/i6nRerTp4+mae3atVu6dKm/a2mRVq1aNW7cOCHEyJEjR44c6e9yWqTHH398/fr1QoilS5e2a9fO3+W0PA6HIz09XQhx8cUXv//++/4up0X6+OOPp0yZIoTIyMi4++67/V1OizRq1KjNmzcLIVasWBEXF9cc/wsOgQEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIfL4H+Rm5tbWFgohOjRo0dYWJi/y2mRsrOzhRChoaE9e/b0dy0tUlFR0b59+4QQycnJycnJ/i6nRcrJySkpKRFC9OzZMzQ01N/ltDyapnkvPw4LC+vRo4e/y2mR8vPzDxw4IIRISUlJSkrydzkt0q5du8rLy4UQaWlpFoulOf4XBCAAACAdDoEBAADpEIAAAIB0CEAAAEA6BCAAACCdIH8afJ10df+qt155J+uwM2H4S2/+qZvx14doB//9eMY/93tqe818RcbCCQPDA/Shus2k6ujXC2a+tXxfhfXa8e+P6WNu4DBdPfjNx0uWf7t9/4kypzG8dYdLrrrhttuu6yTZ0vMU/rj8w4+/2rznSKGqhUS16XL5dcNH3Pib1r9yrYPnx7kPTPxPgVbLS0rEoIkLRvdu6OfQMullOauXfLRy40+H8ivclsikTpf1v/H2W65KCW3A2uPL2CDSxAbUi7+Y9Jc3t7lqe83Y9f43pt2SJNXXaa105yeZsz7YdMLT+d45L/8huaF/fBMbPxgFwCwsYwDSy/d8/sar72045tQbswtMd9hVXSi21h3aRJ77SZmSIowybUV1x8E182fOX52n6kI05g/Xy7e9O3HKp/urRGhMu9SLw5z5B3I2LN2zadOep6aM6h0lyzL0HF354vi3NhVphojEi7q1N5Yd2b9t1cLtG//758kTbmpf36ZQc6iqrigRCRcl1Oh0W+uw4J6C9IJvXxs/c+3PbsUW36FrSoj6c97OrH/tzP5hxKTn/9jdVu/a48vYINL0BtRV1aEJJSQ2JSX63DXU0DbKLMsSFEIIT9G2xa+99uF/C9y6EA2Ytn8Z2OTGDzYBMgvLFoB0NefTV15+f/PJkNQbRrTZ9lHW8UYMtau6MPf449SJA6W+SZDz8OrMF+etPypSBtx58ZHFK3MbPrRyxwevf7a/KvzSP47/++3dIw1C6GrushnPz9+8Ys67vTIzroyQYTOq5698651NxUqbQWMnPnRNG4sQwl2Q/c7zLy/ftjDzs8um3dau7m2qS1XdugjvO3L6Y70la169bMO7b6097ont++CEMUMusilCaKU7/jV1yuLdSzIX9Zr1p+4hzTI2mPjQgLpqV4Uwdhw2YdrwRBnatA566bYPpr2yZGd55KW33Bq65uPsioYP9aHxg0kAzcLB/Y2xJi3/h7Vb1Q5Dn3zlxZFXJzbqaIFHVSuFYrTZZMrptdDLf1y3oSD+2kdenp4xuIO1EZtCvey7z9ae0EMuufOxEd0jvaueYut04yN39bKK4m8/X18gxT2pPPtWLNtRqcQPHvWgdyMohDDF9bl/1JAkg3Pf8uU7nXWP1VW7qgnFam3Mcg8O+omvPvu+TIRfdd+j3gQjhDC0uuR//vqHzkbt2OrPsyvqXnt8GRtEfGrAX1a9C1RtgPIc+m7NbqX7iEkzn7u7V2xjJlBfGj+oBNAsLFsAUkI73vDEKy+O7JfU2AWoO+yqrgurTb6p5xzmNumPTJuR8btGhR8hhKjcsXmHQ5i6pfdrXX2kEnPVNZdYhGvPpv+WSTAPaUe2bPnZY4jrk97jrJsUW7qmX5lg0Iq2bMqt9Qi3EEII3aE6dKFYw6SbhfTirT/kuoUtLb1PZPW1x9i2X79Ug27fvmlnVXOMDSY+NaDuUB1CUaw2yU6ZOpcS0f0Pk2Y+f1ev2EburvGp8YNKAM3CsgUgQ+KVQ65q9GIXQgjdoaqaMBCAlMi06wd2bMJS8Pycd7BSN7ROvSjy7MGKrWNqkkF3Hdx3UIItQNWh/cc0xdQhteM5h7CM7VI7WhStYP/+4jqnIe8eYMVqs8nWuZ7DeYdcujGl80XnHKxS4jt1jFJ09cD+n+tae3wZG0R8akC9SlXdugix2eQ4TFMnY4drhqY1NvwI4WPjB5UAmoUlO43AB95D4MJqFT9vWbF+484DJ+1aSGRCx55XD0zvERfcl96cH5784yc1ocTE19hvbIiNizGIA2UnTzp0EeSnAWkFx0+6dBEVF1fjrBNzbFyUIvIL8gs1EVf7Fvb0OYChnoMbP1+/efehQocIjUru3Ct94NWprYJ4atLtx09U6IopNr7GibqGmPgYgygqOFGgiY61LQJfxgYT3xrQG71tVmPBzjVZ327ff7zMbY6Ib9+973XXpiVJvleoIXxrfAghmmEWJgA1mGp36EI79tlzo8vLXWeS+rdfLVuydNAj4x8ekMSyrJ9LdXh0YbDVTO9KqM2mKEKzV9iFiPBLcReM7rA7RB3fYaw2qyJ0e4W9zi+CmqpWCuHe839Pjikv95x52zdrPvmw87DHx93XOyZY9ww5HA5diBCbtUabKd7F5qywu4SodRvoy9gg4lMD6g67Qxd6SdaMx5aVVZ5Z875b98VHH13553Fjft+Rp87Wy7fGh9f5noWZtBtKc6iqLkSlnjT4gTFDr+7RNlIpP7oja/G7H3xzaM3sF6OTZtzTRfLTo+unO11OXQjFZKq50nl/WeVxexp5WX0L5HI5dSGMtS0Fo9kohPC43XVtB/VKVfXoQlSaO9z4yB3X9+2aGOYpObD1yw/e/fCHnE9nTI+dMXlY26D8Cqk7q1y6EEZTLX+dyWRShNDrXHt8GRtEfGtAXVVVXehOV3T/ex65ZcBl7aON6ok9Gz5Z8N6qfd+/PfWdhFcfvlyyW3k1ki+ND6/zPgsTgBrKdMk902ffqofGJCdEnNqQRrfvPfxv7cOrMjKzDy7/eOMtT6azBaiHyWgUQgiX2y3EOSup7na5vVvh4F+ARqNRCOF2u2u84l0Kop6loIT1fWhWZqWwxSbHn77nT1xqvzvHtQsZP3bhrl2fLts5ZFTPoMzh3vjidtVykorb7dKFMJhMdd0FxJexQcSnBjR0vOWZ2YM8plaJbaJODW6V3HPIw8/GesZMXZ2/dmnWiN8MjQ/+hdh0vjQ+vM77LByUAUjd8FrG2/+tdstS8+WjMv/a17c7fSi2uJT2cTV/HX/NDX0XblpdnrPrgJZ+SbB8+3b/+I8xr35d7eJgU9e7Xvr7b2N9aFAlJDzcrAinw67q4uwbz+lqharriiEsIngSpJ6/cuq4Rft+mXOVVteOfeXeHkpYRLgiTqh2tea3PbVC1YUhvJ6lYIxonVLLIQpT28HX9/zX7uzi3bt+1nq2D8LDYEp4eJhBiCrV7j53q6WrFQ5dKCER4XUkP1/GBhHfGlAJjU5uF13z15GX35CetHbpsX0/7XUOjZfjbkpN4lvjQwjRDLNwUAYgvbK8qLCw2k0VLOXO5tu3aIyJjTKIMrtd1Rp3V9CAVlVRVFhYXi0AlTpqe/xCYxjjE+IM4sjJEwXnnuqnFZwo0IQSm5gQROcRaI7SosLCX77uKVqFSxfCGJsQb1Zy7fk1zzetOplfogtDfFJ8oxOMYo2NsQlRqtodwbkXXQlLaB2u6GUF+YWaOPuxA56T+Sc1YWid2LqOxebL2GDSPA1oiI6LVsRRt6pW6SKEGbwuhmZpfHg1dRYOygAUNnDCkoHn/5/VnOXFDnNMq3OueNBKiks1oUREhAfR2mvq/dg/P33s/P6bxuTUi2zKoYK9ewv1btVvRKKX7M05rikhnboE0b4LJXH4y0uH1/JCaMfObQ3f5ebl5Lp+m1Z9v4Mrd0+uWzcmd+4UWc804qksLXNZoyPO2WNRVVziEEIJjwwL0inI2KFzR/OqrYdzch0iufo9YLVjOXsrdCUyNTWxrrXHl7FBxMcG1J0VJaqhVdQ5d2DQSotKdaFYIiK4FKxePjY+hBDnfRaWoO3PD/s3L991+91/Gbdo79lPA9TV7Ru2lOmKtXO39kGz+6eZhFzSNy1c8eRkrT9S/WwMz7H1a3e7hfXSvmnBOntXZ2jT+4p2RlG8cd3W6hd96Oq2td8Xacakvn3rvB5bL1g+4Y47/vcvL/zn6Nm74/Ti7G93VOmG6C5dgnUmV1r16nOxRVRuW7uhsPpOLue+dV8f8ihRva/sXudRLF/GBhMfGtC1/a0/j7jrvjHzt6hnv+DM3ZB9TFPMqV07BftVdD7yofHhdf5n4SDdWvpKO5z13ty5cxesO3R6Q2FLG9A3SniOLMuc9/XR01eBamU5y159fU2hbmzz26G9pX5AWA36yex/z5s7d/4XOWdusquEX3HT4LYG994ls/+5rdi7ZD0lPy6avXiPy9Bm8C39WkmQf4Qwtv/dzZeHi5Kst19fc8i7KumVh9e+MW9tkR6WNuyGzqdb2LVv5fy5c+ct+j7/1PqmxPYZ0NMmXHsWz3rvh4LT2wB30bZFM/6RXSEsqUOG9AjaWUiJGzAsPVZRt7yf+UnOqbPTXPkb/zHn8yOapfNNN6edPnpTs3kbPja4NbgBazavuds1/ZMMomjt3MwV+0/P37p66Ks3Zn122COirx6a7ssJgsGnRvM2ovEhhLgws7Ci68F5zkDtPDv+b/z8TadOk3AWHz1W4jK1Smob4z13z9j290+OvT7RIIR7y5z7n1tVFj5o4oLRvU9NKXrJ5nkTX15+sFIYbfHt2ydYtZJjB46UVAlDTK/7Jjw1LFWOjagn75Ops9cWePdAuMt/PlJQpYS3bhfvPatSib7mrxP/kGoUwrPvvceeWHLYcEXGwgkDfzm5rzLn388++8FPFcISndIxyVZ5PO9QcZWwXfzHZ5+9o6s0z3fQCr6ZNe7VrONuQ3hCx5RoUXwk70S5ZkwcMGZyRvqZ01Ec66bcM3Oju82t016/r+upjaN2ImvmxNlfH3cJU0Rih3axIVXFhw8eK3MJS2L/h54ZMyg5KA9qn6KXbZ0/4cVlB6qENbZ9+9aWiqN5R0vdSvTlIyc//fuU09GvtuZt6Njg16AGrK15dXX3omefX7S7Qiih0e06tIkQFccPHip06CKi6+1PTbzr0iC/g6mXbt84b9IHP3lP7dMdBYdZv9SaAAAE0klEQVRPlGuWmOQ2rbxrkKnriGce6hep1N68DW38IBdIs3Awby5roaknD+TlnXUavqv0WF6p90ejUlLPI4GUqN4jp8+8bNknKzds33dk708uozUq4ZL+V1x787CBXaPkCe9VRYfz8o5XPwSjV5w4cOqRyIaKHpX1jg7tcsdz09t/8u9P123N3bfLZY5M6nHtgGEjhvdNlukCEkNc/4zpcd0XL1m5cefBPfnCGtfhimuvv23E77q1+pWNoCFhwNhX2vb+7LM1G3fsP7z7hNscFptyWe++g4fd1L9jsF9EokT2+stL0zovWfyfb7bn5ezSQmOS064fdOsdN14W96sbMl/GBpMmN6Bi63bn5FndVny8/Outew7n7jqihETGd7nyNwOGDh/cM16KQ4hCCOEpP34gL++sIzBVRUfyirw/miPL632mStMbP4gE0iws2R4gAAAAzgECAAASIgABAADpEIAAAIB0CEAAAEA6BCAAACAdAhAAAJAOAQgAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASMfk7wIAwAdVuz56bfGPqm5IGDDywesSz/lOp5dmL8z84oBbmDoMefTePq0U/xQJIPAQgAC0ZCEXdXJ9ce/zG+2GtrlJWxcMj6uecSq+fu7ekbN2u42pDy0fHUn6AfALDoEBaNFC0p6YN75vmOI5+sHYSatL9V9eqdz88ug39riEufOot6b+Nor8A6AaAhCAFs7Sc+y8iVeFC3fe/IzJG+ynfuvaOXv0zG1Vwtz14blTBnLwC8DZCEAAWjzLpWPmTeoXLly75jw2fUuVEMKT+3bG1O/swtLt0bkvXMvRLwDnUnRd//V3AUCAc/30yqArn/i6wtZvWvaaOzff0ev+TwtNPcau+X56/3B/1wYg8BCAAAQJ165XB185Nqsi8uqbrshbtvq46dInv/rupavD/F0XgEBEAAIQNFx7Xvtd3zHrSnUhlNDLnl63YUpfm79rAhCYOAcIQNAwp940rGeIIoQQxvYDh1xK+gFQFwIQgGChHXj30cnfVgpFURR3zht/nfy96u+SAAQqAhCA4ODJe+fhp1YU6iE9n1g4dUCkqNo+c+TzZ66KB4CzEIAABAPP/ncefmploW65+NE5k+4ZO2f8VWGiasesB5/7psLfpQEIRAQgAC2fJ/fth59eVaSbUkdmTuwXJsw9Rs/5++VWUbXztQefWV/u7/IABB4CEICWzpM77+FxXxbpxg5/mv38dd67Hob0+tvrY3qGCOeuOQ9Oyirzd4kAAg0BCEDL5tk396Hxq4s1Y9u7Xp1yffSZmz5b+zyd+Ug3s3Duef3BiV+VcsMPANURgAC0ZO69bz00fk2xZki6fca0m896FrwI7/9M5shOJuHKefOhCUQgANWZ/F0AADSd+/BeZ/roif0Mra954LbEcx/5pUQOnPz+vMSVB93CfGRPmd6HZ6ICOIU7QQMAAOlwCAwAAEiHAAQAAKRDAAIAANIhAAEAAOkQgAAAgHQIQAAAQDoEIAAAIB0CEAAAkA4BCAAASIcABAAApEMAAgAA0iEAAQAA6RCAAACAdAhAAABAOgQgAAAgHQIQAACQDgEIAABIhwAEAACkQwACAADS+X/hCuu368a3ZAAAAABJRU5ErkJggg==" width="384" style="display: block; margin: auto;" /></p>
+<p>Confidence interval at 90%: <span class="math inline">\(\bar{X}_d \pm
+(1.90)(\frac{S_d}{\sqrt{n}})\)</span> = <span class="math inline">\(0.749 \pm (1.90)(\frac{0.838}{\sqrt{8}})\)</span>
+= (0.187, 1.31)</p>
+<p>Interpretation: We are 90% confident that the mean difference in
+price (Leary’s - Lilac) is between 0.187 and 1.130. On average, dry
+cleaning at Leary’s costs between 0.19 and 1.13 dollars more than at
+Lilac.</p>
+<hr id="d16-2">
+</div>
+</div>
+<div id="large-sample-inferences-concerning-the-difference-between-two-population-or-treatment-proportions" class="section level2">
+<h2>Large-Sample Inferences Concerning the Difference Between Two
+Population or Treatment Proportions</h2>
+<p>Notation:</p>
+<ul>
+<li><p>Population or Treatment 1: <span class="math inline">\(p_1\)</span></p></li>
+<li><p>Population or Treatment 2: <span class="math inline">\(p_2\)</span></p></li>
+<li><p>Sample from Population or Treatment 1: size (<span class="math inline">\(n_1\)</span>), proportion (<span class="math inline">\(\hat{p}_1\)</span>, read as p-hat 1)</p></li>
+<li><p>Sample from Population or Treatment 2: size (<span class="math inline">\(n_2\)</span>), proportion (<span class="math inline">\(\hat{p}_2\)</span>, read as p-hat 2)</p></li>
+</ul>
+<p><strong>Properties of the Sampling Distribution of <span class="math inline">\(\hat{p}_1 - \hat{p}_2\)</span></strong>: For
+independently selected random samples, the following properties
+hold:</p>
+<ul>
+<li><p>Center: <span class="math inline">\(\mu_{\hat{p}_1 -
+\hat{p}_2}\)</span> = <span class="math inline">\(p_1 -
+p_2\)</span></p></li>
+<li><p>Spread: <span class="math inline">\(\sigma^2_{\hat{p}_1 -
+\hat{p}_2} = \frac{p_1(1 - p_1)}{n_1} + \frac{p_2(1 -
+p_2)}{n_2}\)</span></p></li>
+<li><p>Shape: If both <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span> are large (if <span class="math inline">\(n_1p_1 \geq\)</span> 10, <span class="math inline">\(n_1(1 - p_1) \geq\)</span> 10, <span class="math inline">\(n_2p_2 \geq\)</span> 10, and <span class="math inline">\(n_2(1 - p_2) \geq\)</span> 10), then <span class="math inline">\(\hat{p}_1\)</span> and <span class="math inline">\(\hat{p}_2\)</span> each have a sampling
+distribution that is approximately normal. The difference <span class="math inline">\(\hat{p}_1 - \hat{p}_2\)</span> also has a sampling
+distribution that is approximately normal.</p></li>
+</ul>
+<hr />
+<div id="summary-of-a-large-sample-z-test-for-p_1---p_2-0" class="section level3">
+<h3>Summary of a Large-Sample Z Test for <span class="math inline">\(p_1
+- p_2\)</span> = 0</h3>
+<p>Null Hypothesis: Ho: <span class="math inline">\(p_1 - p_2\)</span> =
+0</p>
+<p>Alternative Hypothesis: Ha: <span class="math inline">\(p_1 -
+p_2\)</span> &gt; 0 (OR <span class="math inline">\(p_1 - p_2\)</span>
+&lt; 0 OR <span class="math inline">\(p_1 - p_2\)</span> <span class="math inline">\(\neq\)</span> 0)</p>
+<p>Test Statistics: Z = <span class="math inline">\(\frac{\hat{p}_1 -
+\hat{p}_2}{\sqrt{\frac{\hat{p}_c(1 - \hat{p}_c)}{n_1} +
+\frac{\hat{p}_c(1 - \hat{p}_c)}{n_2}}}\)</span> where <span class="math inline">\(\hat{p}_c = \frac{n_1\hat{p}_1 + n_2\hat{p}_2}{n_1
++ n_2}\)</span></p>
+<p><span class="math inline">\(\hat{p}_c\)</span> is the combined
+estimate of the <strong>common population proportion</strong> (under the
+null hypothesis).</p>
+<hr />
+<p>A hotel chain is interested in evaluating reservation process. Guests
+can reserve a room by using either a telephone system or an online
+system that is accessed through the hotel’s web site. Independent random
+sample of 80 guests who reserved a room by phone and 60 guests reserved
+a room online were selected. Of those who reserved by phone, 57 reported
+that they were satisfied with the reservation process. Of those who
+reserved online, 50 reported that they were satisfied. Based on these
+data, is it reasonable to conclude that the proportion who are satisfied
+is higher for those who reserve a room online? Test the appropriate
+hypotheses using <span class="math inline">\(\alpha\)</span> = 0.05</p>
+<ul>
+<li><p>Notation: 1 (online), 2 (telephone)</p></li>
+<li><p>Hypotheses: Ho: <span class="math inline">\(p_1\)</span> - <span class="math inline">\(p_2\)</span> = 0 versus Ha: <span class="math inline">\(p_1\)</span> - <span class="math inline">\(p_2\)</span> &gt; 0</p></li>
+<li><p>Evidence: <span class="math inline">\(\hat{p}_1\)</span> = <span class="math inline">\(\frac{50}{60}\)</span> = 0.8333; <span class="math inline">\(\hat{p}_2\)</span> = <span class="math inline">\(\frac{57}{80}\)</span> = 0.7125; <span class="math inline">\(n_1\)</span> = 60; <span class="math inline">\(n_2\)</span> = 80.</p></li>
+<li><p>Common population proportion, <span class="math inline">\(\hat{p}_c\)</span> = <span class="math inline">\(\frac{50 + 57}{60 + 80}\)</span> = 0.7642</p></li>
+<li><p>Test statistic: Z = <span class="math inline">\(\frac{0.8333 -
+0.7125}{\sqrt{(0.7642)(1 - 0.7642)(\frac{1}{60} +
+\frac{1}{80})}}\)</span> = 1.667</p></li>
+<li><p>At <span class="math inline">\(\alpha\)</span> = 0.05, the
+rejection region is (1.645, <span class="math inline">\(\infty\)</span>)</p></li>
+<li><p>Since Z=1.667 <span class="math inline">\(\in\)</span> (1.645,
+<span class="math inline">\(\infty\)</span>), there is enough evidence
+to reject Ho.</p></li>
+</ul>
+<hr />
+<p>Is someone who switches brands because of a financial inducement less
+likely to remain loyal than someone who switches without inducement? Let
+<span class="math inline">\(p_1\)</span> and <span class="math inline">\(p_2\)</span> denote the true proportions of
+switchers to a certain brand with and without inducement, respectively,
+who subsequently make a repeat purchase. Test Ho: <span class="math inline">\(p_1 - p_2 = 0\)</span> versus Ha: <span class="math inline">\(p_1 - p_2\)</span> &lt; 0 using a <span class="math inline">\(\alpha\)</span> = 0.01 and the following data:
+<span class="math inline">\(n_1\)</span> = 200, number of successes =
+30; <span class="math inline">\(n_2\)</span> = 600, number of successes
+= 180. (Similar data is given in “Impact of Deals and Deal Retraction on
+Brand Switching,” J. Marketing, 1980: 62-70.)</p>
+<ul>
+<li><p>Ho: <span class="math inline">\(p_1 - p_2 = 0\)</span> versus Ha:
+<span class="math inline">\(p_1 - p_2\)</span> &lt; 0</p></li>
+<li><p>Test Statistic: Z = <span class="math inline">\(\frac{\hat{p}_1 -
+\hat{p}_2}{\sqrt{\hat{p}_c(1 - \hat{p}_c)(\frac{1}{n_1} +
+\frac{1}{n_2})}}\)</span></p></li>
+<li><p><span class="math inline">\(\hat{p}_1\)</span> = <span class="math inline">\(\frac{30}{200}\)</span> = 0.15, <span class="math inline">\(\hat{p}_2\)</span> = <span class="math inline">\(\frac{180}{600}\)</span> = 0.3, <span class="math inline">\(\hat{p}_c\)</span> = <span class="math inline">\(\frac{30 + 180}{200 + 600}\)</span> =
+0.2625</p></li>
+<li><p>Z = <span class="math inline">\(\frac{0.15 -
+0.3}{\sqrt{(0.2625)(1 - 0.2625)(\frac{1}{200} +
+\frac{1}{600})}}\)</span> = -4.18</p></li>
+<li><p>At <span class="math inline">\(\alpha\)</span> = 0.01, the
+critical region is ( <span class="math inline">\(-\infty\)</span>,
+-2.33].</p></li>
+<li><p>Since the Z <span class="math inline">\(\in\)</span> ( <span class="math inline">\(-\infty\)</span>, -2.33], reject Ho.</p></li>
+</ul>
+<hr id="d16-3">
+</div>
+</div>
+<div id="a-large-sample-confidence-interval-for-p_1---p_2" class="section level2">
+<h2>A large-Sample Confidence Interval for <span class="math inline">\(p_1 - p_2\)</span></h2>
+<p>Assumptions:</p>
+<ul>
+<li><p>The samples are independent selected random samples or treatments
+were assigned at random to individuals or objects (or
+viceversa).</p></li>
+<li><p>Both samples are large: <span class="math inline">\(n_1\hat{p}_1
+\geq\)</span> 10, <span class="math inline">\(n_1(1 - \hat{p}_1)
+\geq\)</span> 10, <span class="math inline">\(n_2\hat{p}_2 \geq\)</span>
+10, <span class="math inline">\(n_2(1 - \hat{p}_2) \geq\)</span>
+10</p></li>
+</ul>
+<p>A large-sample confidence interval for <span class="math inline">\(p_1 - p_2\)</span> is</p>
+<ul>
+<li><span class="math inline">\((\hat{p}_1 - \hat{p}_2) \pm
+(Z_c)\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} +
+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\)</span></li>
+</ul>
+<hr />
+<p>USA Today (February 16, 2012) reported that the percentage of U.S.
+residents living in poverty was 12.5% for men and 15.1% for women. These
+percentages were estimates based on data from large representative
+samples of men and women. For purposes of this exercise, suppose that
+the sample sizes were 1200 for the sample of men and 1000 for the sample
+of women. Use the survey data to compute and interpret a 90% confidence
+interval for the difference in the proportion living in poverty for men
+and women. <span class="math inline">\(\phantom{Peck5, ex11.42,
+p.602}\)</span></p>
+<ul>
+<li><p>Formula: <span class="math inline">\((\hat{p}_1 - \hat{p}_2) \pm
+Z_{crit}\sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 -
+\hat{p}_2)}{n_2}}\)</span></p></li>
+<li><p>On Table 3 (textbook’s appendix): At 90% confidence level, <span class="math inline">\(Z_{crit}\)</span> = 1.645.</p></li>
+<li><p>Sample 1: <span class="math inline">\(\hat{p}_1\)</span> = 0.151,
+<span class="math inline">\(n_1\)</span> = 1000</p></li>
+<li><p>Sample 2: <span class="math inline">\(\hat{p}_2\)</span> = 0.125,
+<span class="math inline">\(n_2\)</span> = 1200</p></li>
+<li><p><span class="math inline">\((0.151 - 0.125) \pm
+(1.645)\sqrt{\frac{0.151(1 - 0.151)}{1000} + \frac{0.125(1 -
+0.125)}{1200}}\)</span></p></li>
+<li><p><span class="math inline">\(0.026 \pm
+(1.645)(0.015)\)</span></p></li>
+<li><p>(0.0013, 0.051)</p></li>
+<li><p>Interpretation: We are 90% confident that the difference in the
+proportions living in poverty for men and women (women – men) is between
+0.13% and 5.1%.</p></li>
+</ul>
+<hr />
+<p>The Insurance Institute for Highway Safety issued a press release
+titled “Teen Drivers often Ignoring Bans on Using Cell Phones” (June 9,
+2008). The following quote is from the press release: <em>Just 1–2
+months prior to the ban’s Dec. 1, 2006 start, 11 percent of teen drivers
+were observed using cell phones as they left school in the afternoon.
+About 5 months after the ban took effect, 12% of teen drivers were
+observed using cell phones.</em> Suppose that the two samples of teen
+drivers (before the ban, after the ban) can be regarded as
+representative of these populations of teen drivers. Suppose also that
+200 teen drivers were observed before the ban (so <span class="math inline">\(n_1\)</span> = 200 and <span class="math inline">\(\hat{p}_1\)</span> = 0.11) and 150 teen drivers
+were observed after the ban. <span class="math inline">\(\phantom{Peck5,
+ex11.43, p.602}\)</span></p>
+<p><em>a)</em> Construct and interpret a 95% confidence interval for the
+difference in the proportion using a cell phone while driving before the
+ban and the proportion after the ban.</p>
+<ul>
+<li><p>On Table 3 (textbook’s appendix): At 95% confidence level, <span class="math inline">\(Z_{crit}\)</span> = 1.96.</p></li>
+<li><p>Sample 1: <span class="math inline">\(\hat{p}_1\)</span> = 0.11,
+<span class="math inline">\(n_1\)</span> = 200</p></li>
+<li><p>Sample 2: <span class="math inline">\(\hat{p}_2\)</span> = 0.12,
+<span class="math inline">\(n_2\)</span> = 150</p></li>
+<li><p><span class="math inline">\((0.11 - 0.12) \pm
+(1.96)\sqrt{\frac{0.11(1 - 0.11)}{200} + \frac{0.12(1 -
+0.12)}{150}}\)</span></p></li>
+<li><p><span class="math inline">\(-0.01 \pm
+(1.96)(0.035)\)</span></p></li>
+<li><p>(-0.079, 0.059)</p></li>
+</ul>
+<p><em>b)</em> Is zero included in the confidence interval of Part (a)?
+What does this imply about the difference in the population
+proportions?</p>
+<ul>
+<li><p>Zero is included in the confidence interval.</p></li>
+<li><p>This tell us that we do not have convincing evidence at a 0.05
+significance level of a difference between the proportion of teenagers
+using a cell phone before the ban and the proportion of teenagers using
+a cell phone after the ban.</p></li>
+</ul>
+<hr />
+<p>In a study of a proposed treatment for diabetes prevention, 339
+people under the age of 20 who were thought to be at high risk of
+developing type I diabetes were assigned at random to two groups. One
+group received twice-daily injections of a low dose of insulin. The
+other group (the control) did not receive any insulin, but was closely
+monitored. Summary data <em>(from the article “Diabetes Theory Fails
+Test,” USA Today, June 25, 2001)</em> follow: </p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Group</th>
+<th align="left">n</th>
+<th align="left">Number with Diabetes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Insulin</td>
+<td align="left">169</td>
+<td align="left">25</td>
+</tr>
+<tr class="even">
+<td align="left">Control</td>
+<td align="left">170</td>
+<td align="left">24</td>
+</tr>
+</tbody>
+</table>
+<p><em>a)</em> Use the given data to construct a 90% confidence interval
+for the difference in the proportion that develop diabetes for the
+control group and the insulin group.</p>
+<p>Checking the conditions:</p>
+<ul>
+<li><p>We are told that the people were randomly assigned to the two
+groups. Also,</p></li>
+<li><p><span class="math inline">\(n_1\hat{p}_1 \geq\)</span> 10, <span class="math inline">\(n_1(1 - \hat{p}_1) \geq\)</span> 10, <span class="math inline">\(n_2\hat{p}_2 \geq\)</span> 10, <span class="math inline">\(n_2(1 - \hat{p}_2) \geq\)</span> 10; <span class="math inline">\(n_1\)</span> = 169, <span class="math inline">\(\hat{p}_1\)</span> = <span class="math inline">\(\frac{25}{169}\)</span>, <span class="math inline">\(n_2\)</span> = 170, <span class="math inline">\(\hat{p}_2\)</span> = <span class="math inline">\(\frac{24}{170}\)</span>. The samples are
+large.</p></li>
+</ul>
+<p>Calculation:</p>
+<p>The 90% confidence interval for <span class="math inline">\(p_1 -
+p_2\)</span> is</p>
+<ul>
+<li><p><span class="math inline">\((\hat{p}_1 - \hat{p}_2) \pm
+(Z_c)\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} +
+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}\)</span></p></li>
+<li><p><span class="math inline">\((25/169 - 24/170) \pm
+(1.645)\sqrt{\frac{(25/169)(144/169)}{169} +
+\frac{(24/170)(146/170)}{170}}\)</span></p></li>
+<li><p>(-0.056, 0.070)</p></li>
+</ul>
+<p><em>b)</em> Give an interpretation of the confidence interval and the
+associated confidence level.</p>
+<ul>
+<li><p><em>Confidence Interval:</em> We are 90% confident that the
+proportion of people receiving insulin who develop diabetes minus the
+proportion of people not receiving insulin who develop diabetes is
+between -0.056 and 0.070.</p></li>
+<li><p><em>Confidence Level:</em> Consider the process of randomly
+selecting 339 people at random from the population of people thought to
+be at risk of developing type I diabetes, randomly assigning them to
+groups of the given sizes, performing the experiment as described, and
+then calculating the confidence interval by the method shown in Part
+(a). Ninety percent of the time, this process will result in a
+confidence interval that contains <span class="math inline">\(p_1 -
+p_2\)</span> , where <span class="math inline">\(p_1\)</span> is the
+proportion of all such people who would develop diabetes having been
+given the insulin treatment, and <span class="math inline">\(p_2\)</span> is the proportion of all such people
+who would develop diabetes having not been given insulin.</p></li>
+</ul>
+<p><em>c)</em> Based on your interval from Part (a), write a few
+sentences commenting on the effectiveness of the proposed prevention
+treatment.</p>
+<ul>
+<li><p>
+Since zero is included in the interval, we do not have convincing
+evidence (even at the 0.1 level) of a difference between the proportions
+of people developing diabetes for the two treatments. In fact, the great
+closeness of the proportions for the two groups tells us that virtually
+no significance level (however large) will give us a significant result.
+We have virtually no evidence whatsoever that the insulin treatment is
+more effective than no treatment at all.
+</p></li>
+</ul>
+<hr />
 </div>
 </div>
 
