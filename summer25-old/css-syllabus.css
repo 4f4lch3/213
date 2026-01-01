@@ -49,7 +49,7 @@ td, th {
 
 /*Mobile Layout: Stack Vertically*/
 
-@media (max-width: 768px){
+@media (max-width: 480px){
 
 	#toc {
 		width: 100%;
