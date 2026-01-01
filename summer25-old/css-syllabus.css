@@ -52,20 +52,19 @@ td, th {
 @media (max-width: 768px){
 
 	.page-wrapper{
-		flex-direction: column;
-		height: auto;
-		overflow: visible;
+		display: block;
 	}
 
 	#toc {
-		flex: none;
 		width: 100%;
 		max-width: none;
 		overflow: visible;
+		padding-bottom: 1rem;
 	}
 
 	#content {
-		overflow: visible;
+		width: 100%;
+		padding-top: 1rem;
 	}
 }
  
