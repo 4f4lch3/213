@@ -44,7 +44,7 @@ td, th {
 
 
 
-/*Mobile Layout: Stack Vertically*/
+/*Mobile Layout: Stack Vertically
 
 @media (max-width: 768px){
 
@@ -65,5 +65,7 @@ td, th {
 		overflow: visible;
 	}
 }
+ 
+*/
 
 
