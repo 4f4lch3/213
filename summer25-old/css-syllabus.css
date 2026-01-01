@@ -52,18 +52,18 @@ td, th {
 @media (max-width: 768px){
 
 	.page-wrapper{
-		display: block;
+		display: block !important;
 	}
 
 	#toc {
-		width: 100%;
-		max-width: none;
+		width: 100% !important;
+		max-width: none !important;
 		overflow: visible;
 		padding-bottom: 1rem;
 	}
 
 	#content {
-		width: 100%;
+		width: 100% !important;
 		padding-top: 1rem;
 	}
 }
