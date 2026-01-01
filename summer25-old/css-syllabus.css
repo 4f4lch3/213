@@ -1,4 +1,7 @@
 
+<style>
+
+
 p {
 	font-size: 18px
 }
@@ -44,7 +47,7 @@ td, th {
 
 
 
-/*Mobile Layout: Stack Vertically
+/*Mobile Layout: Stack Vertically*/
 
 @media (max-width: 768px){
 
@@ -66,6 +69,6 @@ td, th {
 	}
 }
  
-*/
 
+</style>
 
