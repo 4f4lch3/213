@@ -1,0 +1,69 @@
+
+p {
+	font-size: 18px
+}
+
+
+tr {
+	border-bottom: 1px solid black;
+	font-size: 18px
+}
+
+td, th {
+	padding: 8px
+}
+
+
+.page-wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+#toc {
+	flex: 0 0 250px;
+	padding: 1rem;
+	max-width: 300px;
+	background: #EEEEEE;
+	position: sticky;
+	top: 0;
+	max-height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#syllabus{
+	flex: 1;
+	min-width: 0;
+	padding: 1rem;
+	overflow-y: auto;
+}
+
+
+
+/*Mobile Layout: Stack Vertically*/
+
+@media (max-width: 768px){
+
+	.page-wrapper{
+		flex-direction: column;
+		height: auto;
+		overflow: visible;
+	}
+
+	#toc {
+		flex: none;
+		width: 100%;
+		max-width: none;
+		overflow: visible;
+	}
+
+	#content {
+		overflow: visible;
+	}
+}
+
+
