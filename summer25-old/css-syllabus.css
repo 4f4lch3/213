@@ -52,7 +52,7 @@ td, th {
 @media (max-width: 480px){
 
 	#toc {
-		width: 100%;
+		width: 50%;
 		padding-bottom: 1rem;
 	}
 
