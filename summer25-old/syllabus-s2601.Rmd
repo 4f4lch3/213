@@ -1,0 +1,663 @@
+---
+output: html_document
+css: "css-syllabus.css"
+---
+
+<div class="page-wrapper">
+
+<div id="toc">
+
+- <a href="#t1"> Course Description </a>
+
+- <a href="#t2"> Learning Outcomes </a>
+
+- <a href="#t3"> Course Information </a>
+
+- <a href="#t4"> Technical Requirements </a>
+
+- <a href="#t5"> Working with ALEKS </a>
+
+- <a href="#t6"> Students </a>
+
+- <a href="#t7"> Knowledge Checks </a>
+
+- <a href="#t8"> Learning vs Mastering </a>
+
+- <a href="#t9"> Exams Rules </a>
+
+- <a href="#t10"> ALEKS Schedule </a>
+
+- <a href="#t11"> Class Schedule </a>
+
+- <a href="#t12"> Grading </a>
+
+- <a href="#t13"> Points Breakdown </a>
+
+- <a href="#t14"> Final Grade </a>
+
+- <a href="#t15"> Additional Resources </a>
+
+- <a href="#t16"> Attendance </a>
+
+- <a href="#t17"> Emergency Situations </a>
+
+- <a href="#t18"> Calculator </a>
+
+- <a href="#t19"> General Information </a>
+
+- <a href="#t20"> Syllabus Change Policy </a>
+
+- <a href="#t21"> College Policies </a>
+
+- <a href="#t22"> ALEKS Support </a>
+
+
+</div>
+
+
+<div id="syllabus">
+
+<center style="font-size:20px; background-color: #60269E; color: white;">
+
+# Hunter College of CUNY 			
+
+**STAT 113 -  ELEMENTARY PROBABILITY AND STATISTICS <br> SYLLABUS - SPRING 2026** 
+
+</center>
+
+
+<hr id="t1">
+
+
+**COURSE DESCRIPTION** 
+
+An Introduction to applied statistics and statistical computing. Hands-on data analysis. Graphical inference. The five number summary, box plots, scatterplots, normal probability plots. Elementary probability. Statistical estimation and hypothesis testing. Linear regression. Students are expected to analyze real data sets and write reports. Prerequisites: C or better in MATH 101 or equivalent; Pre or Co-Req ENGL 120, or permission of the Statistics Advisor.
+
+<hr id="t2">
+
+**EXPECTED LEARNING OUTCOMES**
+
+At the end of the course, students in STAT 113 will be able to 
+
+- Demonstrate an understanding of basic Probability and Statistics
+
+- Interpret and draw appropriate inferences from quantitative representations, such as formulas, graphs, or tables.
+
+-  Use algebraic, numerical, graphical, or statistical methods to draw accurate conclusions and solve mathematical/statistical problems. 
+
+- Represent quantitative problems expressed in natural language in a suitable mathematical/statistical format.
+ 
+- Effectively communicate quantitative analysis or solutions to mathematical and statistical problems in written or oral form. 
+ 
+- Evaluate solutions to problems for reasonableness using a variety of means, including informed estimation.
+ 
+- Apply mathematical/statistical methods to problems in other fields of study.  
+
+- Use a computer-based data-analysis package to analyze data and 
+
+- Write reports on analyses using non-technical language.
+
+<hr id="t3">
+
+<div style="background-color:#FFFFBD;">
+
+**COURSE INFORMATION** 
+
+- Section: *1*
+
+- Schedule: *Monday and Wednesday* 
+
+- Time: *8:30am  -  9:45am*
+
+- Room: *HN 305 (In Person)*
+
+- Instructor: *Alejandro Falchettore*
+
+- Email: *afalche@hunter.cuny.edu*
+
+- Office Hours: *Monday, 1:00pm  -  2:00pm. (ZOOM Link available in Brightspace)*
+
+- Course Coordinator: *Dr. Bora Ferlengez, bf55@hunter.cuny.edu*
+
+- Your Course Sites: *Brightspace, ALEKS (www.aleks.com) and R software.*
+
+</div>
+
+<hr id="t4">
+
+**TECHNICAL REQUIREMENTS**
+
+- Students will have computers in the classroom but will also need access to a computer for working on ALEKS outside of class time.
+
+- If you do not have this, spaces are available in the Hunter College Library where you can do your work. See <a href="https://hunter.cuny.edu/focus/information-for-students" target="blank"> https://hunter.cuny.edu/focus/information-for-students/</a> and scroll down for both Study Spaces and Computer Labs and Student Technology Resources. 
+
+
+<hr id="t5">
+
+
+**WORKING WITH ALEKS**
+
+- You will sign into the program on the first day of class. 
+
+- Although you will be able to access the materials free for several classes before you must purchase them, please arrange to have money available for the purchase when the time comes. Your deadlines will not be extended. 
+
+- If you purchase ALEKS through AKADEMOS because of a scholarship, let us know. The price is higher through that vendor. If you need emergency funding for housing or food, contact <a href="https://hunter.cuny.edu/students/health-wellness/emergency-support-resources/" target="blank">Emergency Support and Resources</a>.
+
+- Your instructor will introduce you to ALEKS and there are a number of video tutorials to also help you with the program. 
+
+- Once you take your initial Knowledge Check, you will be assigned the learning objectives that you are to learn. Each time you log in, you will see what you are to do next. 
+
+- All the deadline dates must be met for you to do get full credit for the modules. That is, in order to earn the full 35 points for the Modules, all material must be completed on time. 
+
+<hr id="t6"> 
+
+**STUDENTS** 
+
+- **It is extremely important you manage your time well for this course. For each hour you spend in class, expect to spend another three (3) hours outside of class working on the material.** However, depending on your level of preparation, you may have to spend more time in order to progress satisfactorily or you may spend less time because you come in knowing a lot. 
+
+- Each assignment has a due date. Missing a due date has consequences. Hard work is important but it does not guarantee you a grade. If you find you are not progressing as you would like, it is up to you to seek more help from your instructor or from the <a href="https://www.hunter.cuny.edu/dolciani" target="blank">Dolciani Math Learning Center</a> on the 7th floor in the Hunter College Library and also online. 
+
+- Do not fall behind. A good recommendation would be to consider possible delays in your life and try to complete the work 1-2 days before the actual due date. 
+
+- Deadlines will not be extended. When you do not complete work on time, you lose points. 
+
+- *NOTE:* The class syllabus, available on the ALEKS site gives you the amount of time an average student will take to master each objective. Master means learn the material so that you still know it when the exam comes around. Be sure to set aside enough time so you will be successful in this class.
+
+<hr id="t7"> 
+
+**KNOWLEDGE CHECKS**
+
+- In your first class, you will take a knowledge check or KC--if you miss the first day, you are not excused from the KC. You must take it in order for your VOE to be certified. 
+
+- Although there are 154 learning objectives in the course, your KC may identify material that you already know and can skip. You will also do one KC after a due date for one or sometimes two objectives. 
+
+- Depending on how you do on each KC, you may be able to skip material, or you may be sent back to redo material that you have not completely mastered. If you are required to redo materials, you will not lose the points you have gained but you will lose time because you need certain material in order to be able to learn the next topics. 
+
+- Statistics is similar to mathematics in that it is cumulative. What you learn at the beginning of the semester, you will use throughout the rest of the course. At the end of the course, there is a required, scheduled final knowledge check--**5% of your grade comes from taking the final knowledge check, KC**.
+
+
+<hr id="t8"> 
+
+**LEARNING VS MASTERING**
+
+- The ALEKS program is set up to identify what you know and what you still need to work on. For that reason, if is important to do the work on your own. 
+
+- The Learning Objectives are what you will be tested on in the midterms. 
+
+- Each post-module KC will show whether you have mastered the material in a Module or whether you need to go back and review material. 
+
+- It is wise to do the KC immediately after completing the module. Clicking "don't know" on a KC may mean that you complete it more quickly, but it will ultimately also mean that you are required to repeat material before moving forward. 
+
+- You must complete all your post-module KCs prior to taking each exam. If you fail to take the Post Module Knowledge Check, you may find that your access to your exam is blocked until you have completed it. That may result in your having less time to complete your exam.
+
+<hr id="t9"> 
+
+**IN CLASS and EXAM RULES**
+
+- Be on time to class. Use the class time to get answers to questions you may have. Organize so that you do not have to leave the room while taking an exam. 
+
+- During the test, you are not allowed to access any other screen other than that of the actual exam. If there is any evidence that you have done that, your exam will be voided and you will be subject to disciplinary action. 
+
+- The ALEKS calculator will be available for most of the exam. If it is not available for a particular problem, you are to do that problem by hand. 
+
+- At some point in the semester (once or more than once), the instructor may ask to see your ID. If asked, please comply with the teacher's directions.
+
+
+<hr id="t10"> 
+
+**ALEKS SCHEDULE** 
+
+<center>
+
+<table style="width:auto; table-layout:auto;">
+
+<thead>
+<tr style="border-top: 1px solid black">
+<th style="text-align:left"> Assignment </th> 
+<th> Available<br>(12:01 am) </th>
+<th> Due Date<br>(11:59 pm) </th>
+</tr>
+</thead>
+
+<tr> 
+<td style="width:30%"> Initial KC </td> 
+<td style="text-align:center">  August 28  </td> 
+<td style="text-align:center"> August 28  </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 1 </td> 
+<td style="text-align:center"> August 28  </td> 
+<td style="text-align:center"> September 13  </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 2 </td> 
+<td style="text-align:center"> August 28 </td> 
+<td style="text-align:center"> September 13 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 3 </td> 
+<td style="text-align:center"> September 16 </td> 
+<td style="text-align:center"> September 29 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 4 </td> 
+<td style="text-align:center"> September 30 </td> 
+<td style="text-align:center"> October 21 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 5 </td> 
+<td style="text-align:center"> October 24 </td> 
+<td style="text-align:center"> November 6 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 6 </td> 
+<td style="text-align:center"> October 24 </td> 
+<td style="text-align:center"> November 6 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 7 </td> 
+<td style="text-align:center"> November 7 </td> 
+<td style="text-align:center"> November 18 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Module 8 </td> 
+<td style="text-align:center"> November 21 </td> 
+<td style="text-align:center"> December 13 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> ALEKS Pie </td> 
+<td style="text-align:center"> August 28 </td> 
+<td style="text-align:center"> December 19 </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Final KC </td> 
+<td style="text-align:center"> December 20 </td> 
+<td style="text-align:center"> December 21 </td> 
+</tr>
+
+</table>
+</center>
+
+
+<hr id="t11"> 
+
+**CLASS SCHEDULE** 
+
+
+<center>
+
+<table style="width:auto; table-layout:auto;">
+
+<thead>
+<tr style="border-top: 1px solid black">
+<th style="text-align:left">Date</th> 
+<th style="text-align:left">SECTION 1</th>
+</tr>
+</thead>
+
+<tr> 
+<td style="width:30%"> Jan 26 </td> 
+<td> <a href="lect-1.html"> Initial Knowledge Check </a> </td> 
+</tr>
+<tr> 
+<td style="width:30%"> Jan 28 </td> 
+<td> <a href="lect-2.html"> R and Categorical Data </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Feb 2 </td> 
+<td> <a href="lect-3.html"> Quantitative Data </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Feb 4 </td> 
+<td> <a href="lect-4.html"> Introduction to Data Day 1 and Review for Exam 1 </a> </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **Feb 9** </td> 
+<td> **Exam 1** *(ALEKS  -  Modules 1-2)* </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%;"> **Feb 11** </td> 
+<td> **Data Day 1** </td> 
+</tr>
+<tr>
+<td style="width:30%"> Feb 18 </td> 
+<td> <a href="lect-5.html"> Summarizing Two Quantitative Variables </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Feb 23 </td> 
+<td> <a href="lect-6.html"> The Least-Squares Regression Line </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Feb 25 </td> 
+<td> <a href="lect-7.html"> Side-by-Side Box Plots </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 2 </td> 
+<td> <a href="lect-8.html"> Back-to-Back Stem Plots </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 4 *(Tuesday)*  </td> 
+<td> <a href="lect-9.html"> Introduction to Data Day 2 </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 9 </td> 
+<td> <a href="lect-10.html"> Review for Exam 2 </a> </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **Mar 11** </td> 
+<td> **Exam 2** *(ALEKS  -  Modules 3-4)* </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **Mar 16** *(Friday)*  </td> 
+<td> **Data Day 2** </td> 
+</tr>
+<tr >
+<td style="width:30%"> Mar 18 </td> 
+<td> <a href="lect-11.html"> Sampling Distribution </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 23 </td> 
+<td> <a href="lect-12.html"> Point Estimator and Confidence Interval </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 25 </td> 
+<td> <a href="lect-13.html"> Introduction and Hypothesis Testing </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Mar 30 </td> 
+<td> <a href="lect-14.html"> Testing for a Population Proportion: Z Test </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Apr 13 </td> 
+<td> <a href="lect-15.html"> Testing for a Population Mean: T Test </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Apr 15 </td> 
+<td> <a href="lect-16.html"> Introduction to Data Day 3 </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> Apr 20 </td> 
+<td> <a href="lect-17.html"> Review for Exam 3 </a> </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **Apr 22** </td> 
+<td> **Exam 3** *(ALEKS  -  Modules 5-6-7)* </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **Apr 27** </td> 
+<td> **Data Day 3** </td> 
+</tr>
+<tr>
+<td style="width:30%"> Apr 29 </td> 
+<td> <a href="lect-18.html"> The Chi-Square Goodness-of-Fit Test </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> May 4 </td> 
+<td> <a href="lect-19.html"> Review for Exam 4 </a> </td> 
+</tr>
+<tr>
+<td style="width:30%"> May 6 </td> 
+<td> <a href="lect-20.html"> Introduction to Data Day 4 </a> </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **May 11** </td> 
+<td> **Data Day 4** </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **May 13** </td> 
+<td> **Exam 4** *(ALEKS  -  Module 8)* </td> 
+</tr>
+<tr style="background:#FFFF97">
+<td style="width:30%"> **May ** </td> 
+<td> **Final Exam (9:00  -  11:00 am)** </td> 
+</tr>
+
+</table>
+</center>
+
+
+<hr id="t12"> 
+
+**COURSE GRADING**
+
+To make a good grade:
+   
+- Your work on the modules should be completed ON TIME and your final Pie score should be 100%. (The module scores and your PIE score together constitute 35% of your grade). Any work you do not complete on time results in a lowered grade. You may have one late pass but this can only be assigned by your instructor and you must ask for it. Send your late pass request to **afalche@hunter.cuny.edu** 24 hours before the due date.
+   
+- You must take four (4) exams. All four exams are counted. If you have a conflict, you need to notify your instructor prior to the exam so that you may schedule to take the exam on-site in the Testing center prior to the date of your class' exam date. With permission from your instructor, you may take a makeup exam at the end of the semester. These exam grades contribute 30% of your final grade. The final exam is cumulative.
+   
+- You must complete all four (4) Data Day assignments (20%) and a REQUIRED semester-long independent data project all on time for an A or A+. For a grade of A- or less, the Independent Data Project is not required but can be done for guaranteed extra 2 points credit toward the maximum of 5 extra credit points. All your data assignments must be completed using the statistical software **R**. Your projects will be not be given a grade if you use a different software.
+   
+- You must take the final exam (10% of your final grade).
+   
+- You should take the final KC. **It counts as 5 points.**
+   
+- There is up to an additional 5% extra credit available to you. *See the Grade Points Breakdown below.*
+
+Your letter grades are determined by the standard Hunter College system of grading. 
+
+> It is not overwhelming to complete all the work on time provided you do a little every few days. If you wait and try to do it all at one setting, it is much harder. Also, if you don't space it out and, instead, try to cram all the work in on one day, you may find that you have to go back and redo things because you don't remember the material when you take the post module KCs (required for the course).
+
+
+<hr id="t13"> 
+
+**GRADE POINTS BREAKDOWN**
+
+<li style="font-size:18px">Mastery Work on ALEKS modules (35)</li>
+
+> There are eight modules in the course. The eight modules contain 154 unique learning objectives. You will receive 25% credit for **completing work by the given due dates;** for work not completed by the due date but completed by the end of the class, you will receive an additional 10%. The last possible date to complete work on any module is **May 13, 2026**. So, if all the work is completed by the module due dates, you get 35 full points--25 for completing 100% of the learning objectives on time plus the 10 additional points for PIE Mastery of 100%. If you complete half of the learning objectives (50%) by the module due date and then complete all the rest by the end of the semester, you will get 12.5 points for completing half by the module due dates and an additional 10 points for having 100% pie completion by the end of the semester--22.5 total points.
+
+
+
+<li style="font-size:18px">Knowledge Checks (5)</li>
+
+
+> There is a Knowledge Check (KC) at the beginning and end of the course and one at the end of each Module. The Post-Module KCs will identify what you still need to know prior to your Midterm Exams. The KCs are required in this course. The final KC counts 5 points.
+
+
+
+<li style="font-size:18px">Video Assignments (0)</li>
+
+> There are a number of **optional** video assignments. These are very useful if you are having problems with a particular topic. I urge you to look at these--most are very short. These are not required and contribute nothing to your grade but will make learning topics easier. Missing these assignments will not block you from moving forward but missing them may make it harder to learn. 
+
+<li style="font-size:18px">Tests (30)</li>
+
+> There are four **required** closed-book  midterm tests on the material you are learning. See above dates. The tests count 30% of your grade. A missed exam is a test grade of zero. Your tests will be graded and you will be given feedback when all scheduled test days are past so, when everyone has taken Test 1, you will be able to see what you missed, etc. If you have a legitimate reason to miss an exam, and if you contact the instructor, with documentation, within 24 hours of the exam time, you may be able to take a makeup. That is entirely up to your instructor to decide. If you take a make-up, it may have to be in person in the Hunter Testing Center or at the end of the semester. You are not guaranteed to have the option for a make-up exam. Each case is decided on its merit.
+
+<li style="font-size:18px">Final Exam (10)</li>
+
+> The final exam will be on **May, 9:00am  -  11:00am**. It will be given on Aleks. The final exam contributes 10% of your grade. You will be able to see your grade for the final exam on Aleks. You will not be able to review the final exam after you take it. If the final exam grade is a part of a grade appeal, a committee of faculty will review the final to make sure that it was graded properly.
+
+
+
+<li style="font-size:18px">Data Days (20)</li>
+
+> You and your class will be using R to analyze data during the semester. I will teach you what you will need for the particular assignment on a class prior to each DataDay. If you miss class, get notes from a classmate. Four (4) class periods will be set aside for the DataDay assignment. Work needs to be completed and submitted by the end of your class. Your work will be graded using a uniform rubric and you will be given feedback within 7 days. If you miss DataDay, there is a makeup available *but there is a 10% penalty.* You will lose 2 points out of the 20 possible for that assignment. The data part of the course counts 20% of your grade. On DataDays, be sure to come to class on time so you can complete the work. 
+
+
+
+<li style="font-size:18px">Independent Data Project--Required for an A in the course (0)</li>
+
+> **The Independent Data Project must be completed satisfactorily and on time by a student in order to receive an A.** Students completing this but not earning an A will receive up to 2 extra credit points for completing this (there is a maximum of 5 extra credit points available to you in total). This is a TURNITIN project and cannot show more than 40% of the project to be copied from other sources in order to get credit--the numbers may be the same but the words may not.) You must do the work entirely on your own. 
+
+<li style="font-size:18px">Extra Credit (0-5)</li>
+
+> Regular attendance of tutoring service at the Dolciani Math Learning Center (Main Library, 7[th] floor)
+
+
+<hr id="t14"> 
+
+**FINAL GRADE**
+
+To receive an A or A+, there are two more criteria you will need to meet:
+
+- <p>Complete the Independent Data Analysis Project satisfactorily and on-time</p>
+
+AND
+
+- <p>Complete 95% of the topics on time.</p>
+
+Do all your work completely and on time and you are definitely on course for a good grade. Good Luck.
+
+
+<hr id="t15"> 
+
+**ADDITIONAL RESOURCES**
+
+> The Dolciani Math Learning Center is a multi-media/tutorial Center providing computer-assisted tutorials, workshops and tutoring for students across the College who need assistance in mathematics and statistics. There are both online and onsite services.  Visit their website <a href="https://www.hunter.cuny.edu/dolciani" target="blank">www.hunter.cuny.edu/dolciani</a> and be sure to check your email for details on specific events throughout the semester.
+
+
+<hr id="t16"> 
+
+**ATTENDANCE**
+
+> Attendance is required and will be taken at every class. Your instructor may use multiple ways to help you learn the material. If you are not going to be able to attend on a particular day, notify your instructor ahead of time. 
+
+
+<hr id="t17"> 
+
+**EMERGENCY SITUATIONS**
+
+> We have all dealt with emergency situations this past year, including power and internet outages. If that happens to you, either causing you to miss class or giving you problems during an exam, you need to communicate clearly with your professor about your situation as soon as it is rectified. Don't wait until the end of the semester to list all the reasons you were not able to be a part of the class. And don't wait until the instructor contacts you.
+
+<hr id="t18"> 
+
+**CALCULATOR**
+
+> ALEKS Calculator is allowed during the tests for certain problems. Other calculators, phones and tablets are not allowed during tests. Use of technology is not allowed during tests except for the technology ALEKS allows you. If you have to do calculations by hand on the learning objectives work, expect to do the same kind of calculations on the test. And show the work on your scrap paper. If you are doing calculations, write down what you are calculating. Please note: this requirement is the same regardless of whether you are in an in-person, online synchronous or online asynchronous class.
+
+
+<hr id="t19"> 
+
+**GENERAL INFORMATION** 
+
+- It is your responsibility to have access to Brightspace with a working Hunter student email address so that you can be reached through the email system in Brightspace. Any change in your student email must be simultaneously changed in Brightspace. Contact the student help desk if there is a problem. It is your responsibility to check your Hunter email regularly for messages from your instructor. If you don't know how to do this, contact your advisor -- the name appears on the student view in CUNY First. If you do not have a general advisor, contact Student Affairs to get one.
+
+
+- Use of your cell phone is prohibited during class sessions unless you have an emergency. 
+
+- You should make use of all your time. If your instructor completes a lecture or if you complete classwork before the end of class, log into ALEKS and work on the material during class.  
+
+- Grades: Details of regular letter grading appears earlier in this syllabus.
+
+	- <p>The last day to withdraw from the course with a grade of W is **April 13, 2026**. It is your responsibility to know this date. **Please note that a grade of W may be interpreted by some as a failing grade.**</p>
+
+	- THERE ARE NO INC grades allowed IN THIS CLASS.	
+	- There are no P/NC grades allowed in this course.
+
+	- If you stop attending and do not complete the course work, including the final exam, unless you officially withdraw, you may receive a grade of WU unless it was clear that you would be failing the course even with the missed work.
+
+- Attendance will be taken each class day. It doesn't count for you or against you but shows a certain commitment to the course and respect for your teacher. Additionally, your instructor can see, online, how much work you have done on a particular day.
+
+- You are expected to work 9 or more hours a week, plus class time, on this course. You may be able to complete the material in less time but it may take you more time. If you are not working this long and also not doing well, increase your time before complaining about the difficulty.
+
+- If you have taken this course before, work differently in the course this time. Tell your instructor and follow his/her suggestions for progressing. Make use of the video assignments. Go to the Dolciani Center for tutoring. Increase your hours working in the course. Drop the course if you cannot commit to the work.
+
+- If you need this course for your major and cannot pass it, even after taking it over, speak with your major advisor. 
+
+- In this course, you will have many different ways to learn statistics. Please come prepared to work.
+
+
+<hr id="t20"> 
+
+**SYLLABUS CHANGE POLICY** 
+
+> Except for changes that substantially affect implementation of the evaluation (grading) statement, this syllabus is a guide for the course and is subject to 
+change with advance notice. If any changes are made, a revised syllabus (Named Revised Syllabus xx/xx/xxxx --date changed) will be posted in the Course Materials section of Brightspace and an announcement will be posted and sent notifying you that this has been done.
+
+**I hope this is a productive semester for you and your classmates.**
+
+
+<hr id="t21"> 
+
+**IF YOU DO ALL YOUR OWN WORK, YOU MAY SKIP THIS WARNING. OTHERWISE, READ THIS:** 
+
+> If you are caught cheating on a quiz, test, exam or a project, you will fail the course and disciplinary charges may be brought against you. If you make screenshots of test or final exam questions or are found to have copied someone else's work or Googled answers while taking an exam or used CHEGG, ChatGPT or some other site to get answers or turned in someone else's project as your own, you will be charged with academic dishonesty. If you put answers on your exam that appear to be from someone else's exam, your scrap paper will be evaluated. If you do not have the work for the problem in question, you will be sent to the college's Conduct Officer. If you and someone else turn in (essentially) identical work on the data assignments, you will both be charged with academic dishonesty. If you help someone else cheat by giving them access to your work, that also qualifies as cheating. Any or all of these transgressions may result in your receiving a lowered letter grade, failing the course, or possibly being dismissed depending on the severity of the charges. You are expected to do your own work. You may receive help from others in order to learn material but 'help' is different from turning in someone else's work and claiming it is your work. You may not have someone else other than you do your work in ALEKS or on the data assignments. If you do not know the difference between getting help to learn and cheating, please speak with me directly.
+
+----
+
+**Hunter College Policy on Academic Integrity**
+
+> "Hunter College regards acts of academic dishonesty (e.g., plagiarism, cheating on examinations, obtaining unfair advantage, and falsification of records and official documents) as serious offenses against the values of intellectual honesty. The College is committed to enforcing the CUNY Policy on Academic Integrity and will pursue cases of academic dishonesty according to the Hunter College Academic Integrity Procedures."
+
+**ADA Policy (Suggested language from the Office of AccessABILITY)**
+
+> "In compliance with the American Disability Act of 1990 (ADA) and with Section 504 of the Rehabilitation Act of 1973, Hunter College is committed to ensuring educational parity and accommodations for all students with documented disabilities and/or medical conditions. It is recommended that all students with documented disabilities (Emotional, Medical, Physical, and/or Learning) consult the Office of AccessABILITY, located in Room E1214B, to secure necessary academic accommodations. For further information and assistance, please call: (212) 772- 4857 or (212) 650-3230."
+
+> If you are registered with the Office of AccessABILITY and have been granted accommodations for testing, please notify your instructor as soon as possible and follow the guidelines for scheduling your exams appropriately. The testing accommodations DO NOT extend automatically to due dates for ALEKS objectives.
+
+
+
+
+**Hunter College Policy on Sexual Misconduct**
+
+> "In compliance with the CUNY Policy on Sexual Misconduct, Hunter College reaffirms the prohibition of any sexual misconduct, which includes sexual violence, sexual harassment, and gender-based harassment retaliation against students, employees, or visitors, as well as certain intimate relationships. Students who have experienced any form of sexual violence on or off -  campus (including CUNY-sponsored trips and events) are entitled to the rights outlined in the Bill of Rights for Hunter College.
+
+> - Sexual Violence: Students are strongly encouraged to immediately report the incident by calling 911, contacting NYPD Special Victims Division Hotline (646-610-7272) or their local police precinct, or contacting the College's Public Safety Office (212-772-4444).
+
+> - All Other Forms of Sexual Misconduct: Students are also encouraged to contact the College's Title IX Campus Coordinator, Dean John Rose (jtrose@hunter.cuny.edu or 212-650-3262) or Colleen Barry (colleen.barry@hunter.cuny.edu or 212-772-4534) and seek complimentary services through the Counseling and Wellness Services Office, Hunter East 1123.
+
+CUNY Policy on Sexual Misconduct Link: <a href="https://hunter-undergraduate.catalog.cuny.edu/policies-and-requirements/institutional-policies/cuny-policy-on-sexual-misconduct" target="_blank">https://hunter-undergraduate.catalog.cuny.edu/policies-and-requirements/institutional-policies/cuny-policy-on-sexual-misconduct</a> 
+
+
+<hr id="t22">
+
+<center style="font-weight:bold; font-size:18px">A BRIEF DESCRIPTION OF ALEKS</center>
+
+<br>
+
+Welcome! In this course we will use ALEKS, an adaptive program that creates a personalized path based on what you know, what you don't know and what you are ready to work on. ALEKS helps you learn, understand, and master content in your course so that you can be successful in this course and beyond!
+
+<br>
+
+**What is ALEKS?**
+
+> ALEKS is a learning platform from McGraw Hill Education that assesses what you already know, what you don't know yet, and what you're ready to learn throughout this course. Many of your course assignments will be delivered through ALEKS.
+
+**ALEKS Initial Knowledge Check**
+
+> Within the first few days of your course, you will take your Initial Knowledge Check. The purpose of this check is to get to know you and to give you "credit" for any of the content of the course you may already know. This "credit" will be different for each student because each student has a unique math background  -  math courses taken, time since last math class, grades earned in those classes, etc. There is no right or wrong "grade" on the Initial Knowledge Check. Some students come in knowing about 10% of the course content. Comprehending more or less than 10% of the content is perfectly acceptable - you are in this course to learn the material, not to show that you already know it.
+
+**Your Path**
+
+> The result of your Initial Knowledge Check is what ALEKS uses to create your own individualized learning path to work through the content of this course. You will next be asked to "Start your path." ALEKS will start by asking you to work through topics you are most ready to learn.
+
+> Continue on your path to learn and master new topics. Watch your progress as you begin to fill in your pie!
+
+
+**Non-Adaptive Assignments**
+
+> In addition to your personalized learning path, you will also complete assignments that are not part of your adaptive pie in the form of homework, quizzes, tests or test preparation. These non- adaptive assignments will not affect your adaptive learning path, but they do provide important learning opportunities and will help you succeed in this course.
+
+**Additional Knowledge Checks**
+
+> ALEKS periodically gives you automatic knowledge checks based on the time you have spent in ALEKS and/or the number of topics you have learned. These knowledge checks are designed to see how well you are retaining the topics you have learned so that you will be ready for tests/exams. These knowledge checks impact the topics that are in your pie; so, use the SYLLABUS 
+
+
+----
+
+
+**Technical and Support Information**
+
+If you are having trouble registering for or accessing ALEKS, please contact ALEKS Customer Support. Live chat, email, and phone support are available 7 days a week.
+
+When contacting a support agent, you will always receive a case number. It will be important to save this case number if additional follow up or documentation is needed.
+
+Website: aleks.com/support | Phone: (800) 258-2374 Hours (EST)
+
+- Sunday: 4 PM  -  1 AM EST
+
+- Monday - Thursday: 7 AM  -  1 AM EST 
+
+- Friday: 7 AM  -  9 PM EST
+
+Ensure your computer meets system requirements by going to this link: <a href="https://www.aleks.com/support/system_requirements" target="_blank">https://www.aleks.com/support/system_requirements</a> 
+
+
+</div>
+
+
+</div>
+
+
+
